@@ -183,9 +183,9 @@ const blueTable = new Entity('blueTable')
 engine.addEntity(blueTable)
 blueTable.setParent(_scene)
 const transform14 = new Transform({
-  position: new Vector3(7.000000476837158, 0, 8),
+  position: new Vector3(7.016507625579834, 0.07328192889690399, 8),
   rotation: new Quaternion(1.9771354116350417e-15, 0.7071068286895752, -8.429369557916289e-8, -0.7071068286895752),
-  scale: new Vector3(1.5000028610229492, 1.5, 2.5)
+  scale: new Vector3(1.5000072717666626, 1.0190190076828003, 2.681319236755371)
 })
 blueTable.addComponentOrReplace(transform14)
 const gltfShape6 = new GLTFShape("af8136bb-c528-4c8c-a986-c352b48241bf/Table_02/Table_02.glb")
@@ -332,9 +332,9 @@ const simpleChair = new Entity('simpleChair')
 engine.addEntity(simpleChair)
 simpleChair.setParent(_scene)
 const transform27 = new Transform({
-  position: new Vector3(4.5278639793396, 0, 6.484048843383789),
+  position: new Vector3(4.365072727203369, 0.07328192889690399, 6.484048843383789),
   rotation: new Quaternion(-1.096675262029416e-15, 0.9002289772033691, -1.0731564970001273e-7, 0.43541696667671204),
-  scale: new Vector3(1.6563106775283813, 1.4472366571426392, 1.3028197288513184)
+  scale: new Vector3(1.702613353729248, 0.9831745028495789, 1.3608932495117188)
 })
 simpleChair.addComponentOrReplace(transform27)
 const gltfShape8 = new GLTFShape("d9eb4464-55fe-4b35-9933-246b2a423793/Chair_03/Chair_03.glb")
@@ -348,9 +348,9 @@ engine.addEntity(simpleChair2)
 simpleChair2.setParent(_scene)
 simpleChair2.addComponentOrReplace(gltfShape8)
 const transform28 = new Transform({
-  position: new Vector3(6.128164768218994, 0, 6.2377705574035645),
+  position: new Vector3(6.08143949508667, 0.07328192889690399, 6.2377705574035645),
   rotation: new Quaternion(8.985245036343629e-15, 0.7359524965286255, -8.773236714887389e-8, 0.6770331859588623),
-  scale: new Vector3(1.6563136577606201, 1.4472366571426392, 1.3028225898742676)
+  scale: new Vector3(1.6571459770202637, 0.9831745028495789, 1.3966583013534546)
 })
 simpleChair2.addComponentOrReplace(transform28)
 
@@ -359,9 +359,9 @@ engine.addEntity(simpleChair3)
 simpleChair3.setParent(_scene)
 simpleChair3.addComponentOrReplace(gltfShape8)
 const transform29 = new Transform({
-  position: new Vector3(7.548795700073242, 0, 5.66210412979126),
+  position: new Vector3(7.605105400085449, 0.07328192889690399, 5.66210412979126),
   rotation: new Quaternion(9.885514851365809e-15, 0.9109900593757629, -1.0859849197686344e-7, -0.4124282896518707),
-  scale: new Vector3(1.6563146114349365, 1.4472366571426392, 1.3028233051300049)
+  scale: new Vector3(1.7086117267608643, 0.9831745028495789, 1.3561780452728271)
 })
 simpleChair3.addComponentOrReplace(transform29)
 
@@ -370,9 +370,9 @@ engine.addEntity(simpleChair4)
 simpleChair4.setParent(_scene)
 simpleChair4.addComponentOrReplace(gltfShape8)
 const transform30 = new Transform({
-  position: new Vector3(9.016944885253906, 0, 6.267442226409912),
+  position: new Vector3(9.179736137390137, 0.07328192889690399, 6.267442226409912),
   rotation: new Quaternion(-3.421338868681359e-14, -0.903877854347229, 1.0775062975199035e-7, -0.42779070138931274),
-  scale: new Vector3(1.6563169956207275, 1.4472366571426392, 1.3028249740600586)
+  scale: new Vector3(1.7046033143997192, 0.9831745028495789, 1.3593366146087646)
 })
 simpleChair4.addComponentOrReplace(transform30)
 
@@ -406,9 +406,9 @@ engine.addEntity(simpleChair5)
 simpleChair5.setParent(_scene)
 simpleChair5.addComponentOrReplace(gltfShape8)
 const transform33 = new Transform({
-  position: new Vector3(4.5278639793396, 0, 10.098552703857422),
+  position: new Vector3(4.365072727203369, 0.07328192889690399, 10.098552703857422),
   rotation: new Quaternion(-1.1859736046145822e-14, 0.819839596748352, -9.773247455768796e-8, -0.5725933909416199),
-  scale: new Vector3(1.6563125848770142, 1.4472366571426392, 1.302821159362793)
+  scale: new Vector3(1.6705536842346191, 0.9831745028495789, 1.3861150741577148)
 })
 simpleChair5.addComponentOrReplace(transform33)
 
@@ -417,9 +417,9 @@ engine.addEntity(simpleChair6)
 simpleChair6.setParent(_scene)
 simpleChair6.addComponentOrReplace(gltfShape8)
 const transform34 = new Transform({
-  position: new Vector3(5.975466728210449, 0.4570779800415039, 10.266435623168945),
-  rotation: new Quaternion(0.3637779951095581, 0.6024600863456726, -0.35672372579574585, -0.6143742799758911),
-  scale: new Vector3(1.6563153266906738, 1.4472379684448242, 1.3028212785720825)
+  position: new Vector3(5.917666435241699, 0.3837960958480835, 10.266435623168945),
+  rotation: new Quaternion(0.3949500322341919, 0.5832798480987549, -0.38729128241539, -0.5948147177696228),
+  scale: new Vector3(1.2398484945297241, 1.3326677083969116, 1.397132396697998)
 })
 simpleChair6.addComponentOrReplace(transform34)
 
@@ -428,9 +428,9 @@ engine.addEntity(simpleChair7)
 simpleChair7.setParent(_scene)
 simpleChair7.addComponentOrReplace(gltfShape8)
 const transform35 = new Transform({
-  position: new Vector3(7.4108567237854, 0.4570779800415039, 10.266435623168945),
-  rotation: new Quaternion(0.3637779951095581, 0.6024600863456726, -0.35672372579574585, -0.6143742799758911),
-  scale: new Vector3(1.656315803527832, 1.4472383260726929, 1.3028216361999512)
+  position: new Vector3(7.457161903381348, 0.3837960958480835, 10.266435623168945),
+  rotation: new Quaternion(0.3949500322341919, 0.5832798480987549, -0.38729128241539, -0.5948147177696228),
+  scale: new Vector3(1.2398484945297241, 1.3326692581176758, 1.3971327543258667)
 })
 simpleChair7.addComponentOrReplace(transform35)
 
@@ -439,9 +439,9 @@ engine.addEntity(simpleChair8)
 simpleChair8.setParent(_scene)
 simpleChair8.addComponentOrReplace(gltfShape8)
 const transform36 = new Transform({
-  position: new Vector3(9.016944885253906, 0, 9.674249649047852),
+  position: new Vector3(9.179736137390137, 0.07328192889690399, 9.674249649047852),
   rotation: new Quaternion(-1.4762908438574994e-14, -0.7854153513908386, 9.362882735786116e-8, 0.6189691424369812),
-  scale: new Vector3(1.6563186645507812, 1.4472366571426392, 1.3028253316879272)
+  scale: new Vector3(1.662883996963501, 0.9831745028495789, 1.3921535015106201)
 })
 simpleChair8.addComponentOrReplace(transform36)
 
@@ -456,6 +456,17 @@ const transform37 = new Transform({
 })
 outdoorChair2.addComponentOrReplace(transform37)
 
+const outdoorChair3 = new Entity('outdoorChair3')
+engine.addEntity(outdoorChair3)
+outdoorChair3.setParent(_scene)
+outdoorChair3.addComponentOrReplace(gltfShape9)
+const transform38 = new Transform({
+  position: new Vector3(13.3726224899292, 0, 1.5992136001586914),
+  rotation: new Quaternion(1.2465786002323906e-15, -0.2769654095172882, 3.3016846145983436e-8, 0.960879921913147),
+  scale: new Vector3(0.9406830668449402, 1.335638165473938, 1.4671534299850464)
+})
+outdoorChair3.addComponentOrReplace(transform38)
+
 const channelId = Math.random().toString(16).slice(2)
 const channelBus = new MessageBus()
 const inventory = createInventory(UICanvas, UIContainerStack, UIImage)
@@ -467,7 +478,7 @@ const script3 = new Script3()
 script1.init(options)
 script2.init(options)
 script3.init(options)
-script1.spawn(scoreboard, {"initialVal":0,"threshold":21,"enabled":true,"onThreshold":[{"entityName":"scoreboard","actionId":"increase","values":{}}]}, createChannel(channelId, scoreboard, channelBus))
+script1.spawn(scoreboard, {"initialVal":0,"threshold":21,"enabled":true,"onThreshold":[{"entityName":"scoreboard","actionId":"enable","values":{}}]}, createChannel(channelId, scoreboard, channelBus))
 script2.spawn(ropeLight, {"startOn":true,"clickable":true}, createChannel(channelId, ropeLight, channelBus))
 script2.spawn(ropeLight2, {"startOn":true,"clickable":true}, createChannel(channelId, ropeLight2, channelBus))
 script3.spawn(imageURLNSFW, {"image":"https://i.imgur.com/1cuKdy2.jpg","nsfw":false}, createChannel(channelId, imageURLNSFW, channelBus))

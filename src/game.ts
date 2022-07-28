@@ -484,4 +484,4 @@ script1.spawn(scoreboard, {"initialVal":17,"threshold":21,"enabled":true,"onThre
 script2.spawn(ropeLight, {"startOn":true,"clickable":true}, createChannel(channelId, ropeLight, channelBus))
 script2.spawn(ropeLight2, {"startOn":true,"clickable":true}, createChannel(channelId, ropeLight2, channelBus))
 script3.spawn(imageURLNSFW, {"image":"https://i.imgur.com/1cuKdy2.jpg","nsfw":false}, createChannel(channelId, imageURLNSFW, channelBus))
-script4.spawn(ambientSound, {"sound":"City","active":true,"loop":true}, createChannel(channelId, ambientSound, channelBus))
+script4.spawn(ambientSound, {"sound":"Birds","active":true,"loop":true}, createChannel(channelId, ambientSound, channelBus))

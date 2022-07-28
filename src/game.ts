@@ -1,3 +1,8 @@
+import { createChannel } from '../node_modules/decentraland-builder-scripts/channel'
+import { createInventory } from '../node_modules/decentraland-builder-scripts/inventory'
+import Script1 from "../1d45dc17-42d2-4d02-af19-f5528f395b13/src/item"
+import Script2 from "../3cf05054-0a57-4b00-ba77-a3f21876494d/src/item"
+import Script3 from "../3b6be649-7ad5-4b34-b96f-9a083ae6dbef/src/item"
 
 const _scene = new Entity('_scene')
 engine.addEntity(_scene)
@@ -163,3 +168,306 @@ gltfShape5.withCollisions = true
 gltfShape5.isPointerBlocker = true
 gltfShape5.visible = true
 basketballHoop2.addComponentOrReplace(gltfShape5)
+
+const scoreboard = new Entity('scoreboard')
+engine.addEntity(scoreboard)
+scoreboard.setParent(_scene)
+const transform13 = new Transform({
+  position: new Vector3(0.5, 5.6968793869018555, 8),
+  rotation: new Quaternion(-1.0957064045685229e-14, -0.7071067690849304, 8.429369557916289e-8, -0.70710688829422),
+  scale: new Vector3(3.7500052452087402, 3, 1.0000017881393433)
+})
+scoreboard.addComponentOrReplace(transform13)
+
+const blueTable = new Entity('blueTable')
+engine.addEntity(blueTable)
+blueTable.setParent(_scene)
+const transform14 = new Transform({
+  position: new Vector3(7.000000476837158, 0, 8),
+  rotation: new Quaternion(1.9771354116350417e-15, 0.7071068286895752, -8.429369557916289e-8, -0.7071068286895752),
+  scale: new Vector3(1.5000028610229492, 1.5, 2.5)
+})
+blueTable.addComponentOrReplace(transform14)
+const gltfShape6 = new GLTFShape("af8136bb-c528-4c8c-a986-c352b48241bf/Table_02/Table_02.glb")
+gltfShape6.withCollisions = true
+gltfShape6.isPointerBlocker = true
+gltfShape6.visible = true
+blueTable.addComponentOrReplace(gltfShape6)
+
+const ropeLight = new Entity('ropeLight')
+engine.addEntity(ropeLight)
+ropeLight.setParent(_scene)
+const transform15 = new Transform({
+  position: new Vector3(8, 8.106879234313965, 0.20492982864379883),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1.141323208808899, 1, 1)
+})
+ropeLight.addComponentOrReplace(transform15)
+
+const smallCandleGauzeLantern = new Entity('smallCandleGauzeLantern')
+engine.addEntity(smallCandleGauzeLantern)
+smallCandleGauzeLantern.setParent(_scene)
+const transform16 = new Transform({
+  position: new Vector3(8.103650093078613, 7.261886119842529, 0.2058943659067154),
+  rotation: new Quaternion(-1.5394153601527394e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
+  scale: new Vector3(1.0000009536743164, 1.5, 1.5000042915344238)
+})
+smallCandleGauzeLantern.addComponentOrReplace(transform16)
+const gltfShape7 = new GLTFShape("3ea31ee2-9a60-4846-a1f5-c8b14419d8af/ChineseLantern_05/ChineseLantern_05.glb")
+gltfShape7.withCollisions = true
+gltfShape7.isPointerBlocker = true
+gltfShape7.visible = true
+smallCandleGauzeLantern.addComponentOrReplace(gltfShape7)
+
+const smallCandleGauzeLantern2 = new Entity('smallCandleGauzeLantern2')
+engine.addEntity(smallCandleGauzeLantern2)
+smallCandleGauzeLantern2.setParent(_scene)
+smallCandleGauzeLantern2.addComponentOrReplace(gltfShape7)
+const transform17 = new Transform({
+  position: new Vector3(3.417440414428711, 7.261886119842529, 0.20870476961135864),
+  rotation: new Quaternion(-1.5394153601527394e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
+  scale: new Vector3(1.000002145767212, 1.5, 1.5000096559524536)
+})
+smallCandleGauzeLantern2.addComponentOrReplace(transform17)
+
+const smallCandleGauzeLantern3 = new Entity('smallCandleGauzeLantern3')
+engine.addEntity(smallCandleGauzeLantern3)
+smallCandleGauzeLantern3.setParent(_scene)
+smallCandleGauzeLantern3.addComponentOrReplace(gltfShape7)
+const transform18 = new Transform({
+  position: new Vector3(12.650352478027344, 7.261886119842529, 0.20870471000671387),
+  rotation: new Quaternion(-1.5394153601527394e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
+  scale: new Vector3(1.000002384185791, 1.5, 1.500010371208191)
+})
+smallCandleGauzeLantern3.addComponentOrReplace(transform18)
+
+const smallCandleGauzeLantern4 = new Entity('smallCandleGauzeLantern4')
+engine.addEntity(smallCandleGauzeLantern4)
+smallCandleGauzeLantern4.setParent(_scene)
+smallCandleGauzeLantern4.addComponentOrReplace(gltfShape7)
+const transform19 = new Transform({
+  position: new Vector3(5.791111469268799, 7.261886119842529, 0.20870442688465118),
+  rotation: new Quaternion(-1.5394153601527394e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
+  scale: new Vector3(1.000002384185791, 1.5, 1.500010371208191)
+})
+smallCandleGauzeLantern4.addComponentOrReplace(transform19)
+
+const smallCandleGauzeLantern5 = new Entity('smallCandleGauzeLantern5')
+engine.addEntity(smallCandleGauzeLantern5)
+smallCandleGauzeLantern5.setParent(_scene)
+smallCandleGauzeLantern5.addComponentOrReplace(gltfShape7)
+const transform20 = new Transform({
+  position: new Vector3(10.26932430267334, 7.261886119842529, 0.20870383083820343),
+  rotation: new Quaternion(-1.5394153601527394e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
+  scale: new Vector3(1.0000026226043701, 1.5, 1.5000110864639282)
+})
+smallCandleGauzeLantern5.addComponentOrReplace(transform20)
+
+const ropeLight2 = new Entity('ropeLight2')
+engine.addEntity(ropeLight2)
+ropeLight2.setParent(_scene)
+const transform21 = new Transform({
+  position: new Vector3(8, 8.106879234313965, 15.664131164550781),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1.141323208808899, 1, 1)
+})
+ropeLight2.addComponentOrReplace(transform21)
+
+const smallCandleGauzeLantern6 = new Entity('smallCandleGauzeLantern6')
+engine.addEntity(smallCandleGauzeLantern6)
+smallCandleGauzeLantern6.setParent(_scene)
+smallCandleGauzeLantern6.addComponentOrReplace(gltfShape7)
+const transform22 = new Transform({
+  position: new Vector3(3.417440414428711, 7.261886119842529, 15.667905807495117),
+  rotation: new Quaternion(-1.5394153601527394e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
+  scale: new Vector3(1.0000026226043701, 1.5, 1.5000110864639282)
+})
+smallCandleGauzeLantern6.addComponentOrReplace(transform22)
+
+const smallCandleGauzeLantern7 = new Entity('smallCandleGauzeLantern7')
+engine.addEntity(smallCandleGauzeLantern7)
+smallCandleGauzeLantern7.setParent(_scene)
+smallCandleGauzeLantern7.addComponentOrReplace(gltfShape7)
+const transform23 = new Transform({
+  position: new Vector3(5.791111469268799, 7.261886119842529, 15.667905807495117),
+  rotation: new Quaternion(-1.5394153601527394e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
+  scale: new Vector3(1.0000028610229492, 1.5, 1.5000118017196655)
+})
+smallCandleGauzeLantern7.addComponentOrReplace(transform23)
+
+const smallCandleGauzeLantern8 = new Entity('smallCandleGauzeLantern8')
+engine.addEntity(smallCandleGauzeLantern8)
+smallCandleGauzeLantern8.setParent(_scene)
+smallCandleGauzeLantern8.addComponentOrReplace(gltfShape7)
+const transform24 = new Transform({
+  position: new Vector3(8.103650093078613, 7.261886119842529, 15.665095329284668),
+  rotation: new Quaternion(-1.5394153601527394e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
+  scale: new Vector3(1.0000014305114746, 1.5, 1.5000057220458984)
+})
+smallCandleGauzeLantern8.addComponentOrReplace(transform24)
+
+const smallCandleGauzeLantern9 = new Entity('smallCandleGauzeLantern9')
+engine.addEntity(smallCandleGauzeLantern9)
+smallCandleGauzeLantern9.setParent(_scene)
+smallCandleGauzeLantern9.addComponentOrReplace(gltfShape7)
+const transform25 = new Transform({
+  position: new Vector3(10.26932430267334, 7.261886119842529, 15.6679048538208),
+  rotation: new Quaternion(-1.5394153601527394e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
+  scale: new Vector3(1.0000030994415283, 1.5, 1.5000125169754028)
+})
+smallCandleGauzeLantern9.addComponentOrReplace(transform25)
+
+const smallCandleGauzeLantern10 = new Entity('smallCandleGauzeLantern10')
+engine.addEntity(smallCandleGauzeLantern10)
+smallCandleGauzeLantern10.setParent(_scene)
+smallCandleGauzeLantern10.addComponentOrReplace(gltfShape7)
+const transform26 = new Transform({
+  position: new Vector3(12.650352478027344, 7.261886119842529, 15.667905807495117),
+  rotation: new Quaternion(-1.5394153601527394e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
+  scale: new Vector3(1.0000028610229492, 1.5, 1.5000118017196655)
+})
+smallCandleGauzeLantern10.addComponentOrReplace(transform26)
+
+const simpleChair = new Entity('simpleChair')
+engine.addEntity(simpleChair)
+simpleChair.setParent(_scene)
+const transform27 = new Transform({
+  position: new Vector3(4.5278639793396, 0, 6.484048843383789),
+  rotation: new Quaternion(-1.096675262029416e-15, 0.9002289772033691, -1.0731564970001273e-7, 0.43541696667671204),
+  scale: new Vector3(1.6563106775283813, 1.4472366571426392, 1.3028197288513184)
+})
+simpleChair.addComponentOrReplace(transform27)
+const gltfShape8 = new GLTFShape("d9eb4464-55fe-4b35-9933-246b2a423793/Chair_03/Chair_03.glb")
+gltfShape8.withCollisions = true
+gltfShape8.isPointerBlocker = true
+gltfShape8.visible = true
+simpleChair.addComponentOrReplace(gltfShape8)
+
+const simpleChair2 = new Entity('simpleChair2')
+engine.addEntity(simpleChair2)
+simpleChair2.setParent(_scene)
+simpleChair2.addComponentOrReplace(gltfShape8)
+const transform28 = new Transform({
+  position: new Vector3(6.128164768218994, 0, 6.2377705574035645),
+  rotation: new Quaternion(8.985245036343629e-15, 0.7359524965286255, -8.773236714887389e-8, 0.6770331859588623),
+  scale: new Vector3(1.6563136577606201, 1.4472366571426392, 1.3028225898742676)
+})
+simpleChair2.addComponentOrReplace(transform28)
+
+const simpleChair3 = new Entity('simpleChair3')
+engine.addEntity(simpleChair3)
+simpleChair3.setParent(_scene)
+simpleChair3.addComponentOrReplace(gltfShape8)
+const transform29 = new Transform({
+  position: new Vector3(7.548795700073242, 0, 5.66210412979126),
+  rotation: new Quaternion(9.885514851365809e-15, 0.9109900593757629, -1.0859849197686344e-7, -0.4124282896518707),
+  scale: new Vector3(1.6563146114349365, 1.4472366571426392, 1.3028233051300049)
+})
+simpleChair3.addComponentOrReplace(transform29)
+
+const simpleChair4 = new Entity('simpleChair4')
+engine.addEntity(simpleChair4)
+simpleChair4.setParent(_scene)
+simpleChair4.addComponentOrReplace(gltfShape8)
+const transform30 = new Transform({
+  position: new Vector3(9.016944885253906, 0, 6.267442226409912),
+  rotation: new Quaternion(-3.421338868681359e-14, -0.903877854347229, 1.0775062975199035e-7, -0.42779070138931274),
+  scale: new Vector3(1.6563169956207275, 1.4472366571426392, 1.3028249740600586)
+})
+simpleChair4.addComponentOrReplace(transform30)
+
+const outdoorChair = new Entity('outdoorChair')
+engine.addEntity(outdoorChair)
+outdoorChair.setParent(_scene)
+const transform31 = new Transform({
+  position: new Vector3(8.911585807800293, 0, 3.989760398864746),
+  rotation: new Quaternion(5.662569835907872e-16, -0.35649818181991577, 4.249789142818372e-8, 0.9342960715293884),
+  scale: new Vector3(0.9406828284263611, 1.335638165473938, 1.4671530723571777)
+})
+outdoorChair.addComponentOrReplace(transform31)
+const gltfShape9 = new GLTFShape("8707b21f-e3a0-4d8b-8da0-60d8927de229/Chair_07/Chair_07.glb")
+gltfShape9.withCollisions = true
+gltfShape9.isPointerBlocker = true
+gltfShape9.visible = true
+outdoorChair.addComponentOrReplace(gltfShape9)
+
+const imageURLNSFW = new Entity('imageURLNSFW')
+engine.addEntity(imageURLNSFW)
+imageURLNSFW.setParent(_scene)
+const transform32 = new Transform({
+  position: new Vector3(15.544174194335938, 5.047489643096924, 7.972203254699707),
+  rotation: new Quaternion(-2.3634959379979347e-15, 0.7094048857688904, -8.456764533093519e-8, -0.7048011422157288),
+  scale: new Vector3(3.701324939727783, 3.0147268772125244, 1.0001096725463867)
+})
+imageURLNSFW.addComponentOrReplace(transform32)
+
+const simpleChair5 = new Entity('simpleChair5')
+engine.addEntity(simpleChair5)
+simpleChair5.setParent(_scene)
+simpleChair5.addComponentOrReplace(gltfShape8)
+const transform33 = new Transform({
+  position: new Vector3(4.5278639793396, 0, 10.098552703857422),
+  rotation: new Quaternion(-1.1859736046145822e-14, 0.819839596748352, -9.773247455768796e-8, -0.5725933909416199),
+  scale: new Vector3(1.6563125848770142, 1.4472366571426392, 1.302821159362793)
+})
+simpleChair5.addComponentOrReplace(transform33)
+
+const simpleChair6 = new Entity('simpleChair6')
+engine.addEntity(simpleChair6)
+simpleChair6.setParent(_scene)
+simpleChair6.addComponentOrReplace(gltfShape8)
+const transform34 = new Transform({
+  position: new Vector3(5.975466728210449, 0.4570779800415039, 10.266435623168945),
+  rotation: new Quaternion(0.3637779951095581, 0.6024600863456726, -0.35672372579574585, -0.6143742799758911),
+  scale: new Vector3(1.6563153266906738, 1.4472379684448242, 1.3028212785720825)
+})
+simpleChair6.addComponentOrReplace(transform34)
+
+const simpleChair7 = new Entity('simpleChair7')
+engine.addEntity(simpleChair7)
+simpleChair7.setParent(_scene)
+simpleChair7.addComponentOrReplace(gltfShape8)
+const transform35 = new Transform({
+  position: new Vector3(7.4108567237854, 0.4570779800415039, 10.266435623168945),
+  rotation: new Quaternion(0.3637779951095581, 0.6024600863456726, -0.35672372579574585, -0.6143742799758911),
+  scale: new Vector3(1.656315803527832, 1.4472383260726929, 1.3028216361999512)
+})
+simpleChair7.addComponentOrReplace(transform35)
+
+const simpleChair8 = new Entity('simpleChair8')
+engine.addEntity(simpleChair8)
+simpleChair8.setParent(_scene)
+simpleChair8.addComponentOrReplace(gltfShape8)
+const transform36 = new Transform({
+  position: new Vector3(9.016944885253906, 0, 9.674249649047852),
+  rotation: new Quaternion(-1.4762908438574994e-14, -0.7854153513908386, 9.362882735786116e-8, 0.6189691424369812),
+  scale: new Vector3(1.6563186645507812, 1.4472366571426392, 1.3028253316879272)
+})
+simpleChair8.addComponentOrReplace(transform36)
+
+const outdoorChair2 = new Entity('outdoorChair2')
+engine.addEntity(outdoorChair2)
+outdoorChair2.setParent(_scene)
+outdoorChair2.addComponentOrReplace(gltfShape9)
+const transform37 = new Transform({
+  position: new Vector3(13.3726224899292, 0, 1.5992136001586914),
+  rotation: new Quaternion(1.2465786002323906e-15, -0.2769654095172882, 3.3016846145983436e-8, 0.960879921913147),
+  scale: new Vector3(0.9406830668449402, 1.335638165473938, 1.4671534299850464)
+})
+outdoorChair2.addComponentOrReplace(transform37)
+
+const channelId = Math.random().toString(16).slice(2)
+const channelBus = new MessageBus()
+const inventory = createInventory(UICanvas, UIContainerStack, UIImage)
+const options = { inventory }
+
+const script1 = new Script1()
+const script2 = new Script2()
+const script3 = new Script3()
+script1.init(options)
+script2.init(options)
+script3.init(options)
+script1.spawn(scoreboard, {"initialVal":0,"threshold":21,"enabled":true,"onThreshold":[{"entityName":"scoreboard","actionId":"increase","values":{}}]}, createChannel(channelId, scoreboard, channelBus))
+script2.spawn(ropeLight, {"startOn":true,"clickable":true}, createChannel(channelId, ropeLight, channelBus))
+script2.spawn(ropeLight2, {"startOn":true,"clickable":true}, createChannel(channelId, ropeLight2, channelBus))
+script3.spawn(imageURLNSFW, {"image":"https://i.imgur.com/1cuKdy2.jpg","nsfw":false}, createChannel(channelId, imageURLNSFW, channelBus))

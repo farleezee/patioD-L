@@ -3,8 +3,8 @@ import { createInventory } from '../node_modules/decentraland-builder-scripts/in
 import Script1 from "../7d669c08-c354-45e4-b3a3-c915c8fd6b6e/src/item"
 import Script2 from "../b88efbbf-2a9a-47b4-86e1-e38ecc2b433b/src/item"
 import Script3 from "../f89ab04f-46ef-42ea-912b-b194eb8d2f02/src/item"
-import Script4 from "../a747f104-5434-42a8-a543-8739c24cf253/src/item"
-import Script5 from "../4e57232a-6325-42c2-b863-1b527f54ecf5/src/item"
+import Script4 from "../c5cbd030-54d0-4f28-9158-d27401c691b1/src/item"
+import Script5 from "../901e4555-8743-49bb-854c-c8b354a3e3e1/src/item"
 
 const _scene = new Entity('_scene')
 engine.addEntity(_scene)
@@ -49,9 +49,9 @@ const doorframeNavy = new Entity('doorframeNavy')
 engine.addEntity(doorframeNavy)
 doorframeNavy.setParent(_scene)
 const transform4 = new Transform({
-  position: new Vector3(16, 8.344650268554688e-7, 13.75),
+  position: new Vector3(16, 0, 13.75),
   rotation: new Quaternion(-8.45795749755717e-16, 0.7071067690849304, -8.429368847373553e-8, 0.7071068286895752),
-  scale: new Vector3(1, 2, 1)
+  scale: new Vector3(1, 1, 1)
 })
 doorframeNavy.addComponentOrReplace(transform4)
 const gltfShape3 = new GLTFShape("72f9b185-9fde-469c-8b57-899e5f89b18e/NavyDoorframe.glb")
@@ -264,58 +264,69 @@ const transform22 = new Transform({
 })
 imageFromURL10.addComponentOrReplace(transform22)
 
-const videoStream = new Entity('videoStream')
-engine.addEntity(videoStream)
-videoStream.setParent(_scene)
-const transform23 = new Transform({
-  position: new Vector3(16, 3, 7.5),
-  rotation: new Quaternion(-3.641803757159761e-15, -0.7071068286895752, 8.429370268459024e-8, -0.7071068286895752),
-  scale: new Vector3(1.5000035762786865, 1.5, 1.0000016689300537)
-})
-videoStream.addComponentOrReplace(transform23)
-
 const wallPlainGlass4 = new Entity('wallPlainGlass4')
 engine.addEntity(wallPlainGlass4)
 wallPlainGlass4.setParent(_scene)
-const transform24 = new Transform({
+const transform23 = new Transform({
   position: new Vector3(11.99704647064209, 4.49171781539917, 16),
   rotation: new Quaternion(0, 0, -0.7071068286895752, 0.7071068286895752),
   scale: new Vector3(0.5100005269050598, 1.0000011920928955, 0.9999999403953552)
 })
-wallPlainGlass4.addComponentOrReplace(transform24)
+wallPlainGlass4.addComponentOrReplace(transform23)
 wallPlainGlass4.addComponentOrReplace(gltfShape2)
 
 const wallPlainGlass5 = new Entity('wallPlainGlass5')
 engine.addEntity(wallPlainGlass5)
 wallPlainGlass5.setParent(_scene)
 wallPlainGlass5.addComponentOrReplace(gltfShape2)
-const transform25 = new Transform({
+const transform24 = new Transform({
   position: new Vector3(5.99704647064209, 4.49171781539917, 16),
   rotation: new Quaternion(0, 0, -0.7071068286895752, 0.7071068286895752),
   scale: new Vector3(0.5100006461143494, 1.0000014305114746, 0.9999999403953552)
 })
-wallPlainGlass5.addComponentOrReplace(transform25)
+wallPlainGlass5.addComponentOrReplace(transform24)
 
 const wallPlainGlass6 = new Entity('wallPlainGlass6')
 engine.addEntity(wallPlainGlass6)
 wallPlainGlass6.setParent(_scene)
 wallPlainGlass6.addComponentOrReplace(gltfShape2)
-const transform26 = new Transform({
+const transform25 = new Transform({
   position: new Vector3(0, 4.49171781539917, 16),
   rotation: new Quaternion(0, 0, -0.7071068286895752, 0.7071068286895752),
   scale: new Vector3(0.5100007653236389, 1.0000016689300537, 0.9999999403953552)
 })
-wallPlainGlass6.addComponentOrReplace(transform26)
+wallPlainGlass6.addComponentOrReplace(transform25)
 
-const recordPlayer = new Entity('recordPlayer')
-engine.addEntity(recordPlayer)
-recordPlayer.setParent(_scene)
-const transform27 = new Transform({
-  position: new Vector3(15.256758689880371, 1.5, 1.5),
-  rotation: new Quaternion(2.5231000269084576e-15, 0.39228492975234985, -4.6763982908260004e-8, -0.9198437929153442),
-  scale: new Vector3(1.0000016689300537, 1, 1.0000016689300537)
+const wallPlainGlass7 = new Entity('wallPlainGlass7')
+engine.addEntity(wallPlainGlass7)
+wallPlainGlass7.setParent(_scene)
+const transform26 = new Transform({
+  position: new Vector3(16, 4, 13.762435913085938),
+  rotation: new Quaternion(-1.4717615892819412e-14, -0.7071068286895752, 8.42937097900176e-8, -0.7071068286895752),
+  scale: new Vector3(1.000002145767212, 1, 1.000002145767212)
 })
-recordPlayer.addComponentOrReplace(transform27)
+wallPlainGlass7.addComponentOrReplace(transform26)
+wallPlainGlass7.addComponentOrReplace(gltfShape2)
+
+const ambientSound = new Entity('ambientSound')
+engine.addEntity(ambientSound)
+ambientSound.setParent(_scene)
+const transform27 = new Transform({
+  position: new Vector3(0, 0, 16),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+ambientSound.addComponentOrReplace(transform27)
+
+const radio = new Entity('radio')
+engine.addEntity(radio)
+radio.setParent(_scene)
+const transform28 = new Transform({
+  position: new Vector3(15.13454818725586, 1, 1),
+  rotation: new Quaternion(4.335300706598109e-16, 0.3826834559440613, -4.5619415800501883e-8, -0.9238795638084412),
+  scale: new Vector3(1, 1, 1)
+})
+radio.addComponentOrReplace(transform28)
 
 const channelId = Math.random().toString(16).slice(2)
 const channelBus = new MessageBus()
@@ -337,12 +348,12 @@ script2.spawn(externalLink, {"url":"dotbongbillionaires.com"}, createChannel(cha
 script3.spawn(twitterButtonLink, {"url":"dotbongb","bnw":true}, createChannel(channelId, twitterButtonLink, channelBus))
 script1.spawn(imageFromURL, {"image":"https://i.imgur.com/k3lj4zF.jpg"}, createChannel(channelId, imageFromURL, channelBus))
 script1.spawn(imageFromURL3, {"image":"https://i.imgur.com/1yTLpTM.jpg"}, createChannel(channelId, imageFromURL3, channelBus))
-script1.spawn(imageFromURL4, {"image":"https://i.imgur.com/d25gO61.jpg"}, createChannel(channelId, imageFromURL4, channelBus))
-script1.spawn(imageFromURL5, {"image":"https://i.imgur.com/d25gO61.jpg"}, createChannel(channelId, imageFromURL5, channelBus))
-script1.spawn(imageFromURL6, {"image":"https://i.imgur.com/d25gO61.jpg"}, createChannel(channelId, imageFromURL6, channelBus))
-script1.spawn(imageFromURL7, {"image":"https://i.imgur.com/d25gO61.jpg"}, createChannel(channelId, imageFromURL7, channelBus))
-script1.spawn(imageFromURL8, {"image":"https://i.imgur.com/d25gO61.jpg"}, createChannel(channelId, imageFromURL8, channelBus))
-script1.spawn(imageFromURL9, {"image":"https://i.imgur.com/d25gO61.jpg"}, createChannel(channelId, imageFromURL9, channelBus))
+script1.spawn(imageFromURL4, {"image":"https://i.imgur.com/PpMxQ6S.jpg"}, createChannel(channelId, imageFromURL4, channelBus))
+script1.spawn(imageFromURL5, {"image":"https://i.imgur.com/uMfYULu.jpg"}, createChannel(channelId, imageFromURL5, channelBus))
+script1.spawn(imageFromURL6, {"image":"https://i.imgur.com/PpMxQ6S.jpg"}, createChannel(channelId, imageFromURL6, channelBus))
+script1.spawn(imageFromURL7, {"image":"https://i.imgur.com/uMfYULu.jpg"}, createChannel(channelId, imageFromURL7, channelBus))
+script1.spawn(imageFromURL8, {"image":"https://i.imgur.com/uMfYULu.jpg"}, createChannel(channelId, imageFromURL8, channelBus))
+script1.spawn(imageFromURL9, {"image":"https://i.imgur.com/PpMxQ6S.jpg"}, createChannel(channelId, imageFromURL9, channelBus))
 script1.spawn(imageFromURL10, {"image":"https://i.imgur.com/1cuKdy2.jpg"}, createChannel(channelId, imageFromURL10, channelBus))
-script4.spawn(videoStream, {"startOn":"false","onClickText":"WELCOME","volume":1,"onClick":[{"entityName":"videoStream","actionId":"toggle","values":{}}],"station":"https://theuniverse.club/live/genesisplaza/index.m3u8","customStation":"https://i.imgur.com/86DTdTw.mp4"}, createChannel(channelId, videoStream, channelBus))
-script5.spawn(recordPlayer, {"clickable":true,"onActivate":[{"entityName":"recordPlayer","actionId":"activate","values":{}}]}, createChannel(channelId, recordPlayer, channelBus))
+script4.spawn(ambientSound, {"sound":"Birds","active":true,"loop":true}, createChannel(channelId, ambientSound, channelBus))
+script5.spawn(radio, {"startOn":true,"volume":1,"onClickText":"Radio On/Off","onClick":[{"entityName":"radio","actionId":"toggle","values":{}}],"station":"https://freeuk13.listen2myradio.com/live.mp3?typeportmount=s2_20223_stream_944192845"}, createChannel(channelId, radio, channelBus))

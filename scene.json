@@ -1,6 +1,6 @@
 {
   "display": {
-    "title": "PATIO",
+    "title": "NEW PATIO",
     "favicon": "favicon_asset",
     "navmapThumbnail": "scene-thumbnail.png"
   },
@@ -20,7 +20,7 @@
   "source": {
     "version": 1,
     "origin": "builder",
-    "projectId": "5d956b35-04b2-4a24-aac0-84d4e5f70d7f",
+    "projectId": "a5503648-457f-469e-9ef2-2ec310ad5fd1",
     "point": {
       "x": 0,
       "y": 0

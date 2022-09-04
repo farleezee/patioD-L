@@ -6836,9 +6836,8 @@ import { createInventory } from '../node_modules/decentraland-builder-scripts/in
 import Script1 from "../7d669c08-c354-45e4-b3a3-c915c8fd6b6e/src/item"
 import Script2 from "../b88efbbf-2a9a-47b4-86e1-e38ecc2b433b/src/item"
 import Script3 from "../f89ab04f-46ef-42ea-912b-b194eb8d2f02/src/item"
-import Script4 from "../c5cbd030-54d0-4f28-9158-d27401c691b1/src/item"
-import Script5 from "../901e4555-8743-49bb-854c-c8b354a3e3e1/src/item"
-import Script6 from "../c72c3d45-0309-4834-84df-7b5f517694fa/src/item"
+import Script4 from "../901e4555-8743-49bb-854c-c8b354a3e3e1/src/item"
+import Script5 from "../c72c3d45-0309-4834-84df-7b5f517694fa/src/item"
 
 const _scene = new Entity('_scene')
 engine.addEntity(_scene)
@@ -7142,45 +7141,35 @@ const transform26 = new Transform({
 wallPlainGlass7.addComponentOrReplace(transform26)
 wallPlainGlass7.addComponentOrReplace(gltfShape2)
 
-const ambientSound = new Entity('ambientSound')
-engine.addEntity(ambientSound)
-ambientSound.setParent(_scene)
-const transform27 = new Transform({
-  position: new Vector3(0, 0, 16),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-ambientSound.addComponentOrReplace(transform27)
-
 const radio = new Entity('radio')
 engine.addEntity(radio)
 radio.setParent(_scene)
-const transform28 = new Transform({
+const transform27 = new Transform({
   position: new Vector3(15.13454818725586, 1, 1),
   rotation: new Quaternion(4.335300706598109e-16, 0.3826834559440613, -4.5619415800501883e-8, -0.9238795638084412),
   scale: new Vector3(1, 1, 1)
 })
-radio.addComponentOrReplace(transform28)
+radio.addComponentOrReplace(transform27)
 
 const verticalBluePad = new Entity('verticalBluePad')
 engine.addEntity(verticalBluePad)
 verticalBluePad.setParent(_scene)
-const transform29 = new Transform({
+const transform28 = new Transform({
   position: new Vector3(8.000000953674316, 0, 8),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
-verticalBluePad.addComponentOrReplace(transform29)
+verticalBluePad.addComponentOrReplace(transform28)
 
 const wallHexagonGrid = new Entity('wallHexagonGrid')
 engine.addEntity(wallHexagonGrid)
 wallHexagonGrid.setParent(_scene)
-const transform30 = new Transform({
+const transform29 = new Transform({
   position: new Vector3(16, 0, 0.31845664978027344),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(8, 2.5, 1)
 })
-wallHexagonGrid.addComponentOrReplace(transform30)
+wallHexagonGrid.addComponentOrReplace(transform29)
 const gltfShape6 = new GLTFShape("59fecc02-0949-4feb-9501-f4279744b57e/HexagonGridWall.glb")
 gltfShape6.withCollisions = true
 gltfShape6.isPointerBlocker = true
@@ -7190,79 +7179,89 @@ wallHexagonGrid.addComponentOrReplace(gltfShape6)
 const wallHexagonGrid2 = new Entity('wallHexagonGrid2')
 engine.addEntity(wallHexagonGrid2)
 wallHexagonGrid2.setParent(_scene)
-const transform31 = new Transform({
+const transform30 = new Transform({
   position: new Vector3(0.2729787826538086, 3.98525333404541, 0.3542060852050781),
   rotation: new Quaternion(-1.5394153601527394e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
   scale: new Vector3(7.673176288604736, 1.5, 0.8076474070549011)
 })
-wallHexagonGrid2.addComponentOrReplace(transform31)
+wallHexagonGrid2.addComponentOrReplace(transform30)
 wallHexagonGrid2.addComponentOrReplace(gltfShape6)
 
 const wallHexagonGrid3 = new Entity('wallHexagonGrid3')
 engine.addEntity(wallHexagonGrid3)
 wallHexagonGrid3.setParent(_scene)
-const transform32 = new Transform({
+const transform31 = new Transform({
   position: new Vector3(3.9747114181518555, 0, 15.988794326782227),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1.9670429229736328, 1.115785837173462, 0.36720696091651917)
 })
-wallHexagonGrid3.addComponentOrReplace(transform32)
+wallHexagonGrid3.addComponentOrReplace(transform31)
 wallHexagonGrid3.addComponentOrReplace(gltfShape6)
 
 const wallHexagonGrid4 = new Entity('wallHexagonGrid4')
 engine.addEntity(wallHexagonGrid4)
 wallHexagonGrid4.setParent(_scene)
 wallHexagonGrid4.addComponentOrReplace(gltfShape6)
-const transform33 = new Transform({
+const transform32 = new Transform({
   position: new Vector3(3.9747114181518555, 5.5, 15.988794326782227),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1.9670429229736328, 1.115785837173462, 0.36720696091651917)
 })
-wallHexagonGrid4.addComponentOrReplace(transform33)
+wallHexagonGrid4.addComponentOrReplace(transform32)
 
 const wallHexagonGrid5 = new Entity('wallHexagonGrid5')
 engine.addEntity(wallHexagonGrid5)
 wallHexagonGrid5.setParent(_scene)
 wallHexagonGrid5.addComponentOrReplace(gltfShape6)
-const transform34 = new Transform({
+const transform33 = new Transform({
   position: new Vector3(9.974711418151855, 5.5, 15.988794326782227),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1.9670429229736328, 1.115785837173462, 0.36720696091651917)
 })
-wallHexagonGrid5.addComponentOrReplace(transform34)
+wallHexagonGrid5.addComponentOrReplace(transform33)
 
 const wallHexagonGrid6 = new Entity('wallHexagonGrid6')
 engine.addEntity(wallHexagonGrid6)
 wallHexagonGrid6.setParent(_scene)
 wallHexagonGrid6.addComponentOrReplace(gltfShape6)
-const transform35 = new Transform({
+const transform34 = new Transform({
   position: new Vector3(9.974711418151855, 0, 15.988794326782227),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1.9670429229736328, 1.115785837173462, 0.36720696091651917)
 })
-wallHexagonGrid6.addComponentOrReplace(transform35)
+wallHexagonGrid6.addComponentOrReplace(transform34)
 
 const wallHexagonGrid7 = new Entity('wallHexagonGrid7')
 engine.addEntity(wallHexagonGrid7)
 wallHexagonGrid7.setParent(_scene)
 wallHexagonGrid7.addComponentOrReplace(gltfShape6)
-const transform36 = new Transform({
+const transform35 = new Transform({
   position: new Vector3(15.974711418151855, 0, 15.988794326782227),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1.9670429229736328, 1.115785837173462, 0.36720696091651917)
 })
-wallHexagonGrid7.addComponentOrReplace(transform36)
+wallHexagonGrid7.addComponentOrReplace(transform35)
 
 const wallHexagonGrid8 = new Entity('wallHexagonGrid8')
 engine.addEntity(wallHexagonGrid8)
 wallHexagonGrid8.setParent(_scene)
 wallHexagonGrid8.addComponentOrReplace(gltfShape6)
-const transform37 = new Transform({
+const transform36 = new Transform({
   position: new Vector3(15.974711418151855, 5.5, 15.988794326782227),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1.9670429229736328, 1.115785837173462, 0.36720696091651917)
 })
-wallHexagonGrid8.addComponentOrReplace(transform37)
+wallHexagonGrid8.addComponentOrReplace(transform36)
+
+const imageFromURL11 = new Entity('imageFromURL11')
+engine.addEntity(imageFromURL11)
+imageFromURL11.setParent(_scene)
+const transform37 = new Transform({
+  position: new Vector3(8, 5.5, 15.843847274780273),
+  rotation: new Quaternion(6.725456000759248e-15, 1, -1.1920928244535389e-7, -3.725290298461914e-8),
+  scale: new Vector3(4, 4.590000152587891, 1)
+})
+imageFromURL11.addComponentOrReplace(transform37)
 
 const channelId = Math.random().toString(16).slice(2)
 const channelBus = new MessageBus()
@@ -7274,13 +7273,11 @@ const script2 = new Script2()
 const script3 = new Script3()
 const script4 = new Script4()
 const script5 = new Script5()
-const script6 = new Script6()
 script1.init(options)
 script2.init(options)
 script3.init(options)
 script4.init(options)
 script5.init(options)
-script6.init(options)
 script1.spawn(imageFromURL2, {"image":"https://i.imgur.com/nvPVoZ8.jpg"}, createChannel(channelId, imageFromURL2, channelBus))
 script2.spawn(externalLink, {"url":"dotbongbillionaires.com"}, createChannel(channelId, externalLink, channelBus))
 script3.spawn(twitterButtonLink, {"url":"dotbongb","bnw":true}, createChannel(channelId, twitterButtonLink, channelBus))
@@ -7293,6 +7290,6 @@ script1.spawn(imageFromURL7, {"image":"https://i.imgur.com/uMfYULu.jpg"}, create
 script1.spawn(imageFromURL8, {"image":"https://i.imgur.com/uMfYULu.jpg"}, createChannel(channelId, imageFromURL8, channelBus))
 script1.spawn(imageFromURL9, {"image":"https://i.imgur.com/PpMxQ6S.jpg"}, createChannel(channelId, imageFromURL9, channelBus))
 script1.spawn(imageFromURL10, {"image":"https://i.imgur.com/1cuKdy2.jpg"}, createChannel(channelId, imageFromURL10, channelBus))
-script4.spawn(ambientSound, {"sound":"Birds","active":true,"loop":true}, createChannel(channelId, ambientSound, channelBus))
-script5.spawn(radio, {"startOn":true,"volume":1,"onClickText":"PRESS BUTTONS!","onClick":[{"entityName":"radio","actionId":"toggle","values":{}}],"station":"https://cdn.instream.audio/:9069/stream?_=171cd6c2b6e"}, createChannel(channelId, radio, channelBus))
-script6.spawn(verticalBluePad, {"distance":7,"speed":5,"autoStart":true,"onReachEnd":[{"entityName":"verticalBluePad","actionId":"goToStart","values":{}}],"onReachStart":[{"entityName":"verticalBluePad","actionId":"goToEnd","values":{}}]}, createChannel(channelId, verticalBluePad, channelBus))
+script4.spawn(radio, {"startOn":true,"volume":1,"onClickText":"PRESS BUTTONS!","onClick":[{"entityName":"radio","actionId":"toggle","values":{}}],"station":"https://cdn.instream.audio/:9069/stream?_=171cd6c2b6e"}, createChannel(channelId, radio, channelBus))
+script5.spawn(verticalBluePad, {"distance":7,"speed":5,"autoStart":true,"onReachEnd":[{"entityName":"verticalBluePad","actionId":"goToStart","values":{}}],"onReachStart":[{"entityName":"verticalBluePad","actionId":"goToEnd","values":{}}]}, createChannel(channelId, verticalBluePad, channelBus))
+script1.spawn(imageFromURL11, {"image":"https://i.imgur.com/6zayMkh.jpg"}, createChannel(channelId, imageFromURL11, channelBus))

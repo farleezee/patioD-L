@@ -6885,7 +6885,7 @@ doorframeNavy.setParent(_scene)
 const transform4 = new Transform({
   position: new Vector3(16, 0, 13.75),
   rotation: new Quaternion(-8.45795749755717e-16, 0.7071067690849304, -8.429368847373553e-8, 0.7071068286895752),
-  scale: new Vector3(1, 1, 1)
+  scale: new Vector3(1.0740681886672974, 1, 1)
 })
 doorframeNavy.addComponentOrReplace(transform4)
 const gltfShape3 = new GLTFShape("72f9b185-9fde-469c-8b57-899e5f89b18e/NavyDoorframe.glb")
@@ -7137,7 +7137,7 @@ wallPlainGlass7.setParent(_scene)
 const transform26 = new Transform({
   position: new Vector3(16, 4, 13.762435913085938),
   rotation: new Quaternion(-1.4717615892819412e-14, -0.7071068286895752, 8.42937097900176e-8, -0.7071068286895752),
-  scale: new Vector3(1.000002145767212, 1, 1.000002145767212)
+  scale: new Vector3(1.06821608543396, 1, 1.0000026226043701)
 })
 wallPlainGlass7.addComponentOrReplace(transform26)
 wallPlainGlass7.addComponentOrReplace(gltfShape2)

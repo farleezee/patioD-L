@@ -5,6 +5,7 @@ import Script2 from "../b88efbbf-2a9a-47b4-86e1-e38ecc2b433b/src/item"
 import Script3 from "../f89ab04f-46ef-42ea-912b-b194eb8d2f02/src/item"
 import Script4 from "../c5cbd030-54d0-4f28-9158-d27401c691b1/src/item"
 import Script5 from "../901e4555-8743-49bb-854c-c8b354a3e3e1/src/item"
+import Script6 from "../c72c3d45-0309-4834-84df-7b5f517694fa/src/item"
 
 const _scene = new Entity('_scene')
 engine.addEntity(_scene)
@@ -328,6 +329,16 @@ const transform28 = new Transform({
 })
 radio.addComponentOrReplace(transform28)
 
+const verticalBluePad = new Entity('verticalBluePad')
+engine.addEntity(verticalBluePad)
+verticalBluePad.setParent(_scene)
+const transform29 = new Transform({
+  position: new Vector3(8.000000953674316, 0, 8),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+verticalBluePad.addComponentOrReplace(transform29)
+
 const channelId = Math.random().toString(16).slice(2)
 const channelBus = new MessageBus()
 const inventory = createInventory(UICanvas, UIContainerStack, UIImage)
@@ -338,11 +349,13 @@ const script2 = new Script2()
 const script3 = new Script3()
 const script4 = new Script4()
 const script5 = new Script5()
+const script6 = new Script6()
 script1.init(options)
 script2.init(options)
 script3.init(options)
 script4.init(options)
 script5.init(options)
+script6.init(options)
 script1.spawn(imageFromURL2, {"image":"https://i.imgur.com/nvPVoZ8.jpg"}, createChannel(channelId, imageFromURL2, channelBus))
 script2.spawn(externalLink, {"url":"dotbongbillionaires.com"}, createChannel(channelId, externalLink, channelBus))
 script3.spawn(twitterButtonLink, {"url":"dotbongb","bnw":true}, createChannel(channelId, twitterButtonLink, channelBus))
@@ -357,3 +370,4 @@ script1.spawn(imageFromURL9, {"image":"https://i.imgur.com/PpMxQ6S.jpg"}, create
 script1.spawn(imageFromURL10, {"image":"https://i.imgur.com/1cuKdy2.jpg"}, createChannel(channelId, imageFromURL10, channelBus))
 script4.spawn(ambientSound, {"sound":"Birds","active":true,"loop":true}, createChannel(channelId, ambientSound, channelBus))
 script5.spawn(radio, {"startOn":true,"volume":1,"onClickText":"PRESS BUTTONS!","onClick":[{"entityName":"radio","actionId":"toggle","values":{}}],"station":"https://cdn.instream.audio/:9069/stream?_=171cd6c2b6e"}, createChannel(channelId, radio, channelBus))
+script6.spawn(verticalBluePad, {"distance":7,"speed":5,"autoStart":true,"onReachEnd":[{"entityName":"verticalBluePad","actionId":"goToStart","values":{}}],"onReachStart":[{"entityName":"verticalBluePad","actionId":"goToEnd","values":{}}]}, createChannel(channelId, verticalBluePad, channelBus))

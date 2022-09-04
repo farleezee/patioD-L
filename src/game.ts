@@ -333,7 +333,7 @@ const verticalBluePad = new Entity('verticalBluePad')
 engine.addEntity(verticalBluePad)
 verticalBluePad.setParent(_scene)
 const transform29 = new Transform({
-  position: new Vector3(8.000000953674316, 3, 8.5),
+  position: new Vector3(8, 0, 8.500000953674316),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
@@ -369,5 +369,5 @@ script1.spawn(imageFromURL8, {"image":"https://i.imgur.com/uMfYULu.jpg"}, create
 script1.spawn(imageFromURL9, {"image":"https://i.imgur.com/PpMxQ6S.jpg"}, createChannel(channelId, imageFromURL9, channelBus))
 script1.spawn(imageFromURL10, {"image":"https://i.imgur.com/1cuKdy2.jpg"}, createChannel(channelId, imageFromURL10, channelBus))
 script4.spawn(ambientSound, {"sound":"Birds","active":true,"loop":true}, createChannel(channelId, ambientSound, channelBus))
-script5.spawn(radio, {"startOn":true,"volume":1,"onClickText":"Press Buttons!","onClick":[{"entityName":"radio","actionId":"toggle","values":{}}],"station":"https://cdn.instream.audio/:9069/stream?_=171cd6c2b6e"}, createChannel(channelId, radio, channelBus))
-script6.spawn(verticalBluePad, {"distance":12,"speed":5,"autoStart":true,"onReachEnd":[{"entityName":"verticalBluePad","actionId":"goToStart","values":{}}],"onReachStart":[{"entityName":"verticalBluePad","actionId":"goToEnd","values":{}}]}, createChannel(channelId, verticalBluePad, channelBus))
+script5.spawn(radio, {"startOn":true,"volume":1,"onClickText":"PRESS BUTTONS!","onClick":[{"entityName":"radio","actionId":"toggle","values":{}}],"station":"https://cdn.instream.audio/:9069/stream?_=171cd6c2b6e"}, createChannel(channelId, radio, channelBus))
+script6.spawn(verticalBluePad, {"distance":7,"speed":5,"autoStart":true,"onReachEnd":[{"entityName":"verticalBluePad","actionId":"goToStart","values":{}}],"onReachStart":[{"entityName":"verticalBluePad","actionId":"goToEnd","values":{}}]}, createChannel(channelId, verticalBluePad, channelBus))

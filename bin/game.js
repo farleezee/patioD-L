@@ -6868,7 +6868,7 @@ const wallPlainGlass = new Entity('wallPlainGlass')
 engine.addEntity(wallPlainGlass)
 wallPlainGlass.setParent(_scene)
 const transform3 = new Transform({
-  position: new Vector3(16, 0, 0),
+  position: new Vector3(16, 0, 0.28107595443725586),
   rotation: new Quaternion(-8.45795749755717e-16, 0.7071067690849304, -8.429368847373553e-8, 0.7071068286895752),
   scale: new Vector3(6.749911308288574, 2, 1)
 })
@@ -7176,7 +7176,7 @@ const wallHexagonGrid = new Entity('wallHexagonGrid')
 engine.addEntity(wallHexagonGrid)
 wallHexagonGrid.setParent(_scene)
 const transform30 = new Transform({
-  position: new Vector3(16, 0, 0.3288004398345947),
+  position: new Vector3(16, 0, 0.31845664978027344),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(8, 2.5, 1)
 })
@@ -7197,6 +7197,72 @@ const transform31 = new Transform({
 })
 wallHexagonGrid2.addComponentOrReplace(transform31)
 wallHexagonGrid2.addComponentOrReplace(gltfShape6)
+
+const wallHexagonGrid3 = new Entity('wallHexagonGrid3')
+engine.addEntity(wallHexagonGrid3)
+wallHexagonGrid3.setParent(_scene)
+const transform32 = new Transform({
+  position: new Vector3(3.9747114181518555, 0, 15.988794326782227),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1.9670429229736328, 1.115785837173462, 0.36720696091651917)
+})
+wallHexagonGrid3.addComponentOrReplace(transform32)
+wallHexagonGrid3.addComponentOrReplace(gltfShape6)
+
+const wallHexagonGrid4 = new Entity('wallHexagonGrid4')
+engine.addEntity(wallHexagonGrid4)
+wallHexagonGrid4.setParent(_scene)
+wallHexagonGrid4.addComponentOrReplace(gltfShape6)
+const transform33 = new Transform({
+  position: new Vector3(3.9747114181518555, 5.5, 15.988794326782227),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1.9670429229736328, 1.115785837173462, 0.36720696091651917)
+})
+wallHexagonGrid4.addComponentOrReplace(transform33)
+
+const wallHexagonGrid5 = new Entity('wallHexagonGrid5')
+engine.addEntity(wallHexagonGrid5)
+wallHexagonGrid5.setParent(_scene)
+wallHexagonGrid5.addComponentOrReplace(gltfShape6)
+const transform34 = new Transform({
+  position: new Vector3(9.974711418151855, 5.5, 15.988794326782227),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1.9670429229736328, 1.115785837173462, 0.36720696091651917)
+})
+wallHexagonGrid5.addComponentOrReplace(transform34)
+
+const wallHexagonGrid6 = new Entity('wallHexagonGrid6')
+engine.addEntity(wallHexagonGrid6)
+wallHexagonGrid6.setParent(_scene)
+wallHexagonGrid6.addComponentOrReplace(gltfShape6)
+const transform35 = new Transform({
+  position: new Vector3(9.974711418151855, 0, 15.988794326782227),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1.9670429229736328, 1.115785837173462, 0.36720696091651917)
+})
+wallHexagonGrid6.addComponentOrReplace(transform35)
+
+const wallHexagonGrid7 = new Entity('wallHexagonGrid7')
+engine.addEntity(wallHexagonGrid7)
+wallHexagonGrid7.setParent(_scene)
+wallHexagonGrid7.addComponentOrReplace(gltfShape6)
+const transform36 = new Transform({
+  position: new Vector3(15.974711418151855, 0, 15.988794326782227),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1.9670429229736328, 1.115785837173462, 0.36720696091651917)
+})
+wallHexagonGrid7.addComponentOrReplace(transform36)
+
+const wallHexagonGrid8 = new Entity('wallHexagonGrid8')
+engine.addEntity(wallHexagonGrid8)
+wallHexagonGrid8.setParent(_scene)
+wallHexagonGrid8.addComponentOrReplace(gltfShape6)
+const transform37 = new Transform({
+  position: new Vector3(15.974711418151855, 5.5, 15.988794326782227),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1.9670429229736328, 1.115785837173462, 0.36720696091651917)
+})
+wallHexagonGrid8.addComponentOrReplace(transform37)
 
 const channelId = Math.random().toString(16).slice(2)
 const channelBus = new MessageBus()

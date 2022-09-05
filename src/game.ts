@@ -426,9 +426,69 @@ imageFromURL11.setParent(_scene)
 const transform37 = new Transform({
   position: new Vector3(8, 5.5, 15.843847274780273),
   rotation: new Quaternion(6.725456000759248e-15, 1, -1.1920928244535389e-7, -3.725290298461914e-8),
-  scale: new Vector3(4, 4.590000152587891, 1)
+  scale: new Vector3(4, 4.472198486328125, 1)
 })
 imageFromURL11.addComponentOrReplace(transform37)
+
+const imageFromURL12 = new Entity('imageFromURL12')
+engine.addEntity(imageFromURL12)
+imageFromURL12.setParent(_scene)
+const transform38 = new Transform({
+  position: new Vector3(8, 5.5, 16),
+  rotation: new Quaternion(7.105428204633949e-15, 1.862645149230957e-7, -1.8559508313878426e-14, 1),
+  scale: new Vector3(4, 4.4635539054870605, 1)
+})
+imageFromURL12.addComponentOrReplace(transform38)
+
+const imageFromURL13 = new Entity('imageFromURL13')
+engine.addEntity(imageFromURL13)
+imageFromURL13.setParent(_scene)
+const transform39 = new Transform({
+  position: new Vector3(2, 5.5, 16),
+  rotation: new Quaternion(7.105428204633949e-15, 1.862645149230957e-7, -1.8559508313878426e-14, 1),
+  scale: new Vector3(4, 4.4635539054870605, 1)
+})
+imageFromURL13.addComponentOrReplace(transform39)
+
+const imageFromURL14 = new Entity('imageFromURL14')
+engine.addEntity(imageFromURL14)
+imageFromURL14.setParent(_scene)
+const transform40 = new Transform({
+  position: new Vector3(2, 0, 16),
+  rotation: new Quaternion(7.105428204633949e-15, 1.862645149230957e-7, -1.8559508313878426e-14, 1),
+  scale: new Vector3(4, 4.4635539054870605, 1)
+})
+imageFromURL14.addComponentOrReplace(transform40)
+
+const imageFromURL15 = new Entity('imageFromURL15')
+engine.addEntity(imageFromURL15)
+imageFromURL15.setParent(_scene)
+const transform41 = new Transform({
+  position: new Vector3(8, 0, 16),
+  rotation: new Quaternion(7.105428204633949e-15, 1.862645149230957e-7, -1.8559508313878426e-14, 1),
+  scale: new Vector3(4, 4.4635539054870605, 1)
+})
+imageFromURL15.addComponentOrReplace(transform41)
+
+const imageFromURL16 = new Entity('imageFromURL16')
+engine.addEntity(imageFromURL16)
+imageFromURL16.setParent(_scene)
+const transform42 = new Transform({
+  position: new Vector3(14, 0, 16),
+  rotation: new Quaternion(7.105428204633949e-15, 1.862645149230957e-7, -1.8559508313878426e-14, 1),
+  scale: new Vector3(4, 4.4635539054870605, 1)
+})
+imageFromURL16.addComponentOrReplace(transform42)
+
+const imageFromURL17 = new Entity('imageFromURL17')
+engine.addEntity(imageFromURL17)
+imageFromURL17.setParent(_scene)
+const transform43 = new Transform({
+  position: new Vector3(14, 5.5, 16),
+  rotation: new Quaternion(7.105428204633949e-15, 1.862645149230957e-7, -1.8559508313878426e-14, 1),
+  scale: new Vector3(4, 4.4635539054870605, 1)
+})
+imageFromURL17.addComponentOrReplace(transform43)
 
 const channelId = Math.random().toString(16).slice(2)
 const channelBus = new MessageBus()
@@ -460,3 +520,9 @@ script1.spawn(imageFromURL10, {"image":"https://i.imgur.com/1cuKdy2.jpg"}, creat
 script4.spawn(radio, {"startOn":true,"volume":1,"onClickText":"PRESS BUTTONS!","onClick":[{"entityName":"radio","actionId":"toggle","values":{}}],"station":"https://cdn.instream.audio/:9069/stream?_=171cd6c2b6e"}, createChannel(channelId, radio, channelBus))
 script5.spawn(verticalBluePad, {"distance":7,"speed":5,"autoStart":true,"onReachEnd":[{"entityName":"verticalBluePad","actionId":"goToStart","values":{}}],"onReachStart":[{"entityName":"verticalBluePad","actionId":"goToEnd","values":{}}]}, createChannel(channelId, verticalBluePad, channelBus))
 script1.spawn(imageFromURL11, {"image":"https://i.imgur.com/6zayMkh.jpg"}, createChannel(channelId, imageFromURL11, channelBus))
+script1.spawn(imageFromURL12, {"image":"https://i.imgur.com/QcUwFdz.jpg"}, createChannel(channelId, imageFromURL12, channelBus))
+script1.spawn(imageFromURL13, {"image":"https://i.imgur.com/i57SYZ5.jpg"}, createChannel(channelId, imageFromURL13, channelBus))
+script1.spawn(imageFromURL14, {"image":"https://i.imgur.com/QcUwFdz.jpg"}, createChannel(channelId, imageFromURL14, channelBus))
+script1.spawn(imageFromURL15, {"image":"https://i.imgur.com/LxeRceQ.jpg"}, createChannel(channelId, imageFromURL15, channelBus))
+script1.spawn(imageFromURL16, {"image":"https://i.imgur.com/QcUwFdz.jpg"}, createChannel(channelId, imageFromURL16, channelBus))
+script1.spawn(imageFromURL17, {"image":"https://i.imgur.com/m0PsPsm.jpg"}, createChannel(channelId, imageFromURL17, channelBus))

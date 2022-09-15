@@ -7395,7 +7395,7 @@ script1.spawn(imageFromURL9, {"image":"https://i.imgur.com/PpMxQ6S.jpg"}, create
 script1.spawn(imageFromURL10, {"image":"https://i.imgur.com/1cuKdy2.jpg"}, createChannel(channelId, imageFromURL10, channelBus))
 script4.spawn(radio, {"startOn":true,"volume":1,"onClickText":"PRESS BUTTONS!","onClick":[{"entityName":"radio","actionId":"toggle","values":{}}],"station":"https://cdn.instream.audio/:9069/stream?_=171cd6c2b6e"}, createChannel(channelId, radio, channelBus))
 script5.spawn(verticalBluePad, {"distance":7,"speed":5,"autoStart":true,"onReachEnd":[{"entityName":"verticalBluePad","actionId":"goToStart","values":{}}],"onReachStart":[{"entityName":"verticalBluePad","actionId":"goToEnd","values":{}}]}, createChannel(channelId, verticalBluePad, channelBus))
-script1.spawn(imageFromURL11, {"image":"https://i.imgur.com/6zayMkh.jpg"}, createChannel(channelId, imageFromURL11, channelBus))
+script1.spawn(imageFromURL11, {"image":"https://i.imgur.com/TMHKpsB.png"}, createChannel(channelId, imageFromURL11, channelBus))
 script1.spawn(imageFromURL12, {"image":"https://i.imgur.com/QcUwFdz.jpg"}, createChannel(channelId, imageFromURL12, channelBus))
 script1.spawn(imageFromURL13, {"image":"https://i.imgur.com/i57SYZ5.jpg"}, createChannel(channelId, imageFromURL13, channelBus))
 script1.spawn(imageFromURL14, {"image":"https://i.imgur.com/QcUwFdz.jpg"}, createChannel(channelId, imageFromURL14, channelBus))

@@ -511,6 +511,26 @@ const transform45 = new Transform({
 })
 messageBubble2.addComponentOrReplace(transform45)
 
+const imageFromURL18 = new Entity('imageFromURL18')
+engine.addEntity(imageFromURL18)
+imageFromURL18.setParent(_scene)
+const transform46 = new Transform({
+  position: new Vector3(2.0131235122680664, 0, 15.843847274780273),
+  rotation: new Quaternion(6.725456000759248e-15, 1, -1.1920928244535389e-7, -3.725290298461914e-8),
+  scale: new Vector3(4, 4.472198486328125, 1)
+})
+imageFromURL18.addComponentOrReplace(transform46)
+
+const imageFromURL19 = new Entity('imageFromURL19')
+engine.addEntity(imageFromURL19)
+imageFromURL19.setParent(_scene)
+const transform47 = new Transform({
+  position: new Vector3(14, 0, 15.843847274780273),
+  rotation: new Quaternion(6.725456000759248e-15, 1, -1.1920928244535389e-7, -3.725290298461914e-8),
+  scale: new Vector3(4, 4.472198486328125, 1)
+})
+imageFromURL19.addComponentOrReplace(transform47)
+
 const channelId = Math.random().toString(16).slice(2)
 const channelBus = new MessageBus()
 const inventory = createInventory(UICanvas, UIContainerStack, UIImage)
@@ -551,3 +571,5 @@ script1.spawn(imageFromURL16, {"image":"https://i.imgur.com/QcUwFdz.jpg"}, creat
 script1.spawn(imageFromURL17, {"image":"https://i.imgur.com/m0PsPsm.jpg"}, createChannel(channelId, imageFromURL17, channelBus))
 script6.spawn(messageBubble, {"text":"SHOP HERE\n         on \n    wall-link!!","fontSize":13}, createChannel(channelId, messageBubble, channelBus))
 script6.spawn(messageBubble2, {"text":" TWEET HERE\n           on \n      wall-link!!","fontSize":12}, createChannel(channelId, messageBubble2, channelBus))
+script1.spawn(imageFromURL18, {"image":"https://i.imgur.com/rHol1Kx.jpg"}, createChannel(channelId, imageFromURL18, channelBus))
+script1.spawn(imageFromURL19, {"image":"https://i.imgur.com/ARlTuc4.jpg"}, createChannel(channelId, imageFromURL19, channelBus))

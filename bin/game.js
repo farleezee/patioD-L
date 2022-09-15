@@ -6838,6 +6838,7 @@ import Script2 from "../b88efbbf-2a9a-47b4-86e1-e38ecc2b433b/src/item"
 import Script3 from "../f89ab04f-46ef-42ea-912b-b194eb8d2f02/src/item"
 import Script4 from "../901e4555-8743-49bb-854c-c8b354a3e3e1/src/item"
 import Script5 from "../c72c3d45-0309-4834-84df-7b5f517694fa/src/item"
+import Script6 from "../e7a6c753-ea84-4c8e-bb94-4523407a5d55/src/item"
 
 const _scene = new Entity('_scene')
 engine.addEntity(_scene)
@@ -7323,6 +7324,26 @@ const transform43 = new Transform({
 })
 imageFromURL17.addComponentOrReplace(transform43)
 
+const messageBubble = new Entity('messageBubble')
+engine.addEntity(messageBubble)
+messageBubble.setParent(_scene)
+const transform44 = new Transform({
+  position: new Vector3(0.6212868094444275, 2, 15.078262329101562),
+  rotation: new Quaternion(-2.1777291189290946e-16, -0.3826834559440613, 4.561941935321556e-8, 0.9238795638084412),
+  scale: new Vector3(0.6249087452888489, 0.5356435775756836, 0.6249087452888489)
+})
+messageBubble.addComponentOrReplace(transform44)
+
+const messageBubble2 = new Entity('messageBubble2')
+engine.addEntity(messageBubble2)
+messageBubble2.setParent(_scene)
+const transform45 = new Transform({
+  position: new Vector3(1.1212868690490723, 2, 0.4985806345939636),
+  rotation: new Quaternion(1.9267693502836433e-15, 0.9569404125213623, -1.1407617961367578e-7, -0.2902846336364746),
+  scale: new Vector3(0.6249101161956787, 0.5356435775756836, 0.6249101161956787)
+})
+messageBubble2.addComponentOrReplace(transform45)
+
 const channelId = Math.random().toString(16).slice(2)
 const channelBus = new MessageBus()
 const inventory = createInventory(UICanvas, UIContainerStack, UIImage)
@@ -7333,11 +7354,13 @@ const script2 = new Script2()
 const script3 = new Script3()
 const script4 = new Script4()
 const script5 = new Script5()
+const script6 = new Script6()
 script1.init(options)
 script2.init(options)
 script3.init(options)
 script4.init(options)
 script5.init(options)
+script6.init(options)
 script1.spawn(imageFromURL2, {"image":"https://i.imgur.com/nvPVoZ8.jpg"}, createChannel(channelId, imageFromURL2, channelBus))
 script2.spawn(externalLink, {"url":"dotbongbillionaires.com"}, createChannel(channelId, externalLink, channelBus))
 script3.spawn(twitterButtonLink, {"url":"dotbongb","bnw":true}, createChannel(channelId, twitterButtonLink, channelBus))
@@ -7359,3 +7382,5 @@ script1.spawn(imageFromURL14, {"image":"https://i.imgur.com/QcUwFdz.jpg"}, creat
 script1.spawn(imageFromURL15, {"image":"https://i.imgur.com/sgCcz2y.jpg"}, createChannel(channelId, imageFromURL15, channelBus))
 script1.spawn(imageFromURL16, {"image":"https://i.imgur.com/QcUwFdz.jpg"}, createChannel(channelId, imageFromURL16, channelBus))
 script1.spawn(imageFromURL17, {"image":"https://i.imgur.com/m0PsPsm.jpg"}, createChannel(channelId, imageFromURL17, channelBus))
+script6.spawn(messageBubble, {"text":"SHOP HERE\n         on \n    wall-link!!","fontSize":13}, createChannel(channelId, messageBubble, channelBus))
+script6.spawn(messageBubble2, {"text":" TWEET HERE\n           on \n      wall-link!!","fontSize":12}, createChannel(channelId, messageBubble2, channelBus))

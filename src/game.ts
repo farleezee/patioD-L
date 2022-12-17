@@ -503,9 +503,9 @@ const nft = new Entity('nft')
 engine.addEntity(nft)
 nft.setParent(_scene)
 const transform46 = new Transform({
-  position: new Vector3(0.3611235022544861, 2.541051149368286, 3.081850051879883),
+  position: new Vector3(0.36112356185913086, 2.541051149368286, 3.081850051879883),
   rotation: new Quaternion(-1.4036670012895682e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071067690849304),
-  scale: new Vector3(3.3827126026153564, 3.156858205795288, 0.9999999403953552)
+  scale: new Vector3(2.4709081649780273, 1.95090651512146, 0.9999999403953552)
 })
 nft.addComponentOrReplace(transform46)
 const nftShape = new NFTShape("ethereum://0x60f80121c31a0d46b5279700f9df786054aa5ee5/385727")
@@ -519,9 +519,9 @@ const nft2 = new Entity('nft2')
 engine.addEntity(nft2)
 nft2.setParent(_scene)
 const transform47 = new Transform({
-  position: new Vector3(0.3814784288406372, 2.5475828647613525, 12.957402229309082),
+  position: new Vector3(0.38147830963134766, 2.5475828647613525, 12.957403182983398),
   rotation: new Quaternion(-1.520353836586847e-15, -0.7071068286895752, 8.429368847373553e-8, 0.7071067690849304),
-  scale: new Vector3(3.19222354888916, 3.065547227859497, 0.9999999403953552)
+  scale: new Vector3(2.397366523742676, 1.8810300827026367, 0.9999999403953552)
 })
 nft2.addComponentOrReplace(transform47)
 const nftShape2 = new NFTShape("ethereum://0x60f80121c31a0d46b5279700f9df786054aa5ee5/385559")
@@ -569,7 +569,7 @@ script1.spawn(imageFromURL14, {"image":"https://i.imgur.com/QcUwFdz.jpg"}, creat
 script1.spawn(imageFromURL15, {"image":"https://i.imgur.com/sgCcz2y.jpg"}, createChannel(channelId, imageFromURL15, channelBus))
 script1.spawn(imageFromURL16, {"image":"https://i.imgur.com/QcUwFdz.jpg"}, createChannel(channelId, imageFromURL16, channelBus))
 script1.spawn(imageFromURL17, {"image":"https://i.imgur.com/m0PsPsm.jpg"}, createChannel(channelId, imageFromURL17, channelBus))
-script6.spawn(messageBubble, {"text":"SHOP HERE\n         on \n    wall-link!!","fontSize":13}, createChannel(channelId, messageBubble, channelBus))
-script6.spawn(messageBubble2, {"text":" TWEET HERE\n           on \n      wall-link!!","fontSize":12}, createChannel(channelId, messageBubble2, channelBus))
+script6.spawn(messageBubble, {"text":"SHOP HERE\n         on \n    wall-link!!","fontSize":17}, createChannel(channelId, messageBubble, channelBus))
+script6.spawn(messageBubble2, {"text":" TWEET HERE\n           on \n      wall-link!!","fontSize":17}, createChannel(channelId, messageBubble2, channelBus))
 script1.spawn(imageFromURL18, {"image":"https://i.imgur.com/rHol1Kx.jpg"}, createChannel(channelId, imageFromURL18, channelBus))
 script1.spawn(imageFromURL19, {"image":"https://i.imgur.com/ARlTuc4.jpg"}, createChannel(channelId, imageFromURL19, channelBus))

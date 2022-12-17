@@ -1,9 +1,9 @@
 // ECS
-!(function(t, e) {
+!(function (t, e) {
   for (var n in e) t[n] = e[n]
 })(
   this,
-  (function(t) {
+  (function (t) {
     var e = {}
     function n(o) {
       if (e[o]) return e[o].exports
@@ -13,14 +13,14 @@
     return (
       (n.m = t),
       (n.c = e),
-      (n.d = function(t, e, o) {
+      (n.d = function (t, e, o) {
         n.o(t, e) || Object.defineProperty(t, e, { enumerable: !0, get: o })
       }),
-      (n.r = function(t) {
+      (n.r = function (t) {
         'undefined' != typeof Symbol && Symbol.toStringTag && Object.defineProperty(t, Symbol.toStringTag, { value: 'Module' }),
           Object.defineProperty(t, '__esModule', { value: !0 })
       }),
-      (n.t = function(t, e) {
+      (n.t = function (t, e) {
         if ((1 & e && (t = n(t)), 8 & e)) return t
         if (4 & e && 'object' == typeof t && t && t.__esModule) return t
         var o = Object.create(null)
@@ -29,38 +29,38 @@
             n.d(
               o,
               r,
-              function(e) {
+              function (e) {
                 return t[e]
               }.bind(null, r)
             )
         return o
       }),
-      (n.n = function(t) {
+      (n.n = function (t) {
         var e =
           t && t.__esModule
-            ? function() {
+            ? function () {
                 return t.default
               }
-            : function() {
+            : function () {
                 return t
               }
         return n.d(e, 'a', e), e
       }),
-      (n.o = function(t, e) {
+      (n.o = function (t, e) {
         return Object.prototype.hasOwnProperty.call(t, e)
       }),
       (n.p = ''),
       n((n.s = 30))
     )
   })([
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       var o =
           (this && this.__assign) ||
-          function() {
+          function () {
             return (o =
               Object.assign ||
-              function(t) {
+              function (t) {
                 for (var e, n = 1, o = arguments.length; n < o; n++)
                   for (var r in (e = arguments[n])) Object.prototype.hasOwnProperty.call(e, r) && (t[r] = e[r])
                 return t
@@ -68,7 +68,7 @@
           },
         r =
           (this && this.__decorate) ||
-          function(t, e, n, o) {
+          function (t, e, n, o) {
             var r,
               i = arguments.length,
               s = i < 3 ? e : null === o ? (o = Object.getOwnPropertyDescriptor(e, n)) : o
@@ -78,7 +78,7 @@
           },
         i =
           (this && this.__read) ||
-          function(t, e) {
+          function (t, e) {
             var n = 'function' == typeof Symbol && t[Symbol.iterator]
             if (!n) return t
             var o,
@@ -100,41 +100,51 @@
           },
         s =
           (this && this.__spread) ||
-          function() {
+          function () {
             for (var t = [], e = 0; e < arguments.length; e++) t = t.concat(i(arguments[e]))
             return t
           }
       Object.defineProperty(e, '__esModule', { value: !0 }),
-        (e.isDisposableComponent = e.ObservableComponent = e.getComponentId = e.getComponentClassId = e.getComponentName = e.DisposableComponent = e.Component = e.DisposableComponentUpdated = e.DisposableComponentRemoved = e.DisposableComponentCreated = void 0)
+        (e.isDisposableComponent =
+          e.ObservableComponent =
+          e.getComponentId =
+          e.getComponentClassId =
+          e.getComponentName =
+          e.DisposableComponent =
+          e.Component =
+          e.DisposableComponentUpdated =
+          e.DisposableComponentRemoved =
+          e.DisposableComponentCreated =
+            void 0)
       var a = n(1),
         p = n(8),
         u = n(18),
-        l = (function() {
+        l = (function () {
           function t(t, e, n) {
             ;(this.componentId = t), (this.componentName = e), (this.classId = n)
           }
           return (t = r([p.EventConstructor()], t))
         })()
       e.DisposableComponentCreated = l
-      var c = (function() {
+      var c = (function () {
         function t(t) {
           this.componentId = t
         }
         return (t = r([p.EventConstructor()], t))
       })()
       e.DisposableComponentRemoved = c
-      var h = (function() {
+      var h = (function () {
         function t(t, e) {
           ;(this.componentId = t), (this.component = e)
         }
         return (t = r([p.EventConstructor()], t))
       })()
       function d(t, e) {
-        return function(n) {
+        return function (n) {
           if (n.isComponent) throw new TypeError('You cannot extend a component. Trying to extend ' + n.originalClassName + ' with: ' + t)
           if ('number' != typeof e || isNaN(e)) throw new Error('classId: ' + e + ' is an invalid integer')
           var o = n,
-            r = function() {
+            r = function () {
               if (!d.engine) throw new Error('You need to set a DisposableComponent.engine before creating disposable components')
               var n = Array.prototype.slice.call(arguments),
                 r = new (o.bind.apply(o, s([void 0], n)))(),
@@ -165,11 +175,11 @@
         throw new TypeError(t + ' is not a registered disposable component.')
       }
       ;(e.DisposableComponentUpdated = h),
-        (e.Component = function(t, e) {
-          return function(n) {
+        (e.Component = function (t, e) {
+          return function (n) {
             if (n.isComponent) throw new TypeError('You cannot extend a component. Trying to extend ' + n.originalClassName + ' with: ' + t)
             var o = n,
-              r = function() {
+              r = function () {
                 var n = Array.prototype.slice.call(arguments),
                   r = new (o.bind.apply(o, s([void 0], n)))()
                 return (
@@ -190,69 +200,69 @@
           }
         }),
         (e.DisposableComponent = d),
-        (function(t) {
+        (function (t) {
           t.engine = null
         })((d = e.DisposableComponent || (e.DisposableComponent = {}))),
-        (e.getComponentName = function(t) {
+        (e.getComponentName = function (t) {
           if (!t) throw new TypeError(t + ' is not a component.')
           if (t.__name__symbol_) return t.__name__symbol_
           throw new TypeError(t + ' is not a registered component.')
         }),
-        (e.getComponentClassId = function(t) {
+        (e.getComponentClassId = function (t) {
           if (!t) throw new TypeError(t + ' is not a component.')
           if (t.__classId__symbol_) return t.__classId__symbol_
           if (!t.__name__symbol_) throw new TypeError(t + ' is not a registered component.')
           return null
         }),
         (e.getComponentId = f)
-      var y = (function() {
+      var y = (function () {
         function t() {
           ;(this.dirty = !1), (this.data = {}), (this.subscriptions = [])
         }
         return (
-          (t.component = function(t, e) {
+          (t.component = function (t, e) {
             if (delete t[e]) {
               var n = e + '_' + Math.random()
               ;(t[n] = void 0),
                 Object.defineProperty(t, n, o(o({}, Object.getOwnPropertyDescriptor(t, n)), { enumerable: !1 })),
                 Object.defineProperty(t, e.toString(), {
-                  get: function() {
+                  get: function () {
                     return this[n]
                   },
-                  set: function(t) {
+                  set: function (t) {
                     var o = this[n]
                     if (((this.data[e] = t ? f(t) : null), (this[n] = t), t !== o)) {
                       this.dirty = !0
                       for (var r = 0; r < this.subscriptions.length; r++) this.subscriptions[r](e, t, o)
                     }
                   },
-                  enumerable: !0
+                  enumerable: !0,
                 })
             }
           }),
-          (t.field = function(t, e) {
+          (t.field = function (t, e) {
             delete t[e] &&
               Object.defineProperty(t, e.toString(), {
-                get: function() {
+                get: function () {
                   return this.data[e]
                 },
-                set: function(t) {
+                set: function (t) {
                   var n = this.data[e]
                   if (((this.data[e] = t), t !== n)) {
                     this.dirty = !0
                     for (var o = 0; o < this.subscriptions.length; o++) this.subscriptions[o](e, t, n)
                   }
                 },
-                enumerable: !0
+                enumerable: !0,
               })
           }),
-          (t.uiValue = function(t, e) {
+          (t.uiValue = function (t, e) {
             delete t[e] &&
               Object.defineProperty(t, e.toString(), {
-                get: function() {
+                get: function () {
                   return this.data[e].toString()
                 },
-                set: function(t) {
+                set: function (t) {
                   var n = this.data[e],
                     o = new u.UIValue(t)
                   if (((this.data[e] = o), o !== n)) {
@@ -260,43 +270,43 @@
                     for (var r = 0; r < this.subscriptions.length; r++) this.subscriptions[r](e, o, n)
                   }
                 },
-                enumerable: !0
+                enumerable: !0,
               })
           }),
-          (t.readonly = function(t, e) {
+          (t.readonly = function (t, e) {
             delete t[e] &&
               Object.defineProperty(t, e.toString(), {
-                get: function() {
+                get: function () {
                   if (e in this.data == !1) throw new Error('The field ' + e + ' is uninitialized')
                   return this.data[e]
                 },
-                set: function(t) {
+                set: function (t) {
                   if (e in this.data) throw new Error('The field ' + e + ' is readonly')
                   ;(this.data[e] = t), (this.dirty = !0)
                 },
                 enumerable: !0,
-                configurable: !1
+                configurable: !1,
               })
           }),
-          (t.prototype.onChange = function(t) {
+          (t.prototype.onChange = function (t) {
             return this.subscriptions.push(t), this
           }),
-          (t.prototype.toJSON = function() {
+          (t.prototype.toJSON = function () {
             return this.data
           }),
           t
         )
       })()
       ;(e.ObservableComponent = y),
-        (e.isDisposableComponent = function(t) {
+        (e.isDisposableComponent = function (t) {
           return '__component__id_' in t
         })
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       var o =
           (this && this.__read) ||
-          function(t, e) {
+          function (t, e) {
             var n = 'function' == typeof Symbol && t[Symbol.iterator]
             if (!n) return t
             var o,
@@ -318,42 +328,42 @@
           },
         r =
           (this && this.__spread) ||
-          function() {
+          function () {
             for (var t = [], e = 0; e < arguments.length; e++) t = t.concat(o(arguments[e]))
             return t
           }
       Object.defineProperty(e, '__esModule', { value: !0 }),
         (e.openNFTDialog = e.openExternalURL = e.buildArray = e.uuid = e.newId = e.error = e.log = void 0)
       var i = 0
-      ;(e.log = function() {
+      ;(e.log = function () {
         for (var t = [], e = 0; e < arguments.length; e++) t[e] = arguments[e]
         'undefined' != typeof dcl ? dcl.log.apply(dcl, r(t)) : console.log.apply(console, r(['DEBUG:'], t))
       }),
-        (e.error = function(t, e) {
+        (e.error = function (t, e) {
           'undefined' != typeof dcl ? dcl.error(t, e) : console.error('ERROR:', t, e)
         }),
-        (e.newId = function(t) {
+        (e.newId = function (t) {
           if ((i++, 0 === t.length)) throw new Error('newId(type: string): type cannot be empty')
           return t + i.toString(36)
         }),
-        (e.uuid = function() {
-          return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(t) {
+        (e.uuid = function () {
+          return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (t) {
             var e = (16 * Math.random()) | 0
             return ('x' === t ? e : (3 & e) | 8).toString(16)
           })
         }),
-        (e.buildArray = function(t, e) {
+        (e.buildArray = function (t, e) {
           for (var n = [], o = 0; o < t; ++o) n.push(e())
           return n
         }),
-        (e.openExternalURL = function(t) {
+        (e.openExternalURL = function (t) {
           'undefined' != typeof dcl
             ? typeof t.startsWith === 'function' && t.startsWith('https:')
               ? dcl.openExternalUrl(t)
               : console.error('ERROR: url is invalid, it must start with https:')
             : console.error('ERROR: openExternalURL dcl is undefined')
         }),
-        (e.openNFTDialog = function(t, e) {
+        (e.openNFTDialog = function (t, e) {
           if ((void 0 === e && (e = null), 'undefined' != typeof dcl)) {
             var n = t.match(/ethereum:\/\/(.+)\/(.+)/)
             if (!n || n.length < 3) return
@@ -361,14 +371,14 @@
           } else console.error('ERROR: openNFTDialog dcl is undefined')
         })
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }),
         (e.RAD2DEG = e.DEG2RAD = e.Epsilon = e.ToLinearSpace = e.ToGammaSpace = e.Space = e.Orientation = void 0),
-        (function(t) {
+        (function (t) {
           ;(t[(t.CW = 0)] = 'CW'), (t[(t.CCW = 1)] = 'CCW')
         })(e.Orientation || (e.Orientation = {})),
-        (function(t) {
+        (function (t) {
           ;(t[(t.LOCAL = 0)] = 'LOCAL'), (t[(t.WORLD = 1)] = 'WORLD'), (t[(t.BONE = 2)] = 'BONE')
         })(e.Space || (e.Space = {})),
         (e.ToGammaSpace = 1 / 2.2),
@@ -377,20 +387,20 @@
         (e.DEG2RAD = Math.PI / 180),
         (e.RAD2DEG = 360 / (2 * Math.PI))
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.Vector3 = void 0)
       var o = n(9),
         r = n(2),
         i = n(10),
         s = n(6),
-        a = (function() {
+        a = (function () {
           function t(t, e, n) {
             void 0 === t && (t = 0), void 0 === e && (e = 0), void 0 === n && (n = 0), (this.x = t), (this.y = e), (this.z = n)
           }
           return (
             Object.defineProperty(t.prototype, 'isNonUniform', {
-              get: function() {
+              get: function () {
                 var t = Math.abs(this.x),
                   e = Math.abs(this.y)
                 if (t !== e) return !0
@@ -398,69 +408,69 @@
                 return t !== n || e !== n
               },
               enumerable: !1,
-              configurable: !0
+              configurable: !0,
             }),
-            (t.Add = function(e, n) {
+            (t.Add = function (e, n) {
               return new t(e.x, e.y, e.z).addInPlace(n)
             }),
-            (t.GetClipFactor = function(e, n, o, r) {
+            (t.GetClipFactor = function (e, n, o, r) {
               var i = t.Dot(e, o) - r
               return i / (i - (t.Dot(n, o) - r))
             }),
-            (t.GetAngleBetweenVectors = function(e, n, r) {
+            (t.GetAngleBetweenVectors = function (e, n, r) {
               var i = e.normalizeToRef(o.MathTmp.Vector3[1]),
                 s = n.normalizeToRef(o.MathTmp.Vector3[2]),
                 a = t.Dot(i, s),
                 p = o.MathTmp.Vector3[3]
               return t.CrossToRef(i, s, p), t.Dot(p, r) > 0 ? Math.acos(a) : -Math.acos(a)
             }),
-            (t.FromArray = function(e, n) {
+            (t.FromArray = function (e, n) {
               return void 0 === n && (n = 0), new t(e[n], e[n + 1], e[n + 2])
             }),
-            (t.FromFloatArray = function(e, n) {
+            (t.FromFloatArray = function (e, n) {
               return t.FromArray(e, n)
             }),
-            (t.FromArrayToRef = function(t, e, n) {
+            (t.FromArrayToRef = function (t, e, n) {
               ;(n.x = t[e]), (n.y = t[e + 1]), (n.z = t[e + 2])
             }),
-            (t.FromFloatArrayToRef = function(e, n, o) {
+            (t.FromFloatArrayToRef = function (e, n, o) {
               return t.FromArrayToRef(e, n, o)
             }),
-            (t.FromFloatsToRef = function(t, e, n, o) {
+            (t.FromFloatsToRef = function (t, e, n, o) {
               o.copyFromFloats(t, e, n)
             }),
-            (t.Zero = function() {
+            (t.Zero = function () {
               return new t(0, 0, 0)
             }),
-            (t.One = function() {
+            (t.One = function () {
               return new t(1, 1, 1)
             }),
-            (t.Up = function() {
+            (t.Up = function () {
               return new t(0, 1, 0)
             }),
-            (t.Down = function() {
+            (t.Down = function () {
               return new t(0, -1, 0)
             }),
-            (t.Forward = function() {
+            (t.Forward = function () {
               return new t(0, 0, 1)
             }),
-            (t.Backward = function() {
+            (t.Backward = function () {
               return new t(0, 0, -1)
             }),
-            (t.Right = function() {
+            (t.Right = function () {
               return new t(1, 0, 0)
             }),
-            (t.Left = function() {
+            (t.Left = function () {
               return new t(-1, 0, 0)
             }),
-            (t.TransformCoordinates = function(e, n) {
+            (t.TransformCoordinates = function (e, n) {
               var o = t.Zero()
               return t.TransformCoordinatesToRef(e, n, o), o
             }),
-            (t.TransformCoordinatesToRef = function(e, n, o) {
+            (t.TransformCoordinatesToRef = function (e, n, o) {
               return t.TransformCoordinatesFromFloatsToRef(e.x, e.y, e.z, n, o)
             }),
-            (t.TransformCoordinatesFromFloatsToRef = function(t, e, n, o, r) {
+            (t.TransformCoordinatesFromFloatsToRef = function (t, e, n, o, r) {
               var i = o.m,
                 s = t * i[0] + e * i[4] + n * i[8] + i[12],
                 a = t * i[1] + e * i[5] + n * i[9] + i[13],
@@ -468,18 +478,18 @@
                 u = 1 / (t * i[3] + e * i[7] + n * i[11] + i[15])
               ;(r.x = s * u), (r.y = a * u), (r.z = p * u)
             }),
-            (t.TransformNormal = function(e, n) {
+            (t.TransformNormal = function (e, n) {
               var o = t.Zero()
               return t.TransformNormalToRef(e, n, o), o
             }),
-            (t.TransformNormalToRef = function(t, e, n) {
+            (t.TransformNormalToRef = function (t, e, n) {
               this.TransformNormalFromFloatsToRef(t.x, t.y, t.z, e, n)
             }),
-            (t.TransformNormalFromFloatsToRef = function(t, e, n, o, r) {
+            (t.TransformNormalFromFloatsToRef = function (t, e, n, o, r) {
               var i = o.m
               ;(r.x = t * i[0] + e * i[4] + n * i[8]), (r.y = t * i[1] + e * i[5] + n * i[9]), (r.z = t * i[2] + e * i[6] + n * i[10])
             }),
-            (t.CatmullRom = function(e, n, o, r, i) {
+            (t.CatmullRom = function (e, n, o, r, i) {
               var s = i * i,
                 a = i * s
               return new t(
@@ -488,11 +498,11 @@
                 0.5 * (2 * n.z + (-e.z + o.z) * i + (2 * e.z - 5 * n.z + 4 * o.z - r.z) * s + (-e.z + 3 * n.z - 3 * o.z + r.z) * a)
               )
             }),
-            (t.Clamp = function(e, n, o) {
+            (t.Clamp = function (e, n, o) {
               var r = new t()
               return t.ClampToRef(e, n, o, r), r
             }),
-            (t.ClampToRef = function(t, e, n, o) {
+            (t.ClampToRef = function (t, e, n, o) {
               var r = t.x
               r = (r = r > n.x ? n.x : r) < e.x ? e.x : r
               var i = t.y
@@ -500,7 +510,7 @@
               var s = t.z
               ;(s = (s = s > n.z ? n.z : s) < e.z ? e.z : s), o.copyFromFloats(r, i, s)
             }),
-            (t.Hermite = function(e, n, o, r, i) {
+            (t.Hermite = function (e, n, o, r, i) {
               var s = i * i,
                 a = i * s,
                 p = 2 * a - 3 * s + 1,
@@ -513,113 +523,113 @@
                 e.z * p + o.z * u + n.z * l + r.z * c
               )
             }),
-            (t.Lerp = function(e, n, o) {
+            (t.Lerp = function (e, n, o) {
               var r = new t(0, 0, 0)
               return t.LerpToRef(e, n, o, r), r
             }),
-            (t.LerpToRef = function(t, e, n, o) {
+            (t.LerpToRef = function (t, e, n, o) {
               ;(o.x = t.x + (e.x - t.x) * n), (o.y = t.y + (e.y - t.y) * n), (o.z = t.z + (e.z - t.z) * n)
             }),
-            (t.Dot = function(t, e) {
+            (t.Dot = function (t, e) {
               return t.x * e.x + t.y * e.y + t.z * e.z
             }),
-            (t.Cross = function(e, n) {
+            (t.Cross = function (e, n) {
               var o = t.Zero()
               return t.CrossToRef(e, n, o), o
             }),
-            (t.CrossToRef = function(t, e, n) {
+            (t.CrossToRef = function (t, e, n) {
               var o = t.y * e.z - t.z * e.y,
                 r = t.z * e.x - t.x * e.z,
                 i = t.x * e.y - t.y * e.x
               n.copyFromFloats(o, r, i)
             }),
-            (t.Normalize = function(e) {
+            (t.Normalize = function (e) {
               var n = t.Zero()
               return t.NormalizeToRef(e, n), n
             }),
-            (t.NormalizeToRef = function(t, e) {
+            (t.NormalizeToRef = function (t, e) {
               t.normalizeToRef(e)
             }),
-            (t.Minimize = function(e, n) {
+            (t.Minimize = function (e, n) {
               var o = new t(e.x, e.y, e.z)
               return o.minimizeInPlace(n), o
             }),
-            (t.Maximize = function(e, n) {
+            (t.Maximize = function (e, n) {
               var o = new t(e.x, e.y, e.z)
               return o.maximizeInPlace(n), o
             }),
-            (t.Distance = function(e, n) {
+            (t.Distance = function (e, n) {
               return Math.sqrt(t.DistanceSquared(e, n))
             }),
-            (t.DistanceSquared = function(t, e) {
+            (t.DistanceSquared = function (t, e) {
               var n = t.x - e.x,
                 o = t.y - e.y,
                 r = t.z - e.z
               return n * n + o * o + r * r
             }),
-            (t.Center = function(e, n) {
+            (t.Center = function (e, n) {
               var o = t.Add(e, n)
               return o.scaleInPlace(0.5), o
             }),
-            (t.RotationFromAxis = function(e, n, o) {
+            (t.RotationFromAxis = function (e, n, o) {
               var r = t.Zero()
               return t.RotationFromAxisToRef(e, n, o, r), r
             }),
-            (t.RotationFromAxisToRef = function(t, e, n, r) {
+            (t.RotationFromAxisToRef = function (t, e, n, r) {
               var s = o.MathTmp.Quaternion[0]
               i.Quaternion.RotationQuaternionFromAxisToRef(t, e, n, s), r.copyFrom(s.eulerAngles)
             }),
-            (t.prototype.toString = function() {
+            (t.prototype.toString = function () {
               return '(' + this.x + ', ' + this.y + ', ' + this.z + ')'
             }),
-            (t.prototype.getClassName = function() {
+            (t.prototype.getClassName = function () {
               return 'Vector3'
             }),
-            (t.prototype.getHashCode = function() {
+            (t.prototype.getHashCode = function () {
               var t = this.x || 0
               return (t = (397 * (t = (397 * t) ^ (this.y || 0))) ^ (this.z || 0))
             }),
-            (t.prototype.asArray = function() {
+            (t.prototype.asArray = function () {
               var t = []
               return this.toArray(t, 0), t
             }),
-            (t.prototype.toArray = function(t, e) {
+            (t.prototype.toArray = function (t, e) {
               return void 0 === e && (e = 0), (t[e] = this.x), (t[e + 1] = this.y), (t[e + 2] = this.z), this
             }),
-            (t.prototype.toQuaternion = function() {
+            (t.prototype.toQuaternion = function () {
               return i.Quaternion.Identity.setEuler(this.y, this.x, this.z)
             }),
-            (t.prototype.addInPlace = function(t) {
+            (t.prototype.addInPlace = function (t) {
               return this.addInPlaceFromFloats(t.x, t.y, t.z)
             }),
-            (t.prototype.addInPlaceFromFloats = function(t, e, n) {
+            (t.prototype.addInPlaceFromFloats = function (t, e, n) {
               return (this.x += t), (this.y += e), (this.z += n), this
             }),
-            (t.prototype.add = function(e) {
+            (t.prototype.add = function (e) {
               return new t(this.x + e.x, this.y + e.y, this.z + e.z)
             }),
-            (t.prototype.addToRef = function(t, e) {
+            (t.prototype.addToRef = function (t, e) {
               return e.copyFromFloats(this.x + t.x, this.y + t.y, this.z + t.z)
             }),
-            (t.prototype.subtractInPlace = function(t) {
+            (t.prototype.subtractInPlace = function (t) {
               return (this.x -= t.x), (this.y -= t.y), (this.z -= t.z), this
             }),
-            (t.prototype.subtract = function(e) {
+            (t.prototype.subtract = function (e) {
               return new t(this.x - e.x, this.y - e.y, this.z - e.z)
             }),
-            (t.prototype.subtractToRef = function(t, e) {
+            (t.prototype.subtractToRef = function (t, e) {
               return this.subtractFromFloatsToRef(t.x, t.y, t.z, e)
             }),
-            (t.prototype.subtractFromFloats = function(e, n, o) {
+            (t.prototype.subtractFromFloats = function (e, n, o) {
               return new t(this.x - e, this.y - n, this.z - o)
             }),
-            (t.prototype.subtractFromFloatsToRef = function(t, e, n, o) {
+            (t.prototype.subtractFromFloatsToRef = function (t, e, n, o) {
               return o.copyFromFloats(this.x - t, this.y - e, this.z - n)
             }),
-            (t.prototype.applyMatrix4 = function(t) {
+            (t.prototype.applyMatrix4 = function (t) {
               this.applyMatrix4ToRef(t, this)
             }),
-            (t.prototype.applyMatrix4ToRef = function(t, e) {
+            (t.prototype.applyMatrix4ToRef = function (t, e) {
               var n = this.x,
                 o = this.y,
                 r = this.z,
@@ -632,10 +642,10 @@
                 e
               )
             }),
-            (t.prototype.rotate = function(t) {
+            (t.prototype.rotate = function (t) {
               return this.rotateToRef(t, this)
             }),
-            (t.prototype.rotateToRef = function(t, e) {
+            (t.prototype.rotateToRef = function (t, e) {
               var n = this.x,
                 o = this.y,
                 r = this.z,
@@ -654,25 +664,25 @@
                 e
               )
             }),
-            (t.prototype.negate = function() {
+            (t.prototype.negate = function () {
               return new t(-this.x, -this.y, -this.z)
             }),
-            (t.prototype.scaleInPlace = function(t) {
+            (t.prototype.scaleInPlace = function (t) {
               return (this.x *= t), (this.y *= t), (this.z *= t), this
             }),
-            (t.prototype.scale = function(e) {
+            (t.prototype.scale = function (e) {
               return new t(this.x * e, this.y * e, this.z * e)
             }),
-            (t.prototype.scaleToRef = function(t, e) {
+            (t.prototype.scaleToRef = function (t, e) {
               return e.copyFromFloats(this.x * t, this.y * t, this.z * t)
             }),
-            (t.prototype.scaleAndAddToRef = function(t, e) {
+            (t.prototype.scaleAndAddToRef = function (t, e) {
               return e.addInPlaceFromFloats(this.x * t, this.y * t, this.z * t)
             }),
-            (t.prototype.equals = function(t) {
+            (t.prototype.equals = function (t) {
               return t && this.x === t.x && this.y === t.y && this.z === t.z
             }),
-            (t.prototype.equalsWithEpsilon = function(t, e) {
+            (t.prototype.equalsWithEpsilon = function (t, e) {
               return (
                 void 0 === e && (e = r.Epsilon),
                 t &&
@@ -681,81 +691,81 @@
                   s.Scalar.WithinEpsilon(this.z, t.z, e)
               )
             }),
-            (t.prototype.equalsToFloats = function(t, e, n) {
+            (t.prototype.equalsToFloats = function (t, e, n) {
               return this.x === t && this.y === e && this.z === n
             }),
-            (t.prototype.multiplyInPlace = function(t) {
+            (t.prototype.multiplyInPlace = function (t) {
               return (this.x *= t.x), (this.y *= t.y), (this.z *= t.z), this
             }),
-            (t.prototype.multiply = function(t) {
+            (t.prototype.multiply = function (t) {
               return this.multiplyByFloats(t.x, t.y, t.z)
             }),
-            (t.prototype.multiplyToRef = function(t, e) {
+            (t.prototype.multiplyToRef = function (t, e) {
               return e.copyFromFloats(this.x * t.x, this.y * t.y, this.z * t.z)
             }),
-            (t.prototype.multiplyByFloats = function(e, n, o) {
+            (t.prototype.multiplyByFloats = function (e, n, o) {
               return new t(this.x * e, this.y * n, this.z * o)
             }),
-            (t.prototype.divide = function(e) {
+            (t.prototype.divide = function (e) {
               return new t(this.x / e.x, this.y / e.y, this.z / e.z)
             }),
-            (t.prototype.divideToRef = function(t, e) {
+            (t.prototype.divideToRef = function (t, e) {
               return e.copyFromFloats(this.x / t.x, this.y / t.y, this.z / t.z)
             }),
-            (t.prototype.divideInPlace = function(t) {
+            (t.prototype.divideInPlace = function (t) {
               return this.divideToRef(t, this)
             }),
-            (t.prototype.minimizeInPlace = function(t) {
+            (t.prototype.minimizeInPlace = function (t) {
               return this.minimizeInPlaceFromFloats(t.x, t.y, t.z)
             }),
-            (t.prototype.maximizeInPlace = function(t) {
+            (t.prototype.maximizeInPlace = function (t) {
               return this.maximizeInPlaceFromFloats(t.x, t.y, t.z)
             }),
-            (t.prototype.minimizeInPlaceFromFloats = function(t, e, n) {
+            (t.prototype.minimizeInPlaceFromFloats = function (t, e, n) {
               return t < this.x && (this.x = t), e < this.y && (this.y = e), n < this.z && (this.z = n), this
             }),
-            (t.prototype.maximizeInPlaceFromFloats = function(t, e, n) {
+            (t.prototype.maximizeInPlaceFromFloats = function (t, e, n) {
               return t > this.x && (this.x = t), e > this.y && (this.y = e), n > this.z && (this.z = n), this
             }),
-            (t.prototype.floor = function() {
+            (t.prototype.floor = function () {
               return new t(Math.floor(this.x), Math.floor(this.y), Math.floor(this.z))
             }),
-            (t.prototype.fract = function() {
+            (t.prototype.fract = function () {
               return new t(this.x - Math.floor(this.x), this.y - Math.floor(this.y), this.z - Math.floor(this.z))
             }),
-            (t.prototype.length = function() {
+            (t.prototype.length = function () {
               return Math.sqrt(this.x * this.x + this.y * this.y + this.z * this.z)
             }),
-            (t.prototype.lengthSquared = function() {
+            (t.prototype.lengthSquared = function () {
               return this.x * this.x + this.y * this.y + this.z * this.z
             }),
-            (t.prototype.normalize = function() {
+            (t.prototype.normalize = function () {
               return this.normalizeFromLength(this.length())
             }),
-            (t.prototype.normalizeFromLength = function(t) {
+            (t.prototype.normalizeFromLength = function (t) {
               return 0 === t || 1 === t ? this : this.scaleInPlace(1 / t)
             }),
-            (t.prototype.normalizeToNew = function() {
+            (t.prototype.normalizeToNew = function () {
               var e = new t(0, 0, 0)
               return this.normalizeToRef(e), e
             }),
-            (t.prototype.normalizeToRef = function(t) {
+            (t.prototype.normalizeToRef = function (t) {
               var e = this.length()
               return 0 === e || 1 === e ? t.copyFromFloats(this.x, this.y, this.z) : this.scaleToRef(1 / e, t)
             }),
-            (t.prototype.clone = function() {
+            (t.prototype.clone = function () {
               return new t(this.x, this.y, this.z)
             }),
-            (t.prototype.copyFrom = function(t) {
+            (t.prototype.copyFrom = function (t) {
               return this.copyFromFloats(t.x, t.y, t.z)
             }),
-            (t.prototype.copyFromFloats = function(t, e, n) {
+            (t.prototype.copyFromFloats = function (t, e, n) {
               return (this.x = t), (this.y = e), (this.z = n), this
             }),
-            (t.prototype.set = function(t, e, n) {
+            (t.prototype.set = function (t, e, n) {
               return this.copyFromFloats(t, e, n)
             }),
-            (t.prototype.setAll = function(t) {
+            (t.prototype.setAll = function (t) {
               return (this.x = this.y = this.z = t), this
             }),
             t
@@ -763,23 +773,23 @@
         })()
       e.Vector3 = a
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       var o,
         r =
           (this && this.__extends) ||
-          ((o = function(t, e) {
+          ((o = function (t, e) {
             return (o =
               Object.setPrototypeOf ||
               ({ __proto__: [] } instanceof Array &&
-                function(t, e) {
+                function (t, e) {
                   t.__proto__ = e
                 }) ||
-              function(t, e) {
+              function (t, e) {
                 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n])
               })(t, e)
           }),
-          function(t, e) {
+          function (t, e) {
             function n() {
               this.constructor = t
             }
@@ -787,10 +797,10 @@
           }),
         i =
           (this && this.__assign) ||
-          function() {
+          function () {
             return (i =
               Object.assign ||
-              function(t) {
+              function (t) {
                 for (var e, n = 1, o = arguments.length; n < o; n++)
                   for (var r in (e = arguments[n])) Object.prototype.hasOwnProperty.call(e, r) && (t[r] = e[r])
                 return t
@@ -798,7 +808,7 @@
           },
         s =
           (this && this.__decorate) ||
-          function(t, e, n, o) {
+          function (t, e, n, o) {
             var r,
               i = arguments.length,
               s = i < 3 ? e : null === o ? (o = Object.getOwnPropertyDescriptor(e, n)) : o
@@ -807,14 +817,45 @@
             return i > 3 && s && Object.defineProperty(e, n, s), s
           }
       Object.defineProperty(e, '__esModule', { value: !0 }),
-        (e.VideoTexture = e.VideoClip = e.SmartItem = e.OnAnimationEnd = e.OnPointerLock = e.OnPointerUUIDEvent = e.OnUUIDEvent = e.BasicMaterial = e.Material = e.TransparencyMode = e.TextShape = e.Fonts = e.Font = e.OBJShape = e.Animator = e.Texture = e.NFTShape = e.PictureFrameStyle = e.GLTFShape = e.CylinderShape = e.ConeShape = e.PlaneShape = e.CircleShape = e.SphereShape = e.BoxShape = e.Shape = e.Billboard = e.Transform = e.AvatarModifierArea = e.AvatarModifiers = e.CLASS_ID = void 0)
+        (e.VideoTexture =
+          e.VideoClip =
+          e.SmartItem =
+          e.OnAnimationEnd =
+          e.OnPointerLock =
+          e.OnPointerUUIDEvent =
+          e.OnUUIDEvent =
+          e.BasicMaterial =
+          e.Material =
+          e.TransparencyMode =
+          e.TextShape =
+          e.Fonts =
+          e.Font =
+          e.OBJShape =
+          e.Animator =
+          e.Texture =
+          e.NFTShape =
+          e.PictureFrameStyle =
+          e.GLTFShape =
+          e.CylinderShape =
+          e.ConeShape =
+          e.PlaneShape =
+          e.CircleShape =
+          e.SphereShape =
+          e.BoxShape =
+          e.Shape =
+          e.Billboard =
+          e.Transform =
+          e.AvatarModifierArea =
+          e.AvatarModifiers =
+          e.CLASS_ID =
+            void 0)
       var a,
         p = n(0),
         u = n(5),
         l = n(26),
         c = n(1),
         h = n(16)
-      !(function(t) {
+      !(function (t) {
         ;(t[(t.TRANSFORM = 1)] = 'TRANSFORM'),
           (t[(t.UUID_CALLBACK = 8)] = 'UUID_CALLBACK'),
           (t[(t.BOX_SHAPE = 16)] = 'BOX_SHAPE'),
@@ -855,10 +896,10 @@
           (t[(t.SMART_ITEM = 204)] = 'SMART_ITEM'),
           (t[(t.AVATAR_MODIFIER_AREA = 205)] = 'AVATAR_MODIFIER_AREA')
       })((a = e.CLASS_ID || (e.CLASS_ID = {}))),
-        (function(t) {
+        (function (t) {
           ;(t.HIDE_AVATARS = 'HIDE_AVATARS'), (t.DISABLE_PASSPORTS = 'DISABLE_PASSPORTS')
         })(e.AvatarModifiers || (e.AvatarModifiers = {}))
-      var d = (function(t) {
+      var d = (function (t) {
         function e(e) {
           var n = t.call(this) || this
           return (n.area = e.area), (n.modifiers = e.modifiers), n
@@ -871,7 +912,7 @@
         )
       })(p.ObservableComponent)
       e.AvatarModifierArea = d
-      var f = (function(t) {
+      var f = (function (t) {
         function e(e) {
           void 0 === e && (e = {})
           var n = t.call(this) || this
@@ -885,21 +926,21 @@
         return (
           r(e, t),
           Object.defineProperty(e.prototype, 'eulerAngles', {
-            get: function() {
+            get: function () {
               return this.rotation.eulerAngles
             },
             enumerable: !1,
-            configurable: !0
+            configurable: !0,
           }),
-          (e.prototype.lookAt = function(t, e) {
+          (e.prototype.lookAt = function (t, e) {
             void 0 === e && (e = u.MathTmp.staticUp)
             var n = new u.Matrix()
             return u.Matrix.LookAtLHToRef(this.position, t, e, n), n.invert(), u.Quaternion.FromRotationMatrixToRef(n, this.rotation), this
           }),
-          (e.prototype.rotate = function(t, e) {
+          (e.prototype.rotate = function (t, e) {
             return this.rotation.multiplyInPlace(this.rotation.angleAxis(e, t)), this
           }),
-          (e.prototype.translate = function(t) {
+          (e.prototype.translate = function (t) {
             return this.position.addInPlace(t), this
           }),
           s([p.ObservableComponent.field], e.prototype, 'position', void 0),
@@ -909,7 +950,7 @@
         )
       })(p.ObservableComponent)
       e.Transform = f
-      var y = (function(t) {
+      var y = (function (t) {
         function e(e, n, o) {
           void 0 === e && (e = !0), void 0 === n && (n = !0), void 0 === o && (o = !0)
           var r = t.call(this) || this
@@ -924,7 +965,7 @@
         )
       })(p.ObservableComponent)
       e.Billboard = y
-      var v = (function(t) {
+      var v = (function (t) {
         function e() {
           var e = (null !== t && t.apply(this, arguments)) || this
           return (e.withCollisions = !0), (e.isPointerBlocker = !0), (e.visible = !0), e
@@ -938,21 +979,21 @@
         )
       })(p.ObservableComponent)
       e.Shape = v
-      var m = (function(t) {
+      var m = (function (t) {
         function e() {
           return (null !== t && t.apply(this, arguments)) || this
         }
         return r(e, t), (e = s([p.DisposableComponent('engine.shape', a.BOX_SHAPE)], e))
       })(v)
       e.BoxShape = m
-      var b = (function(t) {
+      var b = (function (t) {
         function e() {
           return (null !== t && t.apply(this, arguments)) || this
         }
         return r(e, t), (e = s([p.DisposableComponent('engine.shape', a.SPHERE_SHAPE)], e))
       })(v)
       e.SphereShape = b
-      var g = (function(t) {
+      var g = (function (t) {
         function e() {
           return (null !== t && t.apply(this, arguments)) || this
         }
@@ -964,7 +1005,7 @@
         )
       })(v)
       e.CircleShape = g
-      var _ = (function(t) {
+      var _ = (function (t) {
         function e() {
           var e = (null !== t && t.apply(this, arguments)) || this
           return (e.width = 1), (e.height = 1), e
@@ -978,7 +1019,7 @@
         )
       })(v)
       e.PlaneShape = _
-      var C = (function(t) {
+      var C = (function (t) {
         function e() {
           var e = (null !== t && t.apply(this, arguments)) || this
           return (
@@ -1005,7 +1046,7 @@
         )
       })(v)
       e.ConeShape = C
-      var O = (function(t) {
+      var O = (function (t) {
         function e() {
           var e = (null !== t && t.apply(this, arguments)) || this
           return (
@@ -1033,7 +1074,7 @@
       })(v)
       e.CylinderShape = O
       var x,
-        w = (function(t) {
+        w = (function (t) {
           function e(e) {
             var n = t.call(this) || this
             return (n.src = e), n
@@ -1041,7 +1082,7 @@
           return r(e, t), s([v.readonly], e.prototype, 'src', void 0), (e = s([p.DisposableComponent('engine.shape', a.GLTF_SHAPE)], e))
         })(v)
       ;(e.GLTFShape = w),
-        (function(t) {
+        (function (t) {
           ;(t[(t.Classic = 0)] = 'Classic'),
             (t[(t.Baroque_Ornament = 1)] = 'Baroque_Ornament'),
             (t[(t.Diamond_Ornament = 2)] = 'Diamond_Ornament'),
@@ -1065,7 +1106,7 @@
             (t[(t.Wood_Twigs = 20)] = 'Wood_Twigs'),
             (t[(t.Canvas = 21)] = 'Canvas')
         })((x = e.PictureFrameStyle || (e.PictureFrameStyle = {})))
-      var T = (function(t) {
+      var T = (function (t) {
         function e(e, n) {
           void 0 === n && (n = {})
           var o = t.call(this) || this
@@ -1088,7 +1129,7 @@
         )
       })(v)
       e.NFTShape = T
-      var R = (function(t) {
+      var R = (function (t) {
         function e(e, n) {
           var o = t.call(this) || this
           if (((o.src = e), n))
@@ -1107,24 +1148,24 @@
         )
       })(p.ObservableComponent)
       e.Texture = R
-      var A = (function(t) {
+      var A = (function (t) {
         function e() {
           var e = (null !== t && t.apply(this, arguments)) || this
           return (e.states = []), e
         }
         return (
           r(e, t),
-          (e.prototype.addClip = function(t) {
+          (e.prototype.addClip = function (t) {
             var e = this
             return (
               this.states.push(t),
-              t.onChange(function() {
+              t.onChange(function () {
                 e.dirty = !0
               }),
               this
             )
           }),
-          (e.prototype.getClip = function(t) {
+          (e.prototype.getClip = function (t) {
             for (var e = 0; e < this.states.length; e++) {
               var n = this.states[e]
               if (n.clip === t) return n
@@ -1137,7 +1178,7 @@
         )
       })(v)
       e.Animator = A
-      var E = (function(t) {
+      var E = (function (t) {
         function e(e) {
           var n = t.call(this) || this
           return (n.src = e), n
@@ -1149,7 +1190,7 @@
         )
       })(v)
       e.OBJShape = E
-      var S = (function(t) {
+      var S = (function (t) {
         function e(e) {
           void 0 === e && (e = '')
           var n = t.call(this) || this
@@ -1162,14 +1203,14 @@
         )
       })(p.ObservableComponent)
       ;(e.Font = S),
-        (function(t) {
+        (function (t) {
           ;(t.SanFrancisco = 'builtin:SF-UI-Text-Regular SDF'),
             (t.SanFrancisco_Heavy = 'builtin:SF-UI-Text-Heavy SDF'),
             (t.SanFrancisco_Semibold = 'builtin:SF-UI-Text-Semibold SDF'),
             (t.LiberationSans = 'builtin:LiberationSans SDF')
         })(e.Fonts || (e.Fonts = {}))
       var P,
-        I = (function(t) {
+        I = (function (t) {
           function e(e) {
             var n = t.call(this) || this
             return (
@@ -1238,14 +1279,14 @@
           )
         })(p.ObservableComponent)
       ;(e.TextShape = I),
-        (function(t) {
+        (function (t) {
           ;(t[(t.OPAQUE = 0)] = 'OPAQUE'),
             (t[(t.ALPHA_TEST = 1)] = 'ALPHA_TEST'),
             (t[(t.ALPHA_BLEND = 2)] = 'ALPHA_BLEND'),
             (t[(t.ALPHA_TEST_AND_BLEND = 3)] = 'ALPHA_TEST_AND_BLEND'),
             (t[(t.AUTO = 4)] = 'AUTO')
         })((P = e.TransparencyMode || (e.TransparencyMode = {})))
-      var z = (function(t) {
+      var z = (function (t) {
         function e() {
           var e = (null !== t && t.apply(this, arguments)) || this
           return (e.alphaTest = 0.5), (e.castShadows = !0), (e.transparencyMode = P.AUTO), e
@@ -1276,7 +1317,7 @@
         )
       })(p.ObservableComponent)
       e.Material = z
-      var M = (function(t) {
+      var M = (function (t) {
         function e() {
           var e = (null !== t && t.apply(this, arguments)) || this
           return (e.alphaTest = 0.5), (e.castShadows = !0), e
@@ -1290,7 +1331,7 @@
         )
       })(p.ObservableComponent)
       e.BasicMaterial = M
-      var D = (function(t) {
+      var D = (function (t) {
         function e(e) {
           var n = t.call(this) || this
           if (((n.uuid = c.newId('UUID')), !e || !('apply' in e) || !('call' in e))) throw new Error('Callback is not a function')
@@ -1298,16 +1339,16 @@
         }
         return (
           r(e, t),
-          (e.uuidEvent = function(t, n) {
+          (e.uuidEvent = function (t, n) {
             if (delete t[n]) {
               var o = n + '_' + Math.random()
               ;(t[o] = void 0),
                 Object.defineProperty(t, o, i(i({}, Object.getOwnPropertyDescriptor(t, o)), { enumerable: !1 })),
                 Object.defineProperty(t, n.toString(), {
-                  get: function() {
+                  get: function () {
                     return this[o]
                   },
-                  set: function(t) {
+                  set: function (t) {
                     var r = this[o]
                     if (t) {
                       if (!(t instanceof e)) throw new Error('value is not an OnUUIDEvent')
@@ -1318,11 +1359,11 @@
                       for (var i = 0; i < this.subscriptions.length; i++) this.subscriptions[i](n, t, r)
                     }
                   },
-                  enumerable: !0
+                  enumerable: !0,
                 })
             }
           }),
-          (e.prototype.toJSON = function() {
+          (e.prototype.toJSON = function () {
             return { uuid: this.uuid, type: this.type }
           }),
           s([p.ObservableComponent.field], e.prototype, 'callback', void 0),
@@ -1330,21 +1371,21 @@
         )
       })(p.ObservableComponent)
       e.OnUUIDEvent = D
-      var F = (function(t) {
+      var F = (function (t) {
         function e() {
           var e = (null !== t && t.apply(this, arguments)) || this
           return (e.button = h.ActionButton.ANY), (e.hoverText = 'Interact'), (e.distance = 10), (e.showFeedback = !0), e
         }
         return (
           r(e, t),
-          (e.prototype.toJSON = function() {
+          (e.prototype.toJSON = function () {
             return {
               uuid: this.uuid,
               type: this.type,
               button: this.button,
               hoverText: this.hoverText,
               distance: this.distance,
-              showFeedback: this.showFeedback
+              showFeedback: this.showFeedback,
             }
           }),
           s([p.ObservableComponent.field], e.prototype, 'button', void 0),
@@ -1355,7 +1396,7 @@
         )
       })(D)
       e.OnPointerUUIDEvent = F
-      var U = (function(t) {
+      var U = (function (t) {
         function e() {
           var e = (null !== t && t.apply(this, arguments)) || this
           return (e.type = 'onPointerLock'), e
@@ -1367,7 +1408,7 @@
         )
       })(D)
       e.OnPointerLock = U
-      var L = (function(t) {
+      var L = (function (t) {
         function e() {
           var e = (null !== t && t.apply(this, arguments)) || this
           return (e.type = 'onAnimationEnd'), e
@@ -1379,14 +1420,14 @@
         )
       })(D)
       e.OnAnimationEnd = L
-      var N = (function(t) {
+      var N = (function (t) {
         function e() {
           return (null !== t && t.apply(this, arguments)) || this
         }
         return r(e, t), (e = s([p.Component('engine.smartItem', a.SMART_ITEM)], e))
       })(p.ObservableComponent)
       e.SmartItem = N
-      var V = (function(t) {
+      var V = (function (t) {
         function e(e) {
           var n = t.call(this) || this
           return (n.url = e), n
@@ -1398,7 +1439,7 @@
         )
       })(p.ObservableComponent)
       e.VideoClip = V
-      var j = (function(t) {
+      var j = (function (t) {
         function e(e, n) {
           var o = t.call(this) || this
           if (((o.volume = 1), (o.playbackRate = 1), (o.loop = !1), (o.seek = -1), (o.playing = !1), !(e instanceof V)))
@@ -1411,19 +1452,19 @@
         }
         return (
           r(e, t),
-          (e.prototype.play = function() {
+          (e.prototype.play = function () {
             this.playing = !0
           }),
-          (e.prototype.pause = function() {
+          (e.prototype.pause = function () {
             this.playing = !1
           }),
-          (e.prototype.reset = function() {
+          (e.prototype.reset = function () {
             this.seekTime(0)
           }),
-          (e.prototype.seekTime = function(t) {
+          (e.prototype.seekTime = function (t) {
             ;(this.seek = t), (this.dirty = !0), (this.data.nonce = Math.random())
           }),
-          (e.prototype.toJSON = function() {
+          (e.prototype.toJSON = function () {
             if (this.seek < 0) return t.prototype.toJSON.call(this)
             var e = JSON.parse(JSON.stringify(t.prototype.toJSON.call(this)))
             return (this.seek = -1), e
@@ -1441,26 +1482,26 @@
       })(p.ObservableComponent)
       e.VideoTexture = j
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       var o =
           (this && this.__createBinding) ||
           (Object.create
-            ? function(t, e, n, o) {
+            ? function (t, e, n, o) {
                 void 0 === o && (o = n),
                   Object.defineProperty(t, o, {
                     enumerable: !0,
-                    get: function() {
+                    get: function () {
                       return e[n]
-                    }
+                    },
                   })
               }
-            : function(t, e, n, o) {
+            : function (t, e, n, o) {
                 void 0 === o && (o = n), (t[o] = e[n])
               }),
         r =
           (this && this.__exportStar) ||
-          function(t, e) {
+          function (t, e) {
             for (var n in t) 'default' === n || Object.prototype.hasOwnProperty.call(e, n) || o(e, t, n)
           }
       Object.defineProperty(e, '__esModule', { value: !0 }),
@@ -1486,84 +1527,84 @@
         r(n(21), e),
         r(n(5), e)
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.Scalar = void 0)
-      var o = (function() {
+      var o = (function () {
         function t() {}
         return (
-          (t.WithinEpsilon = function(t, e, n) {
+          (t.WithinEpsilon = function (t, e, n) {
             void 0 === n && (n = 1401298e-51)
             var o = t - e
             return -n <= o && o <= n
           }),
-          (t.ToHex = function(t) {
+          (t.ToHex = function (t) {
             var e = t.toString(16)
             return t <= 15 ? ('0' + e).toUpperCase() : e.toUpperCase()
           }),
-          (t.Sign = function(t) {
+          (t.Sign = function (t) {
             var e = +t
             return 0 === e || isNaN(e) ? e : e > 0 ? 1 : -1
           }),
-          (t.Clamp = function(t, e, n) {
+          (t.Clamp = function (t, e, n) {
             return void 0 === e && (e = 0), void 0 === n && (n = 1), Math.min(n, Math.max(e, t))
           }),
-          (t.Log2 = function(t) {
+          (t.Log2 = function (t) {
             return Math.log(t) * Math.LOG2E
           }),
-          (t.Repeat = function(t, e) {
+          (t.Repeat = function (t, e) {
             return t - Math.floor(t / e) * e
           }),
-          (t.Normalize = function(t, e, n) {
+          (t.Normalize = function (t, e, n) {
             return (t - e) / (n - e)
           }),
-          (t.Denormalize = function(t, e, n) {
+          (t.Denormalize = function (t, e, n) {
             return t * (n - e) + e
           }),
-          (t.DeltaAngle = function(e, n) {
+          (t.DeltaAngle = function (e, n) {
             var o = t.Repeat(n - e, 360)
             return o > 180 && (o -= 360), o
           }),
-          (t.PingPong = function(e, n) {
+          (t.PingPong = function (e, n) {
             var o = t.Repeat(e, 2 * n)
             return n - Math.abs(o - n)
           }),
-          (t.SmoothStep = function(e, n, o) {
+          (t.SmoothStep = function (e, n, o) {
             var r = t.Clamp(o)
             return n * (r = -2 * r * r * r + 3 * r * r) + e * (1 - r)
           }),
-          (t.MoveTowards = function(e, n, o) {
+          (t.MoveTowards = function (e, n, o) {
             return Math.abs(n - e) <= o ? n : e + t.Sign(n - e) * o
           }),
-          (t.MoveTowardsAngle = function(e, n, o) {
+          (t.MoveTowardsAngle = function (e, n, o) {
             var r = t.DeltaAngle(e, n)
             return -o < r && r < o ? n : t.MoveTowards(e, e + r, o)
           }),
-          (t.Lerp = function(t, e, n) {
+          (t.Lerp = function (t, e, n) {
             return t + (e - t) * n
           }),
-          (t.LerpAngle = function(e, n, o) {
+          (t.LerpAngle = function (e, n, o) {
             var r = t.Repeat(n - e, 360)
             return r > 180 && (r -= 360), e + r * t.Clamp(o)
           }),
-          (t.InverseLerp = function(e, n, o) {
+          (t.InverseLerp = function (e, n, o) {
             return e !== n ? t.Clamp((o - e) / (n - e)) : 0
           }),
-          (t.Hermite = function(t, e, n, o, r) {
+          (t.Hermite = function (t, e, n, o, r) {
             var i = r * r,
               s = r * i
             return t * (2 * s - 3 * i + 1) + n * (-2 * s + 3 * i) + e * (s - 2 * i + r) + o * (s - i)
           }),
-          (t.RandomRange = function(t, e) {
+          (t.RandomRange = function (t, e) {
             return t === e ? t : Math.random() * (e - t) + t
           }),
-          (t.RangeToPercent = function(t, e, n) {
+          (t.RangeToPercent = function (t, e, n) {
             return (t - e) / (n - e)
           }),
-          (t.PercentToRange = function(t, e, n) {
+          (t.PercentToRange = function (t, e, n) {
             return (n - e) * t + e
           }),
-          (t.NormalizeRadians = function(e) {
+          (t.NormalizeRadians = function (e) {
             return e - t.TwoPi * Math.floor((e + Math.PI) / t.TwoPi)
           }),
           (t.TwoPi = 2 * Math.PI),
@@ -1572,11 +1613,11 @@
       })()
       e.Scalar = o
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       var o =
         (this && this.__decorate) ||
-        function(t, e, n, o) {
+        function (t, e, n, o) {
           var r,
             i = arguments.length,
             s = i < 3 ? e : null === o ? (o = Object.getOwnPropertyDescriptor(e, n)) : o
@@ -1586,21 +1627,21 @@
         }
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.ParentChanged = e.ComponentAdded = e.ComponentRemoved = void 0)
       var r = n(8),
-        i = (function() {
+        i = (function () {
           function t(t, e, n) {
             ;(this.entity = t), (this.componentName = e), (this.component = n)
           }
           return (t = o([r.EventConstructor()], t))
         })()
       e.ComponentRemoved = i
-      var s = (function() {
+      var s = (function () {
         function t(t, e, n) {
           ;(this.entity = t), (this.componentName = e), (this.classId = n)
         }
         return (t = o([r.EventConstructor()], t))
       })()
       e.ComponentAdded = s
-      var a = (function() {
+      var a = (function () {
         function t(t, e) {
           ;(this.entity = t), (this.parent = e)
         }
@@ -1608,7 +1649,7 @@
       })()
       e.ParentChanged = a
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.EventConstructor = e.EventManager = void 0)
       var o = n(1),
@@ -1617,12 +1658,12 @@
         if (!('__event_name__' in t) || 'string' != typeof t.__event_name__) throw new Error('The EventConstructor is not registered')
         return t.__event_name__
       }
-      var s = (function() {
+      var s = (function () {
         function t() {
           this.listeners = {}
         }
         return (
-          (t.prototype.addListener = function(t, e, n) {
+          (t.prototype.addListener = function (t, e, n) {
             if (!t || 'function' != typeof t) throw new Error('Invalid EventConstructor')
             var o = i(t),
               r = this.listeners[o]
@@ -1632,7 +1673,7 @@
             }
             return r.push({ listener: e, fn: n }), this
           }),
-          (t.prototype.removeListener = function(t, e) {
+          (t.prototype.removeListener = function (t, e) {
             if (!e || 'function' != typeof e) throw new Error('Invalid EventConstructor')
             var n = i(e),
               o = this.listeners[n]
@@ -1642,7 +1683,7 @@
             }
             return !1
           }),
-          (t.prototype.fireEvent = function(t) {
+          (t.prototype.fireEvent = function (t) {
             var e = i(t.constructor),
               n = this.listeners[e]
             if (n)
@@ -1659,18 +1700,18 @@
         )
       })()
       ;(e.EventManager = s),
-        (e.EventConstructor = function() {
+        (e.EventConstructor = function () {
           var t = o.newId('EV')
           if (-1 !== r.indexOf(t)) throw new Error('The event name ' + t + ' is already taken')
           return (
             r.push(t),
-            function(e) {
+            function (e) {
               return (e.__event_name__ = t), e
             }
           )
         })
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.MathTmp = void 0)
       var o = n(1),
@@ -1682,17 +1723,17 @@
         Matrix: o.buildArray(2, s.Matrix.Identity),
         Quaternion: o.buildArray(3, i.Quaternion.Zero),
         staticUp: r.Vector3.Up(),
-        tmpMatrix: s.Matrix.Zero()
+        tmpMatrix: s.Matrix.Zero(),
       }
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.Quaternion = void 0)
       var o = n(11),
         r = n(3),
         i = n(9),
         s = n(2),
-        a = (function() {
+        a = (function () {
           function t(t, e, n, o) {
             void 0 === t && (t = 0),
               void 0 === e && (e = 0),
@@ -1704,11 +1745,11 @@
               (this.w = o)
           }
           return (
-            (t.FromRotationMatrix = function(e) {
+            (t.FromRotationMatrix = function (e) {
               var n = new t()
               return t.FromRotationMatrixToRef(e, n), n
             }),
-            (t.FromRotationMatrixToRef = function(t, e) {
+            (t.FromRotationMatrixToRef = function (t, e) {
               var n,
                 o = t.m,
                 r = o[0],
@@ -1729,41 +1770,41 @@
                 ? ((n = 2 * Math.sqrt(1 + p - r - h)), (e.w = (s - l) / n), (e.x = (i + a) / n), (e.y = 0.25 * n), (e.z = (u + c) / n))
                 : ((n = 2 * Math.sqrt(1 + h - r - p)), (e.w = (a - i) / n), (e.x = (s + l) / n), (e.y = (u + c) / n), (e.z = 0.25 * n))
             }),
-            (t.Dot = function(t, e) {
+            (t.Dot = function (t, e) {
               return t.x * e.x + t.y * e.y + t.z * e.z + t.w * e.w
             }),
-            (t.AreClose = function(e, n) {
+            (t.AreClose = function (e, n) {
               return t.Dot(e, n) >= 0
             }),
-            (t.Zero = function() {
+            (t.Zero = function () {
               return new t(0, 0, 0, 0)
             }),
-            (t.Inverse = function(e) {
+            (t.Inverse = function (e) {
               return new t(-e.x, -e.y, -e.z, e.w)
             }),
-            (t.IsIdentity = function(t) {
+            (t.IsIdentity = function (t) {
               return t && 0 === t.x && 0 === t.y && 0 === t.z && 1 === t.w
             }),
-            (t.RotationAxis = function(e, n) {
+            (t.RotationAxis = function (e, n) {
               var o = n * s.DEG2RAD
               return t.RotationAxisToRef(e, o, new t())
             }),
-            (t.RotationAxisToRef = function(t, e, n) {
+            (t.RotationAxisToRef = function (t, e, n) {
               var o = e * s.DEG2RAD,
                 r = Math.sin(o / 2)
               return t.normalize(), (n.w = Math.cos(o / 2)), (n.x = t.x * r), (n.y = t.y * r), (n.z = t.z * r), n
             }),
-            (t.FromArray = function(e, n) {
+            (t.FromArray = function (e, n) {
               return void 0 === n && (n = 0), new t(e[n], e[n + 1], e[n + 2], e[n + 3])
             }),
-            (t.FromEulerAnglesRef = function(e, n, o, r) {
+            (t.FromEulerAnglesRef = function (e, n, o, r) {
               return t.RotationYawPitchRollToRef(n * s.DEG2RAD, e * s.DEG2RAD, o * s.DEG2RAD, r)
             }),
-            (t.RotationYawPitchRoll = function(e, n, o) {
+            (t.RotationYawPitchRoll = function (e, n, o) {
               var r = new t()
               return t.RotationYawPitchRollToRef(e, n, o, r), r
             }),
-            (t.RotationYawPitchRollToRef = function(t, e, n, o) {
+            (t.RotationYawPitchRollToRef = function (t, e, n, o) {
               var r = 0.5 * n,
                 i = 0.5 * e,
                 s = 0.5 * t,
@@ -1775,11 +1816,11 @@
                 h = Math.sin(r)
               ;(o.x = l * p * u + a * c * h), (o.y = a * c * u - l * p * h), (o.z = a * p * h + l * c * u), (o.w = a * p * u - l * c * h)
             }),
-            (t.RotationAlphaBetaGamma = function(e, n, o) {
+            (t.RotationAlphaBetaGamma = function (e, n, o) {
               var r = new t()
               return t.RotationAlphaBetaGammaToRef(e, n, o, r), r
             }),
-            (t.RotationAlphaBetaGammaToRef = function(t, e, n, o) {
+            (t.RotationAlphaBetaGammaToRef = function (t, e, n, o) {
               var r = 0.5 * (n + t),
                 i = 0.5 * (n - t),
                 s = 0.5 * e
@@ -1788,19 +1829,19 @@
                 (o.z = Math.sin(r) * Math.cos(s)),
                 (o.w = Math.cos(r) * Math.cos(s))
             }),
-            (t.RotationQuaternionFromAxis = function(e, n, o) {
+            (t.RotationQuaternionFromAxis = function (e, n, o) {
               var r = new t(0, 0, 0, 0)
               return t.RotationQuaternionFromAxisToRef(e, n, o, r), r
             }),
-            (t.RotationQuaternionFromAxisToRef = function(e, n, r, s) {
+            (t.RotationQuaternionFromAxisToRef = function (e, n, r, s) {
               var a = i.MathTmp.Matrix[0]
               o.Matrix.FromXYZAxesToRef(e.normalize(), n.normalize(), r.normalize(), a), t.FromRotationMatrixToRef(a, s)
             }),
-            (t.Slerp = function(e, n, o) {
+            (t.Slerp = function (e, n, o) {
               var r = t.Identity
               return t.SlerpToRef(e, n, o, r), r
             }),
-            (t.SlerpToRef = function(t, e, n, o) {
+            (t.SlerpToRef = function (t, e, n, o) {
               var r,
                 i,
                 s = t.x * e.x + t.y * e.y + t.z * e.z + t.w * e.w,
@@ -1813,7 +1854,7 @@
               }
               ;(o.x = i * t.x + r * e.x), (o.y = i * t.y + r * e.y), (o.z = i * t.z + r * e.z), (o.w = i * t.w + r * e.w)
             }),
-            (t.Hermite = function(e, n, o, r, i) {
+            (t.Hermite = function (e, n, o, r, i) {
               var s = i * i,
                 a = i * s,
                 p = 2 * a - 3 * s + 1,
@@ -1828,20 +1869,20 @@
               )
             }),
             Object.defineProperty(t, 'Identity', {
-              get: function() {
+              get: function () {
                 return new t(0, 0, 0, 1)
               },
               enumerable: !1,
-              configurable: !0
+              configurable: !0,
             }),
-            (t.Angle = function(e, n) {
+            (t.Angle = function (e, n) {
               var o = t.Dot(e, n)
               return 2 * Math.acos(Math.min(Math.abs(o), 1)) * s.RAD2DEG
             }),
-            (t.Euler = function(e, n, o) {
+            (t.Euler = function (e, n, o) {
               return t.RotationYawPitchRoll(n * s.DEG2RAD, e * s.DEG2RAD, o * s.DEG2RAD)
             }),
-            (t.LookRotation = function(e, n) {
+            (t.LookRotation = function (e, n) {
               void 0 === n && (n = i.MathTmp.staticUp)
               var o = r.Vector3.Normalize(e),
                 s = r.Vector3.Normalize(r.Vector3.Cross(n, o)),
@@ -1875,13 +1916,13 @@
                 T = 0.5 / w
               return (b.x = (f + l) * T), (b.y = (y + d) * T), (b.z = 0.5 * w), (b.w = (u - c) * T), b
             }),
-            (t.RotateTowards = function(e, n, o) {
+            (t.RotateTowards = function (e, n, o) {
               var r = t.Angle(e, n)
               if (0 === r) return n
               var i = Math.min(1, o / r)
               return t.Slerp(e, n, i)
             }),
-            (t.FromToRotation = function(e, n) {
+            (t.FromToRotation = function (e, n) {
               var o = new t(),
                 i = e.normalize(),
                 a = n.normalize(),
@@ -1899,13 +1940,13 @@
               return o.normalize()
             }),
             Object.defineProperty(t.prototype, 'normalized', {
-              get: function() {
+              get: function () {
                 return this.normalize()
               },
               enumerable: !1,
-              configurable: !0
+              configurable: !0,
             }),
-            (t.prototype.setFromToRotation = function(e, n, r) {
+            (t.prototype.setFromToRotation = function (e, n, r) {
               void 0 === r && (r = i.MathTmp.staticUp),
                 (i.MathTmp.tmpMatrix = o.Matrix.Zero()),
                 o.Matrix.LookAtLHToRef(e, n, r, i.MathTmp.tmpMatrix),
@@ -1913,7 +1954,7 @@
                 t.FromRotationMatrixToRef(i.MathTmp.tmpMatrix, this)
             }),
             Object.defineProperty(t.prototype, 'eulerAngles', {
-              get: function() {
+              get: function () {
                 var t = new r.Vector3(),
                   e = new o.Matrix()
                 this.toRotationMatrix(e)
@@ -1926,106 +1967,106 @@
                   t
                 )
               },
-              set: function(t) {
+              set: function (t) {
                 this.setEuler(t.x, t.y, t.z)
               },
               enumerable: !1,
-              configurable: !0
+              configurable: !0,
             }),
-            (t.prototype.toString = function() {
+            (t.prototype.toString = function () {
               return '(' + this.x + ', ' + this.y + ', ' + this.z + ', ' + this.w + ')'
             }),
             Object.defineProperty(t.prototype, 'length', {
-              get: function() {
+              get: function () {
                 return Math.sqrt(this.lengthSquared)
               },
               enumerable: !1,
-              configurable: !0
+              configurable: !0,
             }),
             Object.defineProperty(t.prototype, 'lengthSquared', {
-              get: function() {
+              get: function () {
                 return this.x * this.x + this.y * this.y + this.z * this.z + this.w * this.w
               },
               enumerable: !1,
-              configurable: !0
+              configurable: !0,
             }),
-            (t.prototype.getClassName = function() {
+            (t.prototype.getClassName = function () {
               return 'Quaternion'
             }),
-            (t.prototype.getHashCode = function() {
+            (t.prototype.getHashCode = function () {
               var t = this.x || 0
               return (t = (397 * (t = (397 * (t = (397 * t) ^ (this.y || 0))) ^ (this.z || 0))) ^ (this.w || 0))
             }),
-            (t.prototype.asArray = function() {
+            (t.prototype.asArray = function () {
               return [this.x, this.y, this.z, this.w]
             }),
-            (t.prototype.equals = function(t) {
+            (t.prototype.equals = function (t) {
               return t && this.x === t.x && this.y === t.y && this.z === t.z && this.w === t.w
             }),
-            (t.prototype.clone = function() {
+            (t.prototype.clone = function () {
               return new t(this.x, this.y, this.z, this.w)
             }),
-            (t.prototype.copyFrom = function(t) {
+            (t.prototype.copyFrom = function (t) {
               return (this.x = t.x), (this.y = t.y), (this.z = t.z), (this.w = t.w), this
             }),
-            (t.prototype.copyFromFloats = function(t, e, n, o) {
+            (t.prototype.copyFromFloats = function (t, e, n, o) {
               return (this.x = t), (this.y = e), (this.z = n), (this.w = o), this
             }),
-            (t.prototype.set = function(t, e, n, o) {
+            (t.prototype.set = function (t, e, n, o) {
               return this.copyFromFloats(t, e, n, o)
             }),
-            (t.prototype.setEuler = function(e, n, o) {
+            (t.prototype.setEuler = function (e, n, o) {
               return t.RotationYawPitchRollToRef(n * s.DEG2RAD, e * s.DEG2RAD, o * s.DEG2RAD, this), this
             }),
-            (t.prototype.add = function(e) {
+            (t.prototype.add = function (e) {
               return new t(this.x + e.x, this.y + e.y, this.z + e.z, this.w + e.w)
             }),
-            (t.prototype.addInPlace = function(t) {
+            (t.prototype.addInPlace = function (t) {
               return (this.x += t.x), (this.y += t.y), (this.z += t.z), (this.w += t.w), this
             }),
-            (t.prototype.subtract = function(e) {
+            (t.prototype.subtract = function (e) {
               return new t(this.x - e.x, this.y - e.y, this.z - e.z, this.w - e.w)
             }),
-            (t.prototype.scale = function(e) {
+            (t.prototype.scale = function (e) {
               return new t(this.x * e, this.y * e, this.z * e, this.w * e)
             }),
-            (t.prototype.scaleToRef = function(t, e) {
+            (t.prototype.scaleToRef = function (t, e) {
               return (e.x = this.x * t), (e.y = this.y * t), (e.z = this.z * t), (e.w = this.w * t), this
             }),
-            (t.prototype.scaleInPlace = function(t) {
+            (t.prototype.scaleInPlace = function (t) {
               return (this.x *= t), (this.y *= t), (this.z *= t), (this.w *= t), this
             }),
-            (t.prototype.scaleAndAddToRef = function(t, e) {
+            (t.prototype.scaleAndAddToRef = function (t, e) {
               return (e.x += this.x * t), (e.y += this.y * t), (e.z += this.z * t), (e.w += this.w * t), this
             }),
-            (t.prototype.multiply = function(e) {
+            (t.prototype.multiply = function (e) {
               var n = new t(0, 0, 0, 1)
               return this.multiplyToRef(e, n), n
             }),
-            (t.prototype.multiplyToRef = function(t, e) {
+            (t.prototype.multiplyToRef = function (t, e) {
               var n = this.x * t.w + this.y * t.z - this.z * t.y + this.w * t.x,
                 o = -this.x * t.z + this.y * t.w + this.z * t.x + this.w * t.y,
                 r = this.x * t.y - this.y * t.x + this.z * t.w + this.w * t.z,
                 i = -this.x * t.x - this.y * t.y - this.z * t.z + this.w * t.w
               return e.copyFromFloats(n, o, r, i), this
             }),
-            (t.prototype.multiplyInPlace = function(t) {
+            (t.prototype.multiplyInPlace = function (t) {
               return this.multiplyToRef(t, this), this
             }),
-            (t.prototype.conjugateToRef = function(t) {
+            (t.prototype.conjugateToRef = function (t) {
               return t.copyFromFloats(-this.x, -this.y, -this.z, this.w), this
             }),
-            (t.prototype.conjugateInPlace = function() {
+            (t.prototype.conjugateInPlace = function () {
               return (this.x *= -1), (this.y *= -1), (this.z *= -1), this
             }),
-            (t.prototype.conjugate = function() {
+            (t.prototype.conjugate = function () {
               return new t(-this.x, -this.y, -this.z, this.w)
             }),
-            (t.prototype.normalize = function() {
+            (t.prototype.normalize = function () {
               var t = 1 / this.length
               return (this.x *= t), (this.y *= t), (this.z *= t), (this.w *= t), this
             }),
-            (t.prototype.angleAxis = function(e, n) {
+            (t.prototype.angleAxis = function (e, n) {
               if (0 === n.lengthSquared()) return t.Identity
               var o = t.Identity,
                 r = e * s.DEG2RAD
@@ -2033,10 +2074,10 @@
               var i = n.normalize()
               return (i = n.scaleInPlace(Math.sin(r))), (o.x = i.x), (o.y = i.y), (o.z = i.z), (o.w = Math.cos(r)), o.normalize()
             }),
-            (t.prototype.toRotationMatrix = function(t) {
+            (t.prototype.toRotationMatrix = function (t) {
               return o.Matrix.FromQuaternionToRef(this, t), this
             }),
-            (t.prototype.fromRotationMatrix = function(e) {
+            (t.prototype.fromRotationMatrix = function (e) {
               return t.FromRotationMatrixToRef(e, this), this
             }),
             t
@@ -2044,14 +2085,14 @@
         })()
       e.Quaternion = a
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.Matrix = void 0)
       var o = n(3),
         r = n(10),
         i = n(9),
         s = n(21),
-        a = (function() {
+        a = (function () {
           function t() {
             ;(this._isIdentity = !1),
               (this._isIdentityDirty = !0),
@@ -2062,33 +2103,33 @@
           }
           return (
             Object.defineProperty(t.prototype, 'm', {
-              get: function() {
+              get: function () {
                 return this._m
               },
               enumerable: !1,
-              configurable: !0
+              configurable: !0,
             }),
             Object.defineProperty(t, 'IdentityReadOnly', {
-              get: function() {
+              get: function () {
                 return t._identityReadOnly
               },
               enumerable: !1,
-              configurable: !0
+              configurable: !0,
             }),
-            (t.FromArray = function(e, n) {
+            (t.FromArray = function (e, n) {
               void 0 === n && (n = 0)
               var o = new t()
               return t.FromArrayToRef(e, n, o), o
             }),
-            (t.FromArrayToRef = function(t, e, n) {
+            (t.FromArrayToRef = function (t, e, n) {
               for (var o = 0; o < 16; o++) n._m[o] = t[o + e]
               n._markAsUpdated()
             }),
-            (t.FromFloatArrayToRefScaled = function(t, e, n, o) {
+            (t.FromFloatArrayToRefScaled = function (t, e, n, o) {
               for (var r = 0; r < 16; r++) o._m[r] = t[r + e] * n
               o._markAsUpdated()
             }),
-            (t.FromValuesToRef = function(t, e, n, o, r, i, s, a, p, u, l, c, h, d, f, y, v) {
+            (t.FromValuesToRef = function (t, e, n, o, r, i, s, a, p, u, l, c, h, d, f, y, v) {
               var m = v._m
               ;(m[0] = t),
                 (m[1] = e),
@@ -2108,7 +2149,7 @@
                 (m[15] = y),
                 v._markAsUpdated()
             }),
-            (t.FromValues = function(e, n, o, r, i, s, a, p, u, l, c, h, d, f, y, v) {
+            (t.FromValues = function (e, n, o, r, i, s, a, p, u, l, c, h, d, f, y, v) {
               var m = new t(),
                 b = m._m
               return (
@@ -2132,63 +2173,63 @@
                 m
               )
             }),
-            (t.Compose = function(e, n, o) {
+            (t.Compose = function (e, n, o) {
               var r = new t()
               return t.ComposeToRef(e, n, o, r), r
             }),
-            (t.ComposeToRef = function(e, n, o, r) {
+            (t.ComposeToRef = function (e, n, o, r) {
               t.ScalingToRef(e.x, e.y, e.z, i.MathTmp.Matrix[1]),
                 n.toRotationMatrix(i.MathTmp.Matrix[0]),
                 i.MathTmp.Matrix[1].multiplyToRef(i.MathTmp.Matrix[0], r),
                 r.setTranslation(o)
             }),
-            (t.Identity = function() {
+            (t.Identity = function () {
               var e = t.FromValues(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
               return e._updateIdentityStatus(!0), e
             }),
-            (t.IdentityToRef = function(e) {
+            (t.IdentityToRef = function (e) {
               t.FromValuesToRef(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, e), e._updateIdentityStatus(!0)
             }),
-            (t.Zero = function() {
+            (t.Zero = function () {
               var e = t.FromValues(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
               return e._updateIdentityStatus(!1), e
             }),
-            (t.RotationX = function(e) {
+            (t.RotationX = function (e) {
               var n = new t()
               return t.RotationXToRef(e, n), n
             }),
-            (t.Invert = function(e) {
+            (t.Invert = function (e) {
               var n = new t()
               return e.invertToRef(n), n
             }),
-            (t.RotationXToRef = function(e, n) {
+            (t.RotationXToRef = function (e, n) {
               var o = Math.sin(e),
                 r = Math.cos(e)
               t.FromValuesToRef(1, 0, 0, 0, 0, r, o, 0, 0, -o, r, 0, 0, 0, 0, 1, n), n._updateIdentityStatus(1 === r && 0 === o)
             }),
-            (t.RotationY = function(e) {
+            (t.RotationY = function (e) {
               var n = new t()
               return t.RotationYToRef(e, n), n
             }),
-            (t.RotationYToRef = function(e, n) {
+            (t.RotationYToRef = function (e, n) {
               var o = Math.sin(e),
                 r = Math.cos(e)
               t.FromValuesToRef(r, 0, -o, 0, 0, 1, 0, 0, o, 0, r, 0, 0, 0, 0, 1, n), n._updateIdentityStatus(1 === r && 0 === o)
             }),
-            (t.RotationZ = function(e) {
+            (t.RotationZ = function (e) {
               var n = new t()
               return t.RotationZToRef(e, n), n
             }),
-            (t.RotationZToRef = function(e, n) {
+            (t.RotationZToRef = function (e, n) {
               var o = Math.sin(e),
                 r = Math.cos(e)
               t.FromValuesToRef(r, o, 0, 0, -o, r, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, n), n._updateIdentityStatus(1 === r && 0 === o)
             }),
-            (t.RotationAxis = function(e, n) {
+            (t.RotationAxis = function (e, n) {
               var o = new t()
               return t.RotationAxisToRef(e, n, o), o
             }),
-            (t.RotationAxisToRef = function(t, e, n) {
+            (t.RotationAxisToRef = function (t, e, n) {
               var o = Math.sin(-e),
                 r = Math.cos(-e),
                 i = 1 - r
@@ -2212,40 +2253,40 @@
                 (s[15] = 1),
                 n._markAsUpdated()
             }),
-            (t.RotationYawPitchRoll = function(e, n, o) {
+            (t.RotationYawPitchRoll = function (e, n, o) {
               var r = new t()
               return t.RotationYawPitchRollToRef(e, n, o, r), r
             }),
-            (t.RotationYawPitchRollToRef = function(t, e, n, o) {
+            (t.RotationYawPitchRollToRef = function (t, e, n, o) {
               r.Quaternion.RotationYawPitchRollToRef(t, e, n, i.MathTmp.Quaternion[0]), i.MathTmp.Quaternion[0].toRotationMatrix(o)
             }),
-            (t.Scaling = function(e, n, o) {
+            (t.Scaling = function (e, n, o) {
               var r = new t()
               return t.ScalingToRef(e, n, o, r), r
             }),
-            (t.ScalingToRef = function(e, n, o, r) {
+            (t.ScalingToRef = function (e, n, o, r) {
               t.FromValuesToRef(e, 0, 0, 0, 0, n, 0, 0, 0, 0, o, 0, 0, 0, 0, 1, r), r._updateIdentityStatus(1 === e && 1 === n && 1 === o)
             }),
-            (t.Translation = function(e, n, o) {
+            (t.Translation = function (e, n, o) {
               var r = new t()
               return t.TranslationToRef(e, n, o, r), r
             }),
-            (t.TranslationToRef = function(e, n, o, r) {
+            (t.TranslationToRef = function (e, n, o, r) {
               t.FromValuesToRef(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, e, n, o, 1, r), r._updateIdentityStatus(0 === e && 0 === n && 0 === o)
             }),
-            (t.Lerp = function(e, n, o) {
+            (t.Lerp = function (e, n, o) {
               var r = new t()
               return t.LerpToRef(e, n, o, r), r
             }),
-            (t.LerpToRef = function(t, e, n, o) {
+            (t.LerpToRef = function (t, e, n, o) {
               for (var r = 0; r < 16; r++) o._m[r] = t._m[r] * (1 - n) + e._m[r] * n
               o._markAsUpdated()
             }),
-            (t.DecomposeLerp = function(e, n, o) {
+            (t.DecomposeLerp = function (e, n, o) {
               var r = new t()
               return t.DecomposeLerpToRef(e, n, o, r), r
             }),
-            (t.DecomposeLerpToRef = function(e, n, s, a) {
+            (t.DecomposeLerpToRef = function (e, n, s, a) {
               var p = i.MathTmp.Vector3[0],
                 u = i.MathTmp.Quaternion[0],
                 l = i.MathTmp.Vector3[1]
@@ -2261,11 +2302,11 @@
               var v = i.MathTmp.Vector3[5]
               o.Vector3.LerpToRef(l, d, s, v), t.ComposeToRef(f, y, v, a)
             }),
-            (t.LookAtLH = function(e, n, o) {
+            (t.LookAtLH = function (e, n, o) {
               var r = new t()
               return t.LookAtLHToRef(e, n, o, r), r
             }),
-            (t.LookAtLHToRef = function(e, n, r, s) {
+            (t.LookAtLHToRef = function (e, n, r, s) {
               var a = i.MathTmp.Vector3[0],
                 p = i.MathTmp.Vector3[1],
                 u = i.MathTmp.Vector3[2]
@@ -2277,11 +2318,11 @@
                 d = -o.Vector3.Dot(u, e)
               t.FromValuesToRef(a.x, p.x, u.x, 0, a.y, p.y, u.y, 0, a.z, p.z, u.z, 0, c, h, d, 1, s)
             }),
-            (t.LookAtRH = function(e, n, o) {
+            (t.LookAtRH = function (e, n, o) {
               var r = new t()
               return t.LookAtRHToRef(e, n, o, r), r
             }),
-            (t.LookAtRHToRef = function(e, n, r, s) {
+            (t.LookAtRHToRef = function (e, n, r, s) {
               var a = i.MathTmp.Vector3[0],
                 p = i.MathTmp.Vector3[1],
                 u = i.MathTmp.Vector3[2]
@@ -2293,11 +2334,11 @@
                 d = -o.Vector3.Dot(u, e)
               t.FromValuesToRef(a.x, p.x, u.x, 0, a.y, p.y, u.y, 0, a.z, p.z, u.z, 0, c, h, d, 1, s)
             }),
-            (t.OrthoLH = function(e, n, o, r) {
+            (t.OrthoLH = function (e, n, o, r) {
               var i = new t()
               return t.OrthoLHToRef(e, n, o, r, i), i
             }),
-            (t.OrthoLHToRef = function(e, n, o, r, i) {
+            (t.OrthoLHToRef = function (e, n, o, r, i) {
               var s = 2 / e,
                 a = 2 / n,
                 p = 2 / (r - o),
@@ -2305,11 +2346,11 @@
               t.FromValuesToRef(s, 0, 0, 0, 0, a, 0, 0, 0, 0, p, 0, 0, 0, u, 1, i),
                 i._updateIdentityStatus(1 === s && 1 === a && 1 === p && 0 === u)
             }),
-            (t.OrthoOffCenterLH = function(e, n, o, r, i, s) {
+            (t.OrthoOffCenterLH = function (e, n, o, r, i, s) {
               var a = new t()
               return t.OrthoOffCenterLHToRef(e, n, o, r, i, s, a), a
             }),
-            (t.OrthoOffCenterLHToRef = function(e, n, o, r, i, s, a) {
+            (t.OrthoOffCenterLHToRef = function (e, n, o, r, i, s, a) {
               var p = 2 / (n - e),
                 u = 2 / (r - o),
                 l = 2 / (s - i),
@@ -2318,14 +2359,14 @@
                 d = (r + o) / (o - r)
               t.FromValuesToRef(p, 0, 0, 0, 0, u, 0, 0, 0, 0, l, 0, h, d, c, 1, a), a._markAsUpdated()
             }),
-            (t.OrthoOffCenterRH = function(e, n, o, r, i, s) {
+            (t.OrthoOffCenterRH = function (e, n, o, r, i, s) {
               var a = new t()
               return t.OrthoOffCenterRHToRef(e, n, o, r, i, s, a), a
             }),
-            (t.OrthoOffCenterRHToRef = function(e, n, o, r, i, s, a) {
+            (t.OrthoOffCenterRHToRef = function (e, n, o, r, i, s, a) {
               t.OrthoOffCenterLHToRef(e, n, o, r, i, s, a), (a._m[10] *= -1)
             }),
-            (t.PerspectiveLH = function(e, n, o, r) {
+            (t.PerspectiveLH = function (e, n, o, r) {
               var i = new t(),
                 s = (2 * o) / e,
                 a = (2 * o) / n,
@@ -2333,11 +2374,11 @@
                 u = (-2 * r * o) / (r - o)
               return t.FromValuesToRef(s, 0, 0, 0, 0, a, 0, 0, 0, 0, p, 1, 0, 0, u, 0, i), i._updateIdentityStatus(!1), i
             }),
-            (t.PerspectiveFovLH = function(e, n, o, r) {
+            (t.PerspectiveFovLH = function (e, n, o, r) {
               var i = new t()
               return t.PerspectiveFovLHToRef(e, n, o, r, i), i
             }),
-            (t.PerspectiveFovLHToRef = function(e, n, o, r, i, s) {
+            (t.PerspectiveFovLHToRef = function (e, n, o, r, i, s) {
               void 0 === s && (s = !0)
               var a = o,
                 p = r,
@@ -2348,11 +2389,11 @@
                 d = (-2 * p * a) / (p - a)
               t.FromValuesToRef(l, 0, 0, 0, 0, c, 0, 0, 0, 0, h, 1, 0, 0, d, 0, i), i._updateIdentityStatus(!1)
             }),
-            (t.PerspectiveFovRH = function(e, n, o, r) {
+            (t.PerspectiveFovRH = function (e, n, o, r) {
               var i = new t()
               return t.PerspectiveFovRHToRef(e, n, o, r, i), i
             }),
-            (t.PerspectiveFovRHToRef = function(e, n, o, r, i, s) {
+            (t.PerspectiveFovRHToRef = function (e, n, o, r, i, s) {
               void 0 === s && (s = !0)
               var a = o,
                 p = r,
@@ -2363,7 +2404,7 @@
                 d = (-2 * p * a) / (p - a)
               t.FromValuesToRef(l, 0, 0, 0, 0, c, 0, 0, 0, 0, h, -1, 0, 0, d, 0, i), i._updateIdentityStatus(!1)
             }),
-            (t.PerspectiveFovWebVRToRef = function(t, e, n, o, r) {
+            (t.PerspectiveFovWebVRToRef = function (t, e, n, o, r) {
               void 0 === r && (r = !1)
               var i = r ? -1 : 1,
                 s = Math.tan((t.upDegrees * Math.PI) / 180),
@@ -2385,17 +2426,17 @@
                 (h[14] = (-2 * n * e) / (n - e)),
                 o._markAsUpdated()
             }),
-            (t.GetAsMatrix2x2 = function(t) {
+            (t.GetAsMatrix2x2 = function (t) {
               return [t._m[0], t._m[1], t._m[4], t._m[5]]
             }),
-            (t.GetAsMatrix3x3 = function(t) {
+            (t.GetAsMatrix3x3 = function (t) {
               return [t._m[0], t._m[1], t._m[2], t._m[4], t._m[5], t._m[6], t._m[8], t._m[9], t._m[10]]
             }),
-            (t.Transpose = function(e) {
+            (t.Transpose = function (e) {
               var n = new t()
               return t.TransposeToRef(e, n), n
             }),
-            (t.TransposeToRef = function(t, e) {
+            (t.TransposeToRef = function (t, e) {
               var n = e._m,
                 o = t._m
               ;(n[0] = o[0]),
@@ -2416,11 +2457,11 @@
                 (n[15] = o[15]),
                 e._updateIdentityStatus(t._isIdentity, t._isIdentityDirty)
             }),
-            (t.Reflection = function(e) {
+            (t.Reflection = function (e) {
               var n = new t()
               return t.ReflectionToRef(e, n), n
             }),
-            (t.ReflectionToRef = function(e, n) {
+            (t.ReflectionToRef = function (e, n) {
               e.normalize()
               var o = e.normal.x,
                 r = e.normal.y,
@@ -2448,10 +2489,10 @@
                 n
               )
             }),
-            (t.FromXYZAxesToRef = function(e, n, o, r) {
+            (t.FromXYZAxesToRef = function (e, n, o, r) {
               t.FromValuesToRef(e.x, e.y, e.z, 0, n.x, n.y, n.z, 0, o.x, o.y, o.z, 0, 0, 0, 0, 1, r)
             }),
-            (t.FromQuaternionToRef = function(t, e) {
+            (t.FromQuaternionToRef = function (t, e) {
               var n = t.x * t.x,
                 o = t.y * t.y,
                 r = t.z * t.z,
@@ -2479,14 +2520,14 @@
                 (e._m[15] = 1),
                 e._markAsUpdated()
             }),
-            (t.prototype._markAsUpdated = function() {
+            (t.prototype._markAsUpdated = function () {
               ;(this.updateFlag = t._updateFlagSeed++),
                 (this._isIdentity = !1),
                 (this._isIdentity3x2 = !1),
                 (this._isIdentityDirty = !0),
                 (this._isIdentity3x2Dirty = !0)
             }),
-            (t.prototype.isIdentity = function() {
+            (t.prototype.isIdentity = function () {
               if (this._isIdentityDirty) {
                 this._isIdentityDirty = !1
                 var t = this._m
@@ -2510,7 +2551,7 @@
               }
               return this._isIdentity
             }),
-            (t.prototype.isIdentityAs3x2 = function() {
+            (t.prototype.isIdentityAs3x2 = function () {
               return (
                 this._isIdentity3x2Dirty &&
                   ((this._isIdentity3x2Dirty = !1),
@@ -2535,7 +2576,7 @@
                 this._isIdentity3x2
               )
             }),
-            (t.prototype.determinant = function() {
+            (t.prototype.determinant = function () {
               if (!0 === this._isIdentity) return 1
               var t = this._m,
                 e = t[0],
@@ -2564,31 +2605,31 @@
                 e * +(s * m - a * b + p * g) + n * -(i * m - a * _ + p * C) + o * +(i * b - s * _ + p * O) + r * -(i * g - s * C + a * O)
               )
             }),
-            (t.prototype.toArray = function() {
+            (t.prototype.toArray = function () {
               return this._m
             }),
-            (t.prototype.asArray = function() {
+            (t.prototype.asArray = function () {
               return this._m
             }),
-            (t.prototype.invert = function() {
+            (t.prototype.invert = function () {
               return this.invertToRef(this), this
             }),
-            (t.prototype.reset = function() {
+            (t.prototype.reset = function () {
               return t.FromValuesToRef(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, this), this._updateIdentityStatus(!1), this
             }),
-            (t.prototype.add = function(e) {
+            (t.prototype.add = function (e) {
               var n = new t()
               return this.addToRef(e, n), n
             }),
-            (t.prototype.addToRef = function(t, e) {
+            (t.prototype.addToRef = function (t, e) {
               for (var n = 0; n < 16; n++) e._m[n] = this._m[n] + t._m[n]
               return e._markAsUpdated(), this
             }),
-            (t.prototype.addToSelf = function(t) {
+            (t.prototype.addToSelf = function (t) {
               for (var e = 0; e < 16; e++) this._m[e] += t._m[e]
               return this._markAsUpdated(), this
             }),
-            (t.prototype.invertToRef = function(e) {
+            (t.prototype.invertToRef = function (e) {
               if (!0 === this._isIdentity) return t.IdentityToRef(e), this
               var n = this._m,
                 o = n[0],
@@ -2667,25 +2708,25 @@
                 this
               )
             }),
-            (t.prototype.addAtIndex = function(t, e) {
+            (t.prototype.addAtIndex = function (t, e) {
               return (this._m[t] += e), this._markAsUpdated(), this
             }),
-            (t.prototype.multiplyAtIndex = function(t, e) {
+            (t.prototype.multiplyAtIndex = function (t, e) {
               return (this._m[t] *= e), this._markAsUpdated(), this
             }),
-            (t.prototype.setTranslationFromFloats = function(t, e, n) {
+            (t.prototype.setTranslationFromFloats = function (t, e, n) {
               return (this._m[12] = t), (this._m[13] = e), (this._m[14] = n), this._markAsUpdated(), this
             }),
-            (t.prototype.setTranslation = function(t) {
+            (t.prototype.setTranslation = function (t) {
               return this.setTranslationFromFloats(t.x, t.y, t.z)
             }),
-            (t.prototype.getTranslation = function() {
+            (t.prototype.getTranslation = function () {
               return new o.Vector3(this._m[12], this._m[13], this._m[14])
             }),
-            (t.prototype.getTranslationToRef = function(t) {
+            (t.prototype.getTranslationToRef = function (t) {
               return (t.x = this._m[12]), (t.y = this._m[13]), (t.z = this._m[14]), this
             }),
-            (t.prototype.removeRotationAndScaling = function() {
+            (t.prototype.removeRotationAndScaling = function () {
               var e = this.m
               return (
                 t.FromValuesToRef(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, e[12], e[13], e[14], e[15], this),
@@ -2693,28 +2734,28 @@
                 this
               )
             }),
-            (t.prototype.multiply = function(e) {
+            (t.prototype.multiply = function (e) {
               var n = new t()
               return this.multiplyToRef(e, n), n
             }),
-            (t.prototype.copyFrom = function(t) {
+            (t.prototype.copyFrom = function (t) {
               t.copyToArray(this._m)
               var e = t
               return this._updateIdentityStatus(e._isIdentity, e._isIdentityDirty, e._isIdentity3x2, e._isIdentity3x2Dirty), this
             }),
-            (t.prototype.copyToArray = function(t, e) {
+            (t.prototype.copyToArray = function (t, e) {
               void 0 === e && (e = 0)
               for (var n = 0; n < 16; n++) t[e + n] = this._m[n]
               return this
             }),
-            (t.prototype.multiplyToRef = function(t, e) {
+            (t.prototype.multiplyToRef = function (t, e) {
               return this._isIdentity
                 ? (e.copyFrom(t), this)
                 : t._isIdentity
                 ? (e.copyFrom(this), this)
                 : (this.multiplyToArray(t, e._m, 0), e._markAsUpdated(), this)
             }),
-            (t.prototype.multiplyToArray = function(t, e, n) {
+            (t.prototype.multiplyToArray = function (t, e, n) {
               var o = this._m,
                 r = t.m,
                 i = o[0],
@@ -2769,7 +2810,7 @@
                 this
               )
             }),
-            (t.prototype.equals = function(t) {
+            (t.prototype.equals = function (t) {
               var e = t
               if (!e) return !1
               if ((this._isIdentity || e._isIdentity) && !this._isIdentityDirty && !e._isIdentityDirty)
@@ -2795,18 +2836,18 @@
                 n[15] === o[15]
               )
             }),
-            (t.prototype.clone = function() {
+            (t.prototype.clone = function () {
               var e = new t()
               return e.copyFrom(this), e
             }),
-            (t.prototype.getClassName = function() {
+            (t.prototype.getClassName = function () {
               return 'Matrix'
             }),
-            (t.prototype.getHashCode = function() {
+            (t.prototype.getHashCode = function () {
               for (var t = this._m[0] || 0, e = 1; e < 16; e++) t = (397 * t) ^ (this._m[e] || 0)
               return t
             }),
-            (t.prototype.decompose = function(e, n, o) {
+            (t.prototype.decompose = function (e, n, o) {
               if (this._isIdentity) return o && o.setAll(0), e && e.setAll(1), n && n.copyFromFloats(0, 0, 0, 1), !0
               var s = this._m
               o && o.copyFromFloats(s[12], s[13], s[14])
@@ -2846,48 +2887,48 @@
               }
               return !0
             }),
-            (t.prototype.getRow = function(t) {
+            (t.prototype.getRow = function (t) {
               if (t < 0 || t > 3) return null
               var e = 4 * t
               return new s.Vector4(this._m[e + 0], this._m[e + 1], this._m[e + 2], this._m[e + 3])
             }),
-            (t.prototype.setRow = function(t, e) {
+            (t.prototype.setRow = function (t, e) {
               return this.setRowFromFloats(t, e.x, e.y, e.z, e.w)
             }),
-            (t.prototype.transpose = function() {
+            (t.prototype.transpose = function () {
               return t.Transpose(this)
             }),
-            (t.prototype.transposeToRef = function(e) {
+            (t.prototype.transposeToRef = function (e) {
               return t.TransposeToRef(this, e), this
             }),
-            (t.prototype.setRowFromFloats = function(t, e, n, o, r) {
+            (t.prototype.setRowFromFloats = function (t, e, n, o, r) {
               if (t < 0 || t > 3) return this
               var i = 4 * t
               return (this._m[i + 0] = e), (this._m[i + 1] = n), (this._m[i + 2] = o), (this._m[i + 3] = r), this._markAsUpdated(), this
             }),
-            (t.prototype.scale = function(e) {
+            (t.prototype.scale = function (e) {
               var n = new t()
               return this.scaleToRef(e, n), n
             }),
-            (t.prototype.scaleToRef = function(t, e) {
+            (t.prototype.scaleToRef = function (t, e) {
               for (var n = 0; n < 16; n++) e._m[n] = this._m[n] * t
               return e._markAsUpdated(), this
             }),
-            (t.prototype.scaleAndAddToRef = function(t, e) {
+            (t.prototype.scaleAndAddToRef = function (t, e) {
               for (var n = 0; n < 16; n++) e._m[n] += this._m[n] * t
               return e._markAsUpdated(), this
             }),
-            (t.prototype.toNormalMatrix = function(e) {
+            (t.prototype.toNormalMatrix = function (e) {
               var n = i.MathTmp.Matrix[0]
               this.invertToRef(n), n.transposeToRef(e)
               var o = e._m
               t.FromValuesToRef(o[0], o[1], o[2], 0, o[4], o[5], o[6], 0, o[8], o[9], o[10], 0, 0, 0, 0, 1, e)
             }),
-            (t.prototype.getRotationMatrix = function() {
+            (t.prototype.getRotationMatrix = function () {
               var e = new t()
               return this.getRotationMatrixToRef(e), e
             }),
-            (t.prototype.getRotationMatrixToRef = function(e) {
+            (t.prototype.getRotationMatrixToRef = function (e) {
               var n = i.MathTmp.Vector3[0]
               if (!this.decompose(n)) return t.IdentityToRef(e), this
               var o = this._m,
@@ -2917,15 +2958,15 @@
                 this
               )
             }),
-            (t.prototype.toggleModelMatrixHandInPlace = function() {
+            (t.prototype.toggleModelMatrixHandInPlace = function () {
               var t = this._m
               ;(t[2] *= -1), (t[6] *= -1), (t[8] *= -1), (t[9] *= -1), (t[14] *= -1), this._markAsUpdated()
             }),
-            (t.prototype.toggleProjectionMatrixHandInPlace = function() {
+            (t.prototype.toggleProjectionMatrixHandInPlace = function () {
               var t = this._m
               ;(t[8] *= -1), (t[9] *= -1), (t[10] *= -1), (t[11] *= -1), this._markAsUpdated()
             }),
-            (t.prototype._updateIdentityStatus = function(e, n, o, r) {
+            (t.prototype._updateIdentityStatus = function (e, n, o, r) {
               void 0 === n && (n = !1),
                 void 0 === o && (o = !1),
                 void 0 === r && (r = !0),
@@ -2942,13 +2983,13 @@
         })()
       e.Matrix = a
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.Entity = void 0)
       var o = n(0),
         r = n(7),
         i = n(1),
-        s = (function() {
+        s = (function () {
           function t(t) {
             ;(this.name = t),
               (this.children = {}),
@@ -2960,7 +3001,7 @@
               (this._parent = null)
           }
           return (
-            (t.prototype.addComponentOrReplace = function(t) {
+            (t.prototype.addComponentOrReplace = function (t) {
               if ('function' == typeof t)
                 throw new Error('You passed a function or class as a component, an instance of component is expected')
               if ('object' != typeof t) throw new Error('You passed a ' + typeof t + ', an instance of component is expected')
@@ -2971,7 +3012,7 @@
               }
               return this.addComponent(t)
             }),
-            (t.prototype.hasComponent = function(t) {
+            (t.prototype.hasComponent = function (t) {
               var e = typeof t
               if ('string' !== e && 'object' !== e && 'function' !== e)
                 throw new Error('Entity#has(component): component is not a class, name or instance')
@@ -2980,7 +3021,7 @@
                 r = this.components[n]
               return !!r && ('object' === e ? r === t : 'function' !== e || r instanceof t)
             }),
-            (t.prototype.getComponent = function(t) {
+            (t.prototype.getComponent = function (t) {
               var e = typeof t
               if ('string' !== e && 'function' !== e) throw new Error('Entity#get(component): component is not a class or name')
               var n = 'string' === e ? t : o.getComponentName(t),
@@ -2992,19 +3033,19 @@
               }
               return r
             }),
-            (t.prototype.getComponentOrNull = function(t) {
+            (t.prototype.getComponentOrNull = function (t) {
               var e = typeof t
               if ('string' !== e && 'function' !== e) throw new Error('Entity#getOrNull(component): component is not a class or name')
               var n = 'string' === e ? t : o.getComponentName(t),
                 r = this.components[n]
               return r ? ('function' === e ? (r instanceof t ? r : null) : r) : null
             }),
-            (t.prototype.getComponentOrCreate = function(t) {
+            (t.prototype.getComponentOrCreate = function (t) {
               if ('function' != typeof t) throw new Error('Entity#getOrCreate(component): component is not a class')
               var e = this.getComponentOrNull(t)
               return e || ((e = new t()), o.getComponentName(e), this.addComponentOrReplace(e)), e
             }),
-            (t.prototype.addComponent = function(t) {
+            (t.prototype.addComponent = function (t) {
               if ('object' != typeof t)
                 throw new Error(
                   'Entity#add(component): You passed a function or class as a component, an instance of component is expected'
@@ -3017,7 +3058,7 @@
               var i = t
               return 'function' == typeof i.addedToEntity && i.addedToEntity(this), t
             }),
-            (t.prototype.removeComponent = function(t, e) {
+            (t.prototype.removeComponent = function (t, e) {
               void 0 === e && (e = !0)
               var n = typeof t
               if ('string' !== n && 'function' !== n && 'object' !== n)
@@ -3046,10 +3087,10 @@
                     'function' == typeof a.removedFromEntity && a.removedFromEntity(this))
               } else i.log('Entity Warning: Trying to remove inexisting component "' + s + '" from entity "' + this.identifier + '"')
             }),
-            (t.prototype.isAddedToEngine = function() {
+            (t.prototype.isAddedToEngine = function () {
               return !(!this.engine || (!(this.uuid in this.engine.entities) && this.engine.rootEntity !== this))
             }),
-            (t.prototype.setParent = function(t) {
+            (t.prototype.setParent = function (t) {
               var e
               if (t && 'getEntityRepresentation' in t) {
                 if (!this.engine)
@@ -3083,17 +3124,17 @@
                 this
               )
             }),
-            (t.prototype.getParent = function() {
+            (t.prototype.getParent = function () {
               return this._parent
             }),
             Object.defineProperty(t.prototype, 'identifier', {
-              get: function() {
+              get: function () {
                 return this.name || this.uuid
               },
               enumerable: !1,
-              configurable: !0
+              configurable: !0,
             }),
-            (t.prototype.getCircularAncestor = function(t) {
+            (t.prototype.getCircularAncestor = function (t) {
               for (var e = this.engine ? this.engine.rootEntity : null, n = t; n && n !== e; ) {
                 var o = n.getParent()
                 if (o === this) return n.uuid
@@ -3101,7 +3142,7 @@
               }
               return null
             }),
-            (t.prototype.registerAsChild = function() {
+            (t.prototype.registerAsChild = function () {
               var t = this.getParent()
               this.uuid && t && (t.children[this.uuid] = this)
             }),
@@ -3110,11 +3151,11 @@
         })()
       e.Entity = s
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       var o =
         (this && this.__decorate) ||
-        function(t, e, n, o) {
+        function (t, e, n, o) {
           var r,
             i = arguments.length,
             s = i < 3 ? e : null === o ? (o = Object.getOwnPropertyDescriptor(e, n)) : o
@@ -3124,21 +3165,21 @@
         }
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.PointerEvent = e.RaycastResponse = e.UUIDEvent = void 0)
       var r = n(8),
-        i = (function() {
+        i = (function () {
           function t(t, e) {
             ;(this.uuid = t), (this.payload = e)
           }
           return (t = o([r.EventConstructor()], t))
         })()
       e.UUIDEvent = i
-      var s = (function() {
+      var s = (function () {
         function t(t) {
           this.payload = t
         }
         return (t = o([r.EventConstructor()], t))
       })()
       e.RaycastResponse = s
-      var a = (function() {
+      var a = (function () {
         function t(t) {
           this.payload = t
         }
@@ -3146,85 +3187,91 @@
       })()
       e.PointerEvent = a
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }),
-        (e.uuidEventSystem = e.UUIDEventSystem = e.pointerEventSystem = e.PointerEventSystem = e.raycastEventSystem = e.RaycastEventSystem = void 0)
+        (e.uuidEventSystem =
+          e.UUIDEventSystem =
+          e.pointerEventSystem =
+          e.PointerEventSystem =
+          e.raycastEventSystem =
+          e.RaycastEventSystem =
+            void 0)
       var o = n(13),
         r = n(4),
         i = n(7),
         s = n(16),
         a = n(28),
-        p = (function() {
+        p = (function () {
           function t() {}
           return (
-            (t.prototype.activate = function(t) {
-              t.eventManager.addListener(o.RaycastResponse, this, function(t) {
+            (t.prototype.activate = function (t) {
+              t.eventManager.addListener(o.RaycastResponse, this, function (t) {
                 'HitFirst' === t.payload.queryType
                   ? a.PhysicsCast.instance.handleRaycastHitFirstResponse(t)
                   : 'HitAll' === t.payload.queryType && a.PhysicsCast.instance.handleRaycastHitAllResponse(t)
               }),
                 'undefined' != typeof dcl && dcl.subscribe('raycastResponse')
             }),
-            (t.prototype.deactivate = function() {
+            (t.prototype.deactivate = function () {
               'undefined' != typeof dcl && dcl.unsubscribe('raycastResponse')
             }),
             t
           )
         })()
       ;(e.RaycastEventSystem = p), (e.raycastEventSystem = new p())
-      var u = (function() {
+      var u = (function () {
         function t() {}
         return (
-          (t.prototype.activate = function(t) {
-            t.eventManager.addListener(o.PointerEvent, this, function(t) {
+          (t.prototype.activate = function (t) {
+            t.eventManager.addListener(o.PointerEvent, this, function (t) {
               s.Input.instance.handlePointerEvent(t.payload)
             }),
               'undefined' != typeof dcl && (dcl.subscribe('pointerUp'), dcl.subscribe('pointerDown'), dcl.subscribe('pointerEvent'))
           }),
-          (t.prototype.deactivate = function() {
+          (t.prototype.deactivate = function () {
             'undefined' != typeof dcl && (dcl.unsubscribe('pointerUp'), dcl.unsubscribe('pointerDown'), dcl.unsubscribe('pointerEvent'))
           }),
           t
         )
       })()
       ;(e.PointerEventSystem = u), (e.pointerEventSystem = new u())
-      var l = (function() {
+      var l = (function () {
         function t() {
           this.handlerMap = {}
         }
         return (
-          (t.prototype.activate = function(t) {
+          (t.prototype.activate = function (t) {
             t.eventManager.addListener(o.UUIDEvent, this, this.handleEvent),
               t.eventManager.addListener(i.ComponentAdded, this, this.componentAdded),
               t.eventManager.addListener(i.ComponentRemoved, this, this.componentRemoved),
               'undefined' != typeof dcl && dcl.subscribe('uuidEvent')
           }),
-          (t.prototype.deactivate = function() {
+          (t.prototype.deactivate = function () {
             'undefined' != typeof dcl && dcl.unsubscribe('uuidEvent')
           }),
-          (t.prototype.onAddEntity = function(t) {
+          (t.prototype.onAddEntity = function (t) {
             for (var e in t.components) {
               var n = t.components[e]
               n instanceof r.OnUUIDEvent && (this.handlerMap[n.uuid] = n)
             }
           }),
-          (t.prototype.onRemoveEntity = function(t) {
+          (t.prototype.onRemoveEntity = function (t) {
             for (var e in t.components) {
               var n = t.components[e]
               n instanceof r.OnUUIDEvent && delete this.handlerMap[n.uuid]
             }
           }),
-          (t.prototype.componentAdded = function(t) {
+          (t.prototype.componentAdded = function (t) {
             if (t.entity.isAddedToEngine()) {
               var e = t.entity.components[t.componentName]
               e instanceof r.OnUUIDEvent && (this.handlerMap[e.uuid] = e)
             }
           }),
-          (t.prototype.componentRemoved = function(t) {
+          (t.prototype.componentRemoved = function (t) {
             t.entity.isAddedToEngine() && t.component instanceof r.OnUUIDEvent && delete this.handlerMap[t.component.uuid]
           }),
-          (t.prototype.handleEvent = function(t) {
+          (t.prototype.handleEvent = function (t) {
             if (t.uuid in this.handlerMap) {
               var e = this.handlerMap[t.uuid]
               e && e.callback && 'call' in e.callback && e.callback(t.payload)
@@ -3235,32 +3282,32 @@
       })()
       ;(e.UUIDEventSystem = l), (e.uuidEventSystem = new l())
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.Vector2 = void 0)
       var o = n(2),
         r = n(6),
-        i = (function() {
+        i = (function () {
           function t(t, e) {
             void 0 === t && (t = 0), void 0 === e && (e = 0), (this.x = t), (this.y = e)
           }
           return (
-            (t.Zero = function() {
+            (t.Zero = function () {
               return new t(0, 0)
             }),
-            (t.One = function() {
+            (t.One = function () {
               return new t(1, 1)
             }),
-            (t.Add = function(e, n) {
+            (t.Add = function (e, n) {
               return new t(e.x, e.y).addInPlace(n)
             }),
-            (t.FromArray = function(e, n) {
+            (t.FromArray = function (e, n) {
               return void 0 === n && (n = 0), new t(e[n], e[n + 1])
             }),
-            (t.FromArrayToRef = function(t, e, n) {
+            (t.FromArrayToRef = function (t, e, n) {
               ;(n.x = t[e]), (n.y = t[e + 1])
             }),
-            (t.CatmullRom = function(e, n, o, r, i) {
+            (t.CatmullRom = function (e, n, o, r, i) {
               var s = i * i,
                 a = i * s
               return new t(
@@ -3268,13 +3315,13 @@
                 0.5 * (2 * n.y + (-e.y + o.y) * i + (2 * e.y - 5 * n.y + 4 * o.y - r.y) * s + (-e.y + 3 * n.y - 3 * o.y + r.y) * a)
               )
             }),
-            (t.Clamp = function(e, n, o) {
+            (t.Clamp = function (e, n, o) {
               var r = e.x
               r = (r = r > o.x ? o.x : r) < n.x ? n.x : r
               var i = e.y
               return new t(r, (i = (i = i > o.y ? o.y : i) < n.y ? n.y : i))
             }),
-            (t.Hermite = function(e, n, o, r, i) {
+            (t.Hermite = function (e, n, o, r, i) {
               var s = i * i,
                 a = i * s,
                 p = 2 * a - 3 * s + 1,
@@ -3283,52 +3330,52 @@
                 c = a - s
               return new t(e.x * p + o.x * u + n.x * l + r.x * c, e.y * p + o.y * u + n.y * l + r.y * c)
             }),
-            (t.Lerp = function(e, n, o) {
+            (t.Lerp = function (e, n, o) {
               return new t(e.x + (n.x - e.x) * o, e.y + (n.y - e.y) * o)
             }),
-            (t.Dot = function(t, e) {
+            (t.Dot = function (t, e) {
               return t.x * e.x + t.y * e.y
             }),
-            (t.Normalize = function(e) {
+            (t.Normalize = function (e) {
               var n = new t(e.x, e.y)
               return n.normalize(), n
             }),
-            (t.Minimize = function(e, n) {
+            (t.Minimize = function (e, n) {
               return new t(e.x < n.x ? e.x : n.x, e.y < n.y ? e.y : n.y)
             }),
-            (t.Maximize = function(e, n) {
+            (t.Maximize = function (e, n) {
               return new t(e.x > n.x ? e.x : n.x, e.y > n.y ? e.y : n.y)
             }),
-            (t.Transform = function(e, n) {
+            (t.Transform = function (e, n) {
               var o = t.Zero()
               return t.TransformToRef(e, n, o), o
             }),
-            (t.TransformToRef = function(t, e, n) {
+            (t.TransformToRef = function (t, e, n) {
               var o = e.m,
                 r = t.x * o[0] + t.y * o[4] + o[12],
                 i = t.x * o[1] + t.y * o[5] + o[13]
               ;(n.x = r), (n.y = i)
             }),
-            (t.PointInTriangle = function(t, e, n, o) {
+            (t.PointInTriangle = function (t, e, n, o) {
               var r = 0.5 * (-n.y * o.x + e.y * (-n.x + o.x) + e.x * (n.y - o.y) + n.x * o.y),
                 i = r < 0 ? -1 : 1,
                 s = (e.y * o.x - e.x * o.y + (o.y - e.y) * t.x + (e.x - o.x) * t.y) * i,
                 a = (e.x * n.y - e.y * n.x + (e.y - n.y) * t.x + (n.x - e.x) * t.y) * i
               return s > 0 && a > 0 && s + a < 2 * r * i
             }),
-            (t.Distance = function(e, n) {
+            (t.Distance = function (e, n) {
               return Math.sqrt(t.DistanceSquared(e, n))
             }),
-            (t.DistanceSquared = function(t, e) {
+            (t.DistanceSquared = function (t, e) {
               var n = t.x - e.x,
                 o = t.y - e.y
               return n * n + o * o
             }),
-            (t.Center = function(e, n) {
+            (t.Center = function (e, n) {
               var o = t.Add(e, n)
               return o.scaleInPlace(0.5), o
             }),
-            (t.DistanceOfPointFromSegment = function(e, n, o) {
+            (t.DistanceOfPointFromSegment = function (e, n, o) {
               var r = t.DistanceSquared(n, o)
               if (0 === r) return t.Distance(e, n)
               var i = o.subtract(n),
@@ -3336,115 +3383,115 @@
                 a = n.add(i.multiplyByFloats(s, s))
               return t.Distance(e, a)
             }),
-            (t.prototype.toString = function() {
+            (t.prototype.toString = function () {
               return '{X: ' + this.x + ' Y:' + this.y + '}'
             }),
-            (t.prototype.getClassName = function() {
+            (t.prototype.getClassName = function () {
               return 'Vector2'
             }),
-            (t.prototype.getHashCode = function() {
+            (t.prototype.getHashCode = function () {
               var t = this.x || 0
               return (t = (397 * t) ^ (this.y || 0))
             }),
-            (t.prototype.toArray = function(t, e) {
+            (t.prototype.toArray = function (t, e) {
               return void 0 === e && (e = 0), (t[e] = this.x), (t[e + 1] = this.y), this
             }),
-            (t.prototype.asArray = function() {
+            (t.prototype.asArray = function () {
               var t = new Array()
               return this.toArray(t, 0), t
             }),
-            (t.prototype.copyFrom = function(t) {
+            (t.prototype.copyFrom = function (t) {
               return (this.x = t.x), (this.y = t.y), this
             }),
-            (t.prototype.copyFromFloats = function(t, e) {
+            (t.prototype.copyFromFloats = function (t, e) {
               return (this.x = t), (this.y = e), this
             }),
-            (t.prototype.set = function(t, e) {
+            (t.prototype.set = function (t, e) {
               return this.copyFromFloats(t, e)
             }),
-            (t.prototype.add = function(e) {
+            (t.prototype.add = function (e) {
               return new t(this.x + e.x, this.y + e.y)
             }),
-            (t.prototype.addToRef = function(t, e) {
+            (t.prototype.addToRef = function (t, e) {
               return (e.x = this.x + t.x), (e.y = this.y + t.y), this
             }),
-            (t.prototype.addInPlace = function(t) {
+            (t.prototype.addInPlace = function (t) {
               return (this.x += t.x), (this.y += t.y), this
             }),
-            (t.prototype.addVector3 = function(e) {
+            (t.prototype.addVector3 = function (e) {
               return new t(this.x + e.x, this.y + e.y)
             }),
-            (t.prototype.subtract = function(e) {
+            (t.prototype.subtract = function (e) {
               return new t(this.x - e.x, this.y - e.y)
             }),
-            (t.prototype.subtractToRef = function(t, e) {
+            (t.prototype.subtractToRef = function (t, e) {
               return (e.x = this.x - t.x), (e.y = this.y - t.y), this
             }),
-            (t.prototype.subtractInPlace = function(t) {
+            (t.prototype.subtractInPlace = function (t) {
               return (this.x -= t.x), (this.y -= t.y), this
             }),
-            (t.prototype.multiplyInPlace = function(t) {
+            (t.prototype.multiplyInPlace = function (t) {
               return (this.x *= t.x), (this.y *= t.y), this
             }),
-            (t.prototype.multiply = function(e) {
+            (t.prototype.multiply = function (e) {
               return new t(this.x * e.x, this.y * e.y)
             }),
-            (t.prototype.multiplyToRef = function(t, e) {
+            (t.prototype.multiplyToRef = function (t, e) {
               return (e.x = this.x * t.x), (e.y = this.y * t.y), this
             }),
-            (t.prototype.multiplyByFloats = function(e, n) {
+            (t.prototype.multiplyByFloats = function (e, n) {
               return new t(this.x * e, this.y * n)
             }),
-            (t.prototype.divide = function(e) {
+            (t.prototype.divide = function (e) {
               return new t(this.x / e.x, this.y / e.y)
             }),
-            (t.prototype.divideToRef = function(t, e) {
+            (t.prototype.divideToRef = function (t, e) {
               return (e.x = this.x / t.x), (e.y = this.y / t.y), this
             }),
-            (t.prototype.divideInPlace = function(t) {
+            (t.prototype.divideInPlace = function (t) {
               return this.divideToRef(t, this)
             }),
-            (t.prototype.negate = function() {
+            (t.prototype.negate = function () {
               return new t(-this.x, -this.y)
             }),
-            (t.prototype.scaleInPlace = function(t) {
+            (t.prototype.scaleInPlace = function (t) {
               return (this.x *= t), (this.y *= t), this
             }),
-            (t.prototype.scale = function(e) {
+            (t.prototype.scale = function (e) {
               var n = new t(0, 0)
               return this.scaleToRef(e, n), n
             }),
-            (t.prototype.scaleToRef = function(t, e) {
+            (t.prototype.scaleToRef = function (t, e) {
               return (e.x = this.x * t), (e.y = this.y * t), this
             }),
-            (t.prototype.scaleAndAddToRef = function(t, e) {
+            (t.prototype.scaleAndAddToRef = function (t, e) {
               return (e.x += this.x * t), (e.y += this.y * t), this
             }),
-            (t.prototype.equals = function(t) {
+            (t.prototype.equals = function (t) {
               return t && this.x === t.x && this.y === t.y
             }),
-            (t.prototype.equalsWithEpsilon = function(t, e) {
+            (t.prototype.equalsWithEpsilon = function (t, e) {
               return void 0 === e && (e = o.Epsilon), t && r.Scalar.WithinEpsilon(this.x, t.x, e) && r.Scalar.WithinEpsilon(this.y, t.y, e)
             }),
-            (t.prototype.floor = function() {
+            (t.prototype.floor = function () {
               return new t(Math.floor(this.x), Math.floor(this.y))
             }),
-            (t.prototype.fract = function() {
+            (t.prototype.fract = function () {
               return new t(this.x - Math.floor(this.x), this.y - Math.floor(this.y))
             }),
-            (t.prototype.length = function() {
+            (t.prototype.length = function () {
               return Math.sqrt(this.x * this.x + this.y * this.y)
             }),
-            (t.prototype.lengthSquared = function() {
+            (t.prototype.lengthSquared = function () {
               return this.x * this.x + this.y * this.y
             }),
-            (t.prototype.normalize = function() {
+            (t.prototype.normalize = function () {
               var t = this.length()
               if (0 === t) return this
               var e = 1 / t
               return (this.x *= e), (this.y *= e), this
             }),
-            (t.prototype.clone = function() {
+            (t.prototype.clone = function () {
               return new t(this.x, this.y)
             }),
             t
@@ -3452,23 +3499,23 @@
         })()
       e.Vector2 = i
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       var o,
         r =
           (this && this.__extends) ||
-          ((o = function(t, e) {
+          ((o = function (t, e) {
             return (o =
               Object.setPrototypeOf ||
               ({ __proto__: [] } instanceof Array &&
-                function(t, e) {
+                function (t, e) {
                   t.__proto__ = e
                 }) ||
-              function(t, e) {
+              function (t, e) {
                 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n])
               })(t, e)
           }),
-          function(t, e) {
+          function (t, e) {
             function n() {
               this.constructor = t
             }
@@ -3476,10 +3523,10 @@
           }),
         i =
           (this && this.__assign) ||
-          function() {
+          function () {
             return (i =
               Object.assign ||
-              function(t) {
+              function (t) {
                 for (var e, n = 1, o = arguments.length; n < o; n++)
                   for (var r in (e = arguments[n])) Object.prototype.hasOwnProperty.call(e, r) && (t[r] = e[r])
                 return t
@@ -3487,7 +3534,7 @@
           },
         s =
           (this && this.__decorate) ||
-          function(t, e, n, o) {
+          function (t, e, n, o) {
             var r,
               i = arguments.length,
               s = i < 3 ? e : null === o ? (o = Object.getOwnPropertyDescriptor(e, n)) : o
@@ -3501,32 +3548,32 @@
         p = n(27),
         u = n(5),
         l = n(0)
-      !(function(t) {
+      !(function (t) {
         ;(t.POINTER = 'POINTER'), (t.PRIMARY = 'PRIMARY'), (t.SECONDARY = 'SECONDARY'), (t.ANY = 'ANY')
       })((a = e.ActionButton || (e.ActionButton = {})))
-      var c = function(t) {
+      var c = function (t) {
         if (((this.callback = t), !t || !('apply' in t) || !('call' in t))) throw new Error('Callback is not a function')
         y.ensureInstance()
       }
       e.PointerEventComponent = c
-      var h = (function(t) {
+      var h = (function (t) {
         function e() {
           return (null !== t && t.apply(this, arguments)) || this
         }
         return r(e, t), (e = s([l.Component('pointerDown')], e))
       })(c)
       e.GlobalPointerDown = h
-      var d = (function(t) {
+      var d = (function (t) {
         function e() {
           return (null !== t && t.apply(this, arguments)) || this
         }
         return r(e, t), (e = s([l.Component('pointerUp')], e))
       })(c)
       e.GlobalPointerUp = d
-      var f = function(t, e) {
+      var f = function (t, e) {
           ;(this.fn = t), (this.useRaycast = e)
         },
-        y = (function() {
+        y = (function () {
           function t() {
             var t, e
             ;(this.subscriptions =
@@ -3544,44 +3591,44 @@
           }
           return (
             Object.defineProperty(t, 'instance', {
-              get: function() {
+              get: function () {
                 return t.ensureInstance(), t._instance
               },
               enumerable: !1,
-              configurable: !0
+              configurable: !0,
             }),
-            (t.ensureInstance = function() {
+            (t.ensureInstance = function () {
               t._instance || (t._instance = new t())
             }),
-            (t.prototype.isButtonPressed = function(t) {
+            (t.prototype.isButtonPressed = function (t) {
               return this.internalState[t]
             }),
-            (t.prototype.subscribe = function(t, e, n, o) {
+            (t.prototype.subscribe = function (t, e, n, o) {
               var r = this
               return (
                 this.subscriptions[e][t].push(new f(o, n)),
-                function() {
+                function () {
                   return r.unsubscribe(t, e, o)
                 }
               )
             }),
-            (t.prototype.unsubscribe = function(t, e, n) {
+            (t.prototype.unsubscribe = function (t, e, n) {
               var o = this.getSubscriptionId(t, e, n)
               return o > -1 && this.subscriptions[e][t].splice(o, 1)
             }),
-            (t.prototype.handlePointerEvent = function(t) {
+            (t.prototype.handlePointerEvent = function (t) {
               var e = this.getPointerById(t.buttonId),
                 n = i(i({}, t), {
                   button: e,
                   direction: new u.Vector3().copyFrom(t.direction),
                   origin: new u.Vector3().copyFrom(t.origin),
-                  hit: void 0
+                  hit: void 0,
                 }),
                 o = t.hit
                   ? i(i({}, t.hit), {
                       hitPoint: new u.Vector3().copyFrom(t.hit.hitPoint),
                       normal: new u.Vector3().copyFrom(t.hit.normal),
-                      worldNormal: new u.Vector3().copyFrom(t.hit.worldNormal)
+                      worldNormal: new u.Vector3().copyFrom(t.hit.worldNormal),
                     })
                   : void 0
               if (t.type === p.InputEventType.DOWN) {
@@ -3602,11 +3649,11 @@
                   (c = (a = l.DisposableComponent.engine.entities[o.entityId]) && a.getComponentOrNull(d)) && ((n.hit = o), c.callback(n))
               }
             }),
-            (t.prototype.getSubscriptionId = function(t, e, n) {
+            (t.prototype.getSubscriptionId = function (t, e, n) {
               for (var o = 0; o < this.subscriptions[e][t].length; o++) if (this.subscriptions[e][t][o].fn === n) return o
               return -1
             }),
-            (t.prototype.getPointerById = function(t) {
+            (t.prototype.getPointerById = function (t) {
               return 0 === t ? a.POINTER : 1 === t ? a.PRIMARY : a.SECONDARY
             }),
             t
@@ -3614,11 +3661,11 @@
         })()
       e.Input = y
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       var o =
           (this && this.__read) ||
-          function(t, e) {
+          function (t, e) {
             var n = 'function' == typeof Symbol && t[Symbol.iterator]
             if (!n) return t
             var o,
@@ -3640,7 +3687,7 @@
           },
         r =
           (this && this.__spread) ||
-          function() {
+          function () {
             for (var t = [], e = 0; e < arguments.length; e++) t = t.concat(o(arguments[e]))
             return t
           }
@@ -3651,7 +3698,7 @@
         p = n(32),
         u = n(1),
         l = n(12),
-        c = (function() {
+        c = (function () {
           function t(t) {
             ;(this.eventManager = new a.EventManager()),
               (this.systems = []),
@@ -3673,20 +3720,20 @@
           }
           return (
             Object.defineProperty(t.prototype, 'entities', {
-              get: function() {
+              get: function () {
                 return this._entities
               },
               enumerable: !1,
-              configurable: !0
+              configurable: !0,
             }),
             Object.defineProperty(t.prototype, 'disposableComponents', {
-              get: function() {
+              get: function () {
                 return this._disposableComponents
               },
               enumerable: !1,
-              configurable: !0
+              configurable: !0,
             }),
-            (t.prototype.addEntity = function(t) {
+            (t.prototype.addEntity = function (t) {
               var e = t.getParent()
               if (t.isAddedToEngine()) return t
               for (var n in ((t.eventManager = this.eventManager),
@@ -3705,7 +3752,7 @@
               }
               return t
             }),
-            (t.prototype.removeEntity = function(t) {
+            (t.prototype.removeEntity = function (t) {
               var e = t.uuid
               if (t.isAddedToEngine()) {
                 for (var n in t.components) {
@@ -3732,7 +3779,7 @@
                 u.log(n)
               return !1
             }),
-            (t.prototype.addSystem = function(t, e) {
+            (t.prototype.addSystem = function (t, e) {
               if ((void 0 === e && (e = 0), -1 !== this.addedSystems.indexOf(t)))
                 return u.log('Engine: Trying to add a system that is already added. Aborting'), t
               if (this.systems.length > 0)
@@ -3751,7 +3798,7 @@
               else this.addedSystems.push(t), this.systems.splice(1, 0, { system: t, priority: e })
               return this.registerSystem(t), t
             }),
-            (t.prototype.removeSystem = function(t) {
+            (t.prototype.removeSystem = function (t) {
               var e = this.addedSystems.indexOf(t)
               if (-1 !== e) {
                 ;(t.active = !1), t.deactivate && t.deactivate(), this.addedSystems.splice(e, 1)
@@ -3762,7 +3809,7 @@
               }
               return !1
             }),
-            (t.prototype.update = function(t) {
+            (t.prototype.update = function (t) {
               for (var e in this.systems) {
                 var n = this.systems[e].system
                 if (n.active && n.update)
@@ -3774,11 +3821,11 @@
               }
               return this
             }),
-            (t.prototype.getEntitiesWithComponent = function(t) {
+            (t.prototype.getEntitiesWithComponent = function (t) {
               var e = 'string' == typeof t ? t : s.getComponentName(t)
               return e in this.entityLists ? this.entityLists[e] : (this.entityLists[e] = {})
             }),
-            (t.prototype.registerComponent = function(t) {
+            (t.prototype.registerComponent = function (t) {
               var e = s.getComponentId(t),
                 n = s.getComponentName(t),
                 o = s.getComponentClassId(t)
@@ -3787,17 +3834,17 @@
                   (this.eventManager.fireEvent(new s.DisposableComponentCreated(e, n, o)),
                   this.eventManager.fireEvent(new s.DisposableComponentUpdated(e, t)))
             }),
-            (t.prototype.disposeComponent = function(t) {
+            (t.prototype.disposeComponent = function (t) {
               var e = s.getComponentId(t)
               return (
                 delete this._disposableComponents[e] &&
                 (this.eventManager.fireEvent(new s.DisposableComponentRemoved(e)), t.onDispose && t.onDispose(), !0)
               )
             }),
-            (t.prototype.updateComponent = function(t) {
+            (t.prototype.updateComponent = function (t) {
               this.eventManager.fireEvent(new s.DisposableComponentUpdated(s.getComponentId(t), t))
             }),
-            (t.prototype.getComponentGroup = function() {
+            (t.prototype.getComponentGroup = function () {
               for (var t = [], e = 0; e < arguments.length; e++) t[e] = arguments[e]
               var n = new (p.ComponentGroup.bind.apply(p.ComponentGroup, r([void 0], t)))()
               n.active = !0
@@ -3809,7 +3856,7 @@
               for (var u in this._entities) this.checkRequirements(this._entities[u], n)
               return n
             }),
-            (t.prototype.removeComponentGroup = function(t) {
+            (t.prototype.removeComponentGroup = function (t) {
               if (t.active) {
                 t.active = !1
                 for (var e = t.requiresNames, n = 0; n < e.length; n++) {
@@ -3824,10 +3871,10 @@
               }
               return !1
             }),
-            (t.prototype.registerSystem = function(t) {
+            (t.prototype.registerSystem = function (t) {
               ;(t.active = !0), t.activate && t.activate(this), this.simpleSystems.push(t)
             }),
-            (t.prototype.checkRequirementsAndAdd = function(t) {
+            (t.prototype.checkRequirementsAndAdd = function (t) {
               if (t.isAddedToEngine()) {
                 for (var e in t.components) {
                   e in this.entityLists || (this.entityLists[e] = {}), (this.entityLists[e][t.uuid] = t)
@@ -3840,10 +3887,10 @@
                 }
               }
             }),
-            (t.prototype.checkRequirements = function(t, e) {
+            (t.prototype.checkRequirements = function (t, e) {
               e.meetsRequirements(t) ? e.hasEntity(t) || e.addEntity(t) : e.hasEntity(t) && e.removeEntity(t)
             }),
-            (t.prototype.componentAddedHandler = function(t) {
+            (t.prototype.componentAddedHandler = function (t) {
               var e,
                 n = t.entity,
                 o = t.componentName
@@ -3853,7 +3900,7 @@
                 if (r) for (var i in r) this.checkRequirements(n, r[i])
               }
             }),
-            (t.prototype.componentRemovedHandler = function(t) {
+            (t.prototype.componentRemovedHandler = function (t) {
               var e = t.entity,
                 n = t.componentName
               if (e.isAddedToEngine()) {
@@ -3867,15 +3914,15 @@
         })()
       e.Engine = c
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       var o
       Object.defineProperty(e, '__esModule', { value: !0 }),
         (e.UIValue = e.UIValueType = void 0),
-        (function(t) {
+        (function (t) {
           ;(t[(t.PERCENT = 0)] = 'PERCENT'), (t[(t.PIXELS = 1)] = 'PIXELS')
         })((o = e.UIValueType || (e.UIValueType = {})))
-      var r = (function() {
+      var r = (function () {
         function t(t) {
           if (((this.type = o.PIXELS), 'string' == typeof t)) {
             var e = t
@@ -3883,7 +3930,7 @@
           } else this.value = t
         }
         return (
-          (t.prototype.toString = function() {
+          (t.prototype.toString = function () {
             var t = this.value.toString()
             return this.type === o.PERCENT ? (t += '%') : (t += 'px'), t
           }),
@@ -3892,32 +3939,32 @@
       })()
       e.UIValue = r
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.executeTask = void 0)
       var o = n(1),
         r = Promise.resolve().then.bind(Promise.resolve())
-      e.executeTask = function(t) {
+      e.executeTask = function (t) {
         var e = r(t)
         return (
           (e.isComplete = !1),
           e
-            .then(function(t) {
+            .then(function (t) {
               ;(e.isComplete = !0), (e.result = t), (e.didFail = !1)
             })
-            .catch(function(t) {
+            .catch(function (t) {
               ;(e.isComplete = !0), (e.error = t), (e.didFail = !0), o.error('executeTask: FAILED ' + t.toString(), t)
             }),
           e
         )
       }
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       var o =
           (this && this.__awaiter) ||
-          function(t, e, n, o) {
-            return new (n || (n = Promise))(function(r, i) {
+          function (t, e, n, o) {
+            return new (n || (n = Promise))(function (r, i) {
               function s(t) {
                 try {
                   p(o.next(t))
@@ -3939,7 +3986,7 @@
                   : ((e = t.value),
                     e instanceof n
                       ? e
-                      : new n(function(t) {
+                      : new n(function (t) {
                           t(e)
                         })).then(s, a)
               }
@@ -3948,31 +3995,31 @@
           },
         r =
           (this && this.__generator) ||
-          function(t, e) {
+          function (t, e) {
             var n,
               o,
               r,
               i,
               s = {
                 label: 0,
-                sent: function() {
+                sent: function () {
                   if (1 & r[0]) throw r[1]
                   return r[1]
                 },
                 trys: [],
-                ops: []
+                ops: [],
               }
             return (
               (i = { next: a(0), throw: a(1), return: a(2) }),
               'function' == typeof Symbol &&
-                (i[Symbol.iterator] = function() {
+                (i[Symbol.iterator] = function () {
                   return this
                 }),
               i
             )
             function a(i) {
-              return function(a) {
-                return (function(i) {
+              return function (a) {
+                return (function (i) {
                   if (n) throw new TypeError('Generator is already executing.')
                   for (; s; )
                     try {
@@ -4030,27 +4077,27 @@
           },
         i =
           (this && this.__values) ||
-          function(t) {
+          function (t) {
             var e = 'function' == typeof Symbol && Symbol.iterator,
               n = e && t[e],
               o = 0
             if (n) return n.call(t)
             if (t && 'number' == typeof t.length)
               return {
-                next: function() {
+                next: function () {
                   return t && o >= t.length && (t = void 0), { value: t && t[o++], done: !t }
-                }
+                },
               }
             throw new TypeError(e ? 'Object is not iterable.' : 'Symbol.iterator is not defined.')
           }
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.Observable = e.MultiObserver = e.Observer = e.ObserverEventState = void 0)
       var s = n(19),
-        a = (function() {
+        a = (function () {
           function t(t, e, n, o) {
             void 0 === e && (e = !1), this.initalize(t, e, n, o)
           }
           return (
-            (t.prototype.initalize = function(t, e, n, o) {
+            (t.prototype.initalize = function (t, e, n, o) {
               return (
                 void 0 === e && (e = !1), (this.mask = t), (this.skipNextObservers = e), (this.target = n), (this.currentTarget = o), this
               )
@@ -4059,7 +4106,7 @@
           )
         })()
       e.ObserverEventState = a
-      var p = function(t, e, n) {
+      var p = function (t, e, n) {
         void 0 === n && (n = null),
           (this.callback = t),
           (this.mask = e),
@@ -4068,12 +4115,12 @@
           (this._willBeUnregistered = !1)
       }
       e.Observer = p
-      var u = (function() {
+      var u = (function () {
         function t() {
           ;(this._observers = null), (this._observables = null)
         }
         return (
-          (t.Watch = function(e, n, o, r) {
+          (t.Watch = function (e, n, o, r) {
             var s, a
             void 0 === o && (o = -1), void 0 === r && (r = null)
             var p = new t()
@@ -4094,7 +4141,7 @@
             }
             return p
           }),
-          (t.prototype.dispose = function() {
+          (t.prototype.dispose = function () {
             if (this._observers && this._observables)
               for (var t = 0; t < this._observers.length; t++) this._observables[t].remove(this._observers[t])
             ;(this._observers = null), (this._observables = null)
@@ -4103,12 +4150,12 @@
         )
       })()
       e.MultiObserver = u
-      var l = (function() {
+      var l = (function () {
         function t(t) {
           ;(this._observers = new Array()), (this._onObserverAdded = null), (this._eventState = new a(0)), t && (this._onObserverAdded = t)
         }
         return (
-          (t.prototype.add = function(t, e, n, o, r) {
+          (t.prototype.add = function (t, e, n, o, r) {
             if ((void 0 === e && (e = -1), void 0 === n && (n = !1), void 0 === o && (o = null), void 0 === r && (r = !1), !t)) return null
             var i = new p(t, e, o)
             return (
@@ -4118,19 +4165,19 @@
               i
             )
           }),
-          (t.prototype.addOnce = function(t) {
+          (t.prototype.addOnce = function (t) {
             return this.add(t, void 0, void 0, void 0, !0)
           }),
-          (t.prototype.remove = function(t) {
+          (t.prototype.remove = function (t) {
             return !!t && -1 !== this._observers.indexOf(t) && (this._deferUnregister(t), !0)
           }),
-          (t.prototype.removeCallback = function(t, e) {
+          (t.prototype.removeCallback = function (t, e) {
             for (var n = 0; n < this._observers.length; n++)
               if (this._observers[n].callback === t && (!e || e === this._observers[n].scope))
                 return this._deferUnregister(this._observers[n]), !0
             return !1
           }),
-          (t.prototype.notifyObservers = function(t, e, n, o) {
+          (t.prototype.notifyObservers = function (t, e, n, o) {
             var r, s
             if ((void 0 === e && (e = -1), !this._observers.length)) return !0
             var a = this._eventState
@@ -4158,7 +4205,7 @@
             }
             return !0
           }),
-          (t.prototype.notifyObserversWithPromise = function(t, e, n, o) {
+          (t.prototype.notifyObserversWithPromise = function (t, e, n, o) {
             var r = this
             void 0 === e && (e = -1)
             var i = Promise.resolve(t)
@@ -4169,40 +4216,40 @@
               (s.target = n),
               (s.currentTarget = o),
               (s.skipNextObservers = !1),
-              this._observers.forEach(function(n) {
+              this._observers.forEach(function (n) {
                 s.skipNextObservers ||
                   n._willBeUnregistered ||
                   (n.mask & e &&
                     ((i = n.scope
-                      ? i.then(function(e) {
+                      ? i.then(function (e) {
                           return (s.lastReturnValue = e), n.callback.apply(n.scope, [t, s])
                         })
-                      : i.then(function(e) {
+                      : i.then(function (e) {
                           return (s.lastReturnValue = e), n.callback(t, s)
                         })),
                     n.unregisterOnNextCall && r._deferUnregister(n)))
               }),
-              i.then(function() {
+              i.then(function () {
                 return t
               })
             )
           }),
-          (t.prototype.notifyObserver = function(t, e, n) {
+          (t.prototype.notifyObserver = function (t, e, n) {
             void 0 === n && (n = -1)
             var o = this._eventState
             ;(o.mask = n), (o.skipNextObservers = !1), t.callback(e, o)
           }),
-          (t.prototype.hasObservers = function() {
+          (t.prototype.hasObservers = function () {
             return this._observers.length > 0
           }),
-          (t.prototype.clear = function() {
+          (t.prototype.clear = function () {
             ;(this._observers = new Array()), (this._onObserverAdded = null)
           }),
-          (t.prototype.clone = function() {
+          (t.prototype.clone = function () {
             var e = new t()
             return (e._observers = this._observers.slice(0)), e
           }),
-          (t.prototype.hasSpecificMask = function(t) {
+          (t.prototype.hasSpecificMask = function (t) {
             var e, n
             void 0 === t && (t = -1)
             try {
@@ -4221,19 +4268,19 @@
             }
             return !1
           }),
-          (t.prototype._deferUnregister = function(t) {
+          (t.prototype._deferUnregister = function (t) {
             var e = this
             ;(t.unregisterOnNextCall = !1),
               (t._willBeUnregistered = !0),
-              s.executeTask(function() {
-                return o(e, void 0, void 0, function() {
-                  return r(this, function(e) {
+              s.executeTask(function () {
+                return o(e, void 0, void 0, function () {
+                  return r(this, function (e) {
                     return [2, this._remove(t)]
                   })
                 })
               })
           }),
-          (t.prototype._remove = function(t) {
+          (t.prototype._remove = function (t) {
             if (!t) return !1
             var e = this._observers.indexOf(t)
             return -1 !== e && (this._observers.splice(e, 1), !0)
@@ -4243,145 +4290,145 @@
       })()
       e.Observable = l
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.Vector4 = void 0)
       var o = n(2),
         r = n(6),
         i = n(3),
-        s = (function() {
+        s = (function () {
           function t(t, e, n, o) {
             ;(this.x = t), (this.y = e), (this.z = n), (this.w = o)
           }
           return (
-            (t.Add = function(e, n) {
+            (t.Add = function (e, n) {
               return new t(e.x, e.y, e.z, e.w).addInPlace(n)
             }),
-            (t.FromArray = function(e, n) {
+            (t.FromArray = function (e, n) {
               return void 0 === n && (n = 0), new t(e[n], e[n + 1], e[n + 2], e[n + 3])
             }),
-            (t.FromArrayToRef = function(t, e, n) {
+            (t.FromArrayToRef = function (t, e, n) {
               ;(n.x = t[e]), (n.y = t[e + 1]), (n.z = t[e + 2]), (n.w = t[e + 3])
             }),
-            (t.FromFloatArrayToRef = function(e, n, o) {
+            (t.FromFloatArrayToRef = function (e, n, o) {
               t.FromArrayToRef(e, n, o)
             }),
-            (t.FromFloatsToRef = function(t, e, n, o, r) {
+            (t.FromFloatsToRef = function (t, e, n, o, r) {
               ;(r.x = t), (r.y = e), (r.z = n), (r.w = o)
             }),
-            (t.Zero = function() {
+            (t.Zero = function () {
               return new t(0, 0, 0, 0)
             }),
-            (t.One = function() {
+            (t.One = function () {
               return new t(1, 1, 1, 1)
             }),
-            (t.Normalize = function(e) {
+            (t.Normalize = function (e) {
               var n = t.Zero()
               return t.NormalizeToRef(e, n), n
             }),
-            (t.NormalizeToRef = function(t, e) {
+            (t.NormalizeToRef = function (t, e) {
               e.copyFrom(t), e.normalize()
             }),
-            (t.Minimize = function(e, n) {
+            (t.Minimize = function (e, n) {
               var o = new t(e.x, e.y, e.z, e.w)
               return o.minimizeInPlace(n), o
             }),
-            (t.Maximize = function(e, n) {
+            (t.Maximize = function (e, n) {
               var o = new t(e.x, e.y, e.z, e.w)
               return o.maximizeInPlace(n), o
             }),
-            (t.Distance = function(e, n) {
+            (t.Distance = function (e, n) {
               return Math.sqrt(t.DistanceSquared(e, n))
             }),
-            (t.DistanceSquared = function(t, e) {
+            (t.DistanceSquared = function (t, e) {
               var n = t.x - e.x,
                 o = t.y - e.y,
                 r = t.z - e.z,
                 i = t.w - e.w
               return n * n + o * o + r * r + i * i
             }),
-            (t.Center = function(e, n) {
+            (t.Center = function (e, n) {
               var o = t.Add(e, n)
               return o.scaleInPlace(0.5), o
             }),
-            (t.TransformNormal = function(e, n) {
+            (t.TransformNormal = function (e, n) {
               var o = t.Zero()
               return t.TransformNormalToRef(e, n, o), o
             }),
-            (t.TransformNormalToRef = function(t, e, n) {
+            (t.TransformNormalToRef = function (t, e, n) {
               var o = e.m,
                 r = t.x * o[0] + t.y * o[4] + t.z * o[8],
                 i = t.x * o[1] + t.y * o[5] + t.z * o[9],
                 s = t.x * o[2] + t.y * o[6] + t.z * o[10]
               ;(n.x = r), (n.y = i), (n.z = s), (n.w = t.w)
             }),
-            (t.TransformNormalFromFloatsToRef = function(t, e, n, o, r, i) {
+            (t.TransformNormalFromFloatsToRef = function (t, e, n, o, r, i) {
               var s = r.m
               ;(i.x = t * s[0] + e * s[4] + n * s[8]),
                 (i.y = t * s[1] + e * s[5] + n * s[9]),
                 (i.z = t * s[2] + e * s[6] + n * s[10]),
                 (i.w = o)
             }),
-            (t.prototype.toString = function() {
+            (t.prototype.toString = function () {
               return '{X: ' + this.x + ' Y:' + this.y + ' Z:' + this.z + ' W:' + this.w + '}'
             }),
-            (t.prototype.getClassName = function() {
+            (t.prototype.getClassName = function () {
               return 'Vector4'
             }),
-            (t.prototype.getHashCode = function() {
+            (t.prototype.getHashCode = function () {
               var t = this.x || 0
               return (t = (397 * (t = (397 * (t = (397 * t) ^ (this.y || 0))) ^ (this.z || 0))) ^ (this.w || 0))
             }),
-            (t.prototype.asArray = function() {
+            (t.prototype.asArray = function () {
               var t = new Array()
               return this.toArray(t, 0), t
             }),
-            (t.prototype.toArray = function(t, e) {
+            (t.prototype.toArray = function (t, e) {
               return void 0 === e && (e = 0), (t[e] = this.x), (t[e + 1] = this.y), (t[e + 2] = this.z), (t[e + 3] = this.w), this
             }),
-            (t.prototype.addInPlace = function(t) {
+            (t.prototype.addInPlace = function (t) {
               return (this.x += t.x), (this.y += t.y), (this.z += t.z), (this.w += t.w), this
             }),
-            (t.prototype.add = function(e) {
+            (t.prototype.add = function (e) {
               return new t(this.x + e.x, this.y + e.y, this.z + e.z, this.w + e.w)
             }),
-            (t.prototype.addToRef = function(t, e) {
+            (t.prototype.addToRef = function (t, e) {
               return (e.x = this.x + t.x), (e.y = this.y + t.y), (e.z = this.z + t.z), (e.w = this.w + t.w), this
             }),
-            (t.prototype.subtractInPlace = function(t) {
+            (t.prototype.subtractInPlace = function (t) {
               return (this.x -= t.x), (this.y -= t.y), (this.z -= t.z), (this.w -= t.w), this
             }),
-            (t.prototype.subtract = function(e) {
+            (t.prototype.subtract = function (e) {
               return new t(this.x - e.x, this.y - e.y, this.z - e.z, this.w - e.w)
             }),
-            (t.prototype.subtractToRef = function(t, e) {
+            (t.prototype.subtractToRef = function (t, e) {
               return (e.x = this.x - t.x), (e.y = this.y - t.y), (e.z = this.z - t.z), (e.w = this.w - t.w), this
             }),
-            (t.prototype.subtractFromFloats = function(e, n, o, r) {
+            (t.prototype.subtractFromFloats = function (e, n, o, r) {
               return new t(this.x - e, this.y - n, this.z - o, this.w - r)
             }),
-            (t.prototype.subtractFromFloatsToRef = function(t, e, n, o, r) {
+            (t.prototype.subtractFromFloatsToRef = function (t, e, n, o, r) {
               return (r.x = this.x - t), (r.y = this.y - e), (r.z = this.z - n), (r.w = this.w - o), this
             }),
-            (t.prototype.negate = function() {
+            (t.prototype.negate = function () {
               return new t(-this.x, -this.y, -this.z, -this.w)
             }),
-            (t.prototype.scaleInPlace = function(t) {
+            (t.prototype.scaleInPlace = function (t) {
               return (this.x *= t), (this.y *= t), (this.z *= t), (this.w *= t), this
             }),
-            (t.prototype.scale = function(e) {
+            (t.prototype.scale = function (e) {
               return new t(this.x * e, this.y * e, this.z * e, this.w * e)
             }),
-            (t.prototype.scaleToRef = function(t, e) {
+            (t.prototype.scaleToRef = function (t, e) {
               return (e.x = this.x * t), (e.y = this.y * t), (e.z = this.z * t), (e.w = this.w * t), this
             }),
-            (t.prototype.scaleAndAddToRef = function(t, e) {
+            (t.prototype.scaleAndAddToRef = function (t, e) {
               return (e.x += this.x * t), (e.y += this.y * t), (e.z += this.z * t), (e.w += this.w * t), this
             }),
-            (t.prototype.equals = function(t) {
+            (t.prototype.equals = function (t) {
               return t && this.x === t.x && this.y === t.y && this.z === t.z && this.w === t.w
             }),
-            (t.prototype.equalsWithEpsilon = function(t, e) {
+            (t.prototype.equalsWithEpsilon = function (t, e) {
               return (
                 void 0 === e && (e = o.Epsilon),
                 t &&
@@ -4391,31 +4438,31 @@
                   r.Scalar.WithinEpsilon(this.w, t.w, e)
               )
             }),
-            (t.prototype.equalsToFloats = function(t, e, n, o) {
+            (t.prototype.equalsToFloats = function (t, e, n, o) {
               return this.x === t && this.y === e && this.z === n && this.w === o
             }),
-            (t.prototype.multiplyInPlace = function(t) {
+            (t.prototype.multiplyInPlace = function (t) {
               return (this.x *= t.x), (this.y *= t.y), (this.z *= t.z), (this.w *= t.w), this
             }),
-            (t.prototype.multiply = function(e) {
+            (t.prototype.multiply = function (e) {
               return new t(this.x * e.x, this.y * e.y, this.z * e.z, this.w * e.w)
             }),
-            (t.prototype.multiplyToRef = function(t, e) {
+            (t.prototype.multiplyToRef = function (t, e) {
               return (e.x = this.x * t.x), (e.y = this.y * t.y), (e.z = this.z * t.z), (e.w = this.w * t.w), this
             }),
-            (t.prototype.multiplyByFloats = function(e, n, o, r) {
+            (t.prototype.multiplyByFloats = function (e, n, o, r) {
               return new t(this.x * e, this.y * n, this.z * o, this.w * r)
             }),
-            (t.prototype.divide = function(e) {
+            (t.prototype.divide = function (e) {
               return new t(this.x / e.x, this.y / e.y, this.z / e.z, this.w / e.w)
             }),
-            (t.prototype.divideToRef = function(t, e) {
+            (t.prototype.divideToRef = function (t, e) {
               return (e.x = this.x / t.x), (e.y = this.y / t.y), (e.z = this.z / t.z), (e.w = this.w / t.w), this
             }),
-            (t.prototype.divideInPlace = function(t) {
+            (t.prototype.divideInPlace = function (t) {
               return this.divideToRef(t, this)
             }),
-            (t.prototype.minimizeInPlace = function(t) {
+            (t.prototype.minimizeInPlace = function (t) {
               return (
                 t.x < this.x && (this.x = t.x),
                 t.y < this.y && (this.y = t.y),
@@ -4424,7 +4471,7 @@
                 this
               )
             }),
-            (t.prototype.maximizeInPlace = function(t) {
+            (t.prototype.maximizeInPlace = function (t) {
               return (
                 t.x > this.x && (this.x = t.x),
                 t.y > this.y && (this.y = t.y),
@@ -4433,10 +4480,10 @@
                 this
               )
             }),
-            (t.prototype.floor = function() {
+            (t.prototype.floor = function () {
               return new t(Math.floor(this.x), Math.floor(this.y), Math.floor(this.z), Math.floor(this.w))
             }),
-            (t.prototype.fract = function() {
+            (t.prototype.fract = function () {
               return new t(
                 this.x - Math.floor(this.x),
                 this.y - Math.floor(this.y),
@@ -4444,32 +4491,32 @@
                 this.w - Math.floor(this.w)
               )
             }),
-            (t.prototype.length = function() {
+            (t.prototype.length = function () {
               return Math.sqrt(this.x * this.x + this.y * this.y + this.z * this.z + this.w * this.w)
             }),
-            (t.prototype.lengthSquared = function() {
+            (t.prototype.lengthSquared = function () {
               return this.x * this.x + this.y * this.y + this.z * this.z + this.w * this.w
             }),
-            (t.prototype.normalize = function() {
+            (t.prototype.normalize = function () {
               var t = this.length()
               return 0 === t ? this : this.scaleInPlace(1 / t)
             }),
-            (t.prototype.toVector3 = function() {
+            (t.prototype.toVector3 = function () {
               return new i.Vector3(this.x, this.y, this.z)
             }),
-            (t.prototype.clone = function() {
+            (t.prototype.clone = function () {
               return new t(this.x, this.y, this.z, this.w)
             }),
-            (t.prototype.copyFrom = function(t) {
+            (t.prototype.copyFrom = function (t) {
               return (this.x = t.x), (this.y = t.y), (this.z = t.z), (this.w = t.w), this
             }),
-            (t.prototype.copyFromFloats = function(t, e, n, o) {
+            (t.prototype.copyFromFloats = function (t, e, n, o) {
               return (this.x = t), (this.y = e), (this.z = n), (this.w = o), this
             }),
-            (t.prototype.set = function(t, e, n, o) {
+            (t.prototype.set = function (t, e, n, o) {
               return this.copyFromFloats(t, e, n, o)
             }),
-            (t.prototype.setAll = function(t) {
+            (t.prototype.setAll = function (t) {
               return (this.x = this.y = this.z = this.w = t), this
             }),
             t
@@ -4477,28 +4524,28 @@
         })()
       e.Vector4 = s
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.Angle = void 0)
-      var o = (function() {
+      var o = (function () {
         function t(t) {
           ;(this._radians = t), this._radians < 0 && (this._radians += 2 * Math.PI)
         }
         return (
-          (t.BetweenTwoPoints = function(e, n) {
+          (t.BetweenTwoPoints = function (e, n) {
             var o = n.subtract(e)
             return new t(Math.atan2(o.y, o.x))
           }),
-          (t.FromRadians = function(e) {
+          (t.FromRadians = function (e) {
             return new t(e)
           }),
-          (t.FromDegrees = function(e) {
+          (t.FromDegrees = function (e) {
             return new t((e * Math.PI) / 180)
           }),
-          (t.prototype.degrees = function() {
+          (t.prototype.degrees = function () {
             return (180 * this._radians) / Math.PI
           }),
-          (t.prototype.radians = function() {
+          (t.prototype.radians = function () {
             return this._radians
           }),
           t
@@ -4506,13 +4553,13 @@
       })()
       e.Angle = o
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.Arc2 = void 0)
       var o = n(22),
         r = n(15),
         i = n(2),
-        s = function(t, e, n) {
+        s = function (t, e, n) {
           ;(this.startPoint = t), (this.midPoint = e), (this.endPoint = n)
           var s = Math.pow(e.x, 2) + Math.pow(e.y, 2),
             a = (Math.pow(t.x, 2) + Math.pow(t.y, 2) - s) / 2,
@@ -4533,12 +4580,12 @@
         }
       e.Arc2 = s
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.Color4 = void 0)
       var o = n(6),
         r = n(2),
-        i = (function() {
+        i = (function () {
           function t(t, e, n, o) {
             void 0 === t && (t = 0),
               void 0 === e && (e = 0),
@@ -4550,7 +4597,7 @@
               (this.a = o)
           }
           return (
-            (t.FromHexString = function(e) {
+            (t.FromHexString = function (e) {
               if ('#' !== e.substring(0, 1) || 9 !== e.length) return new t(0, 0, 0, 0)
               var n = parseInt(e.substring(1, 3), 16),
                 o = parseInt(e.substring(3, 5), 16),
@@ -4558,56 +4605,56 @@
                 i = parseInt(e.substring(7, 9), 16)
               return t.FromInts(n, o, r, i)
             }),
-            (t.Lerp = function(e, n, o) {
+            (t.Lerp = function (e, n, o) {
               var r = new t(0, 0, 0, 0)
               return t.LerpToRef(e, n, o, r), r
             }),
-            (t.LerpToRef = function(t, e, n, o) {
+            (t.LerpToRef = function (t, e, n, o) {
               ;(o.r = t.r + (e.r - t.r) * n), (o.g = t.g + (e.g - t.g) * n), (o.b = t.b + (e.b - t.b) * n), (o.a = t.a + (e.a - t.a) * n)
             }),
-            (t.Red = function() {
+            (t.Red = function () {
               return new t(1, 0, 0, 1)
             }),
-            (t.Green = function() {
+            (t.Green = function () {
               return new t(0, 1, 0, 1)
             }),
-            (t.Blue = function() {
+            (t.Blue = function () {
               return new t(0, 0, 1, 1)
             }),
-            (t.Black = function() {
+            (t.Black = function () {
               return new t(0, 0, 0, 1)
             }),
-            (t.White = function() {
+            (t.White = function () {
               return new t(1, 1, 1, 1)
             }),
-            (t.Purple = function() {
+            (t.Purple = function () {
               return new t(0.5, 0, 0.5, 1)
             }),
-            (t.Magenta = function() {
+            (t.Magenta = function () {
               return new t(1, 0, 1, 1)
             }),
-            (t.Yellow = function() {
+            (t.Yellow = function () {
               return new t(1, 1, 0, 1)
             }),
-            (t.Gray = function() {
+            (t.Gray = function () {
               return new t(0.5, 0.5, 0.5, 1)
             }),
-            (t.Teal = function() {
+            (t.Teal = function () {
               return new t(0, 1, 1, 1)
             }),
-            (t.Clear = function() {
+            (t.Clear = function () {
               return new t(0, 0, 0, 0)
             }),
-            (t.FromColor3 = function(e, n) {
+            (t.FromColor3 = function (e, n) {
               return void 0 === n && (n = 1), new t(e.r, e.g, e.b, n)
             }),
-            (t.FromArray = function(e, n) {
+            (t.FromArray = function (e, n) {
               return void 0 === n && (n = 0), new t(e[n], e[n + 1], e[n + 2], e[n + 3])
             }),
-            (t.FromInts = function(e, n, o, r) {
+            (t.FromInts = function (e, n, o, r) {
               return new t(e / 255, n / 255, o / 255, r / 255)
             }),
-            (t.CheckColors4 = function(t, e) {
+            (t.CheckColors4 = function (t, e) {
               if (t.length === 3 * e) {
                 for (var n = [], o = 0; o < t.length; o += 3) {
                   var r = (o / 3) * 4
@@ -4617,35 +4664,35 @@
               }
               return t
             }),
-            (t.prototype.addInPlace = function(t) {
+            (t.prototype.addInPlace = function (t) {
               return (this.r += t.r), (this.g += t.g), (this.b += t.b), (this.a += t.a), this
             }),
-            (t.prototype.asArray = function() {
+            (t.prototype.asArray = function () {
               var t = new Array()
               return this.toArray(t, 0), t
             }),
-            (t.prototype.toArray = function(t, e) {
+            (t.prototype.toArray = function (t, e) {
               return void 0 === e && (e = 0), (t[e] = this.r), (t[e + 1] = this.g), (t[e + 2] = this.b), (t[e + 3] = this.a), this
             }),
-            (t.prototype.add = function(e) {
+            (t.prototype.add = function (e) {
               return new t(this.r + e.r, this.g + e.g, this.b + e.b, this.a + e.a)
             }),
-            (t.prototype.subtract = function(e) {
+            (t.prototype.subtract = function (e) {
               return new t(this.r - e.r, this.g - e.g, this.b - e.b, this.a - e.a)
             }),
-            (t.prototype.subtractToRef = function(t, e) {
+            (t.prototype.subtractToRef = function (t, e) {
               return (e.r = this.r - t.r), (e.g = this.g - t.g), (e.b = this.b - t.b), (e.a = this.a - t.a), this
             }),
-            (t.prototype.scale = function(e) {
+            (t.prototype.scale = function (e) {
               return new t(this.r * e, this.g * e, this.b * e, this.a * e)
             }),
-            (t.prototype.scaleToRef = function(t, e) {
+            (t.prototype.scaleToRef = function (t, e) {
               return (e.r = this.r * t), (e.g = this.g * t), (e.b = this.b * t), (e.a = this.a * t), this
             }),
-            (t.prototype.scaleAndAddToRef = function(t, e) {
+            (t.prototype.scaleAndAddToRef = function (t, e) {
               return (e.r += this.r * t), (e.g += this.g * t), (e.b += this.b * t), (e.a += this.a * t), this
             }),
-            (t.prototype.clampToRef = function(t, e, n) {
+            (t.prototype.clampToRef = function (t, e, n) {
               return (
                 void 0 === t && (t = 0),
                 void 0 === e && (e = 1),
@@ -4656,46 +4703,46 @@
                 this
               )
             }),
-            (t.prototype.multiply = function(e) {
+            (t.prototype.multiply = function (e) {
               return new t(this.r * e.r, this.g * e.g, this.b * e.b, this.a * e.a)
             }),
-            (t.prototype.multiplyToRef = function(t, e) {
+            (t.prototype.multiplyToRef = function (t, e) {
               return (e.r = this.r * t.r), (e.g = this.g * t.g), (e.b = this.b * t.b), (e.a = this.a * t.a), e
             }),
-            (t.prototype.toString = function() {
+            (t.prototype.toString = function () {
               return '{R: ' + this.r + ' G:' + this.g + ' B:' + this.b + ' A:' + this.a + '}'
             }),
-            (t.prototype.getClassName = function() {
+            (t.prototype.getClassName = function () {
               return 'Color4'
             }),
-            (t.prototype.getHashCode = function() {
+            (t.prototype.getHashCode = function () {
               var t = this.r || 0
               return (t = (397 * (t = (397 * (t = (397 * t) ^ (this.g || 0))) ^ (this.b || 0))) ^ (this.a || 0))
             }),
-            (t.prototype.clone = function() {
+            (t.prototype.clone = function () {
               return new t(this.r, this.g, this.b, this.a)
             }),
-            (t.prototype.copyFrom = function(t) {
+            (t.prototype.copyFrom = function (t) {
               return (this.r = t.r), (this.g = t.g), (this.b = t.b), (this.a = t.a), this
             }),
-            (t.prototype.copyFromFloats = function(t, e, n, o) {
+            (t.prototype.copyFromFloats = function (t, e, n, o) {
               return (this.r = t), (this.g = e), (this.b = n), (this.a = o), this
             }),
-            (t.prototype.set = function(t, e, n, o) {
+            (t.prototype.set = function (t, e, n, o) {
               return this.copyFromFloats(t, e, n, o)
             }),
-            (t.prototype.toHexString = function() {
+            (t.prototype.toHexString = function () {
               var t = (255 * this.r) | 0,
                 e = (255 * this.g) | 0,
                 n = (255 * this.b) | 0,
                 r = (255 * this.a) | 0
               return '#' + o.Scalar.ToHex(t) + o.Scalar.ToHex(e) + o.Scalar.ToHex(n) + o.Scalar.ToHex(r)
             }),
-            (t.prototype.toLinearSpace = function() {
+            (t.prototype.toLinearSpace = function () {
               var e = new t()
               return this.toLinearSpaceToRef(e), e
             }),
-            (t.prototype.toLinearSpaceToRef = function(t) {
+            (t.prototype.toLinearSpaceToRef = function (t) {
               return (
                 (t.r = Math.pow(this.r, r.ToLinearSpace)),
                 (t.g = Math.pow(this.g, r.ToLinearSpace)),
@@ -4704,11 +4751,11 @@
                 this
               )
             }),
-            (t.prototype.toGammaSpace = function() {
+            (t.prototype.toGammaSpace = function () {
               var e = new t()
               return this.toGammaSpaceToRef(e), e
             }),
-            (t.prototype.toGammaSpaceToRef = function(t) {
+            (t.prototype.toGammaSpaceToRef = function (t) {
               return (
                 (t.r = Math.pow(this.r, r.ToGammaSpace)),
                 (t.g = Math.pow(this.g, r.ToGammaSpace)),
@@ -4722,51 +4769,51 @@
         })()
       e.Color4 = i
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.Plane = void 0)
       var o = n(3),
         r = n(11),
         i = n(9),
-        s = (function() {
+        s = (function () {
           function t(t, e, n, r) {
             ;(this.normal = new o.Vector3(t, e, n)), (this.d = r)
           }
           return (
-            (t.FromArray = function(e) {
+            (t.FromArray = function (e) {
               return new t(e[0], e[1], e[2], e[3])
             }),
-            (t.FromPoints = function(e, n, o) {
+            (t.FromPoints = function (e, n, o) {
               var r = new t(0, 0, 0, 0)
               return r.copyFromPoints(e, n, o), r
             }),
-            (t.FromPositionAndNormal = function(e, n) {
+            (t.FromPositionAndNormal = function (e, n) {
               var o = new t(0, 0, 0, 0)
               return n.normalize(), (o.normal = n), (o.d = -(n.x * e.x + n.y * e.y + n.z * e.z)), o
             }),
-            (t.SignedDistanceToPlaneFromPositionAndNormal = function(t, e, n) {
+            (t.SignedDistanceToPlaneFromPositionAndNormal = function (t, e, n) {
               var r = -(e.x * t.x + e.y * t.y + e.z * t.z)
               return o.Vector3.Dot(n, e) + r
             }),
-            (t.prototype.asArray = function() {
+            (t.prototype.asArray = function () {
               return [this.normal.x, this.normal.y, this.normal.z, this.d]
             }),
-            (t.prototype.clone = function() {
+            (t.prototype.clone = function () {
               return new t(this.normal.x, this.normal.y, this.normal.z, this.d)
             }),
-            (t.prototype.getClassName = function() {
+            (t.prototype.getClassName = function () {
               return 'Plane'
             }),
-            (t.prototype.getHashCode = function() {
+            (t.prototype.getHashCode = function () {
               var t = this.normal.getHashCode()
               return (t = (397 * t) ^ (this.d || 0))
             }),
-            (t.prototype.normalize = function() {
+            (t.prototype.normalize = function () {
               var t = Math.sqrt(this.normal.x * this.normal.x + this.normal.y * this.normal.y + this.normal.z * this.normal.z),
                 e = 0
               return 0 !== t && (e = 1 / t), (this.normal.x *= e), (this.normal.y *= e), (this.normal.z *= e), (this.d *= e), this
             }),
-            (t.prototype.transform = function(e) {
+            (t.prototype.transform = function (e) {
               var n = i.MathTmp.Matrix[0]
               r.Matrix.TransposeToRef(e, n)
               var o = n.m,
@@ -4781,10 +4828,10 @@
                 s * o[12] + a * o[13] + p * o[14] + u * o[15]
               )
             }),
-            (t.prototype.dotCoordinate = function(t) {
+            (t.prototype.dotCoordinate = function (t) {
               return this.normal.x * t.x + this.normal.y * t.y + this.normal.z * t.z + this.d
             }),
-            (t.prototype.copyFromPoints = function(t, e, n) {
+            (t.prototype.copyFromPoints = function (t, e, n) {
               var o,
                 r = e.x - t.x,
                 i = e.y - t.y,
@@ -4805,10 +4852,10 @@
                 this
               )
             }),
-            (t.prototype.isFrontFacingTo = function(t, e) {
+            (t.prototype.isFrontFacingTo = function (t, e) {
               return o.Vector3.Dot(this.normal, t) <= e
             }),
-            (t.prototype.signedDistanceTo = function(t) {
+            (t.prototype.signedDistanceTo = function (t) {
               return o.Vector3.Dot(t, this.normal) + this.d
             }),
             t
@@ -4816,23 +4863,23 @@
         })()
       e.Plane = s
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       var o,
         r =
           (this && this.__extends) ||
-          ((o = function(t, e) {
+          ((o = function (t, e) {
             return (o =
               Object.setPrototypeOf ||
               ({ __proto__: [] } instanceof Array &&
-                function(t, e) {
+                function (t, e) {
                   t.__proto__ = e
                 }) ||
-              function(t, e) {
+              function (t, e) {
                 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n])
               })(t, e)
           }),
-          function(t, e) {
+          function (t, e) {
             function n() {
               this.constructor = t
             }
@@ -4840,10 +4887,10 @@
           }),
         i =
           (this && this.__assign) ||
-          function() {
+          function () {
             return (i =
               Object.assign ||
-              function(t) {
+              function (t) {
                 for (var e, n = 1, o = arguments.length; n < o; n++)
                   for (var r in (e = arguments[n])) Object.prototype.hasOwnProperty.call(e, r) && (t[r] = e[r])
                 return t
@@ -4851,7 +4898,7 @@
           },
         s =
           (this && this.__decorate) ||
-          function(t, e, n, o) {
+          function (t, e, n, o) {
             var r,
               i = arguments.length,
               s = i < 3 ? e : null === o ? (o = Object.getOwnPropertyDescriptor(e, n)) : o
@@ -4863,7 +4910,7 @@
       var a = n(0),
         p = n(1),
         u = { looping: !0, speed: 1, weight: 1 },
-        l = (function(t) {
+        l = (function (t) {
           function e(e, n) {
             void 0 === n && (n = u)
             var o = t.call(this) || this
@@ -4882,23 +4929,23 @@
           }
           return (
             r(e, t),
-            (e.prototype.setParams = function(t) {
+            (e.prototype.setParams = function (t) {
               return (this.looping = void 0 !== t.looping ? t.looping : this.looping), (this.speed = t.speed || this.speed), this
             }),
-            (e.prototype.toJSON = function() {
+            (e.prototype.toJSON = function () {
               var e = JSON.parse(JSON.stringify(t.prototype.toJSON.call(this)))
               return this.shouldReset && (this.shouldReset = !1), e
             }),
-            (e.prototype.play = function() {
+            (e.prototype.play = function () {
               this.playing = !0
             }),
-            (e.prototype.pause = function() {
+            (e.prototype.pause = function () {
               this.playing = !1
             }),
-            (e.prototype.reset = function() {
+            (e.prototype.reset = function () {
               this.shouldReset = !0
             }),
-            (e.prototype.stop = function() {
+            (e.prototype.stop = function () {
               this.reset(), this.pause()
             }),
             s([a.ObservableComponent.readonly], e.prototype, 'clip', void 0),
@@ -4913,70 +4960,70 @@
         })(a.ObservableComponent)
       e.AnimationState = l
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }),
         (e.AVATAR_OBSERVABLE = e.InputEventType = void 0),
-        (function(t) {
+        (function (t) {
           ;(t[(t.DOWN = 0)] = 'DOWN'), (t[(t.UP = 1)] = 'UP')
         })(e.InputEventType || (e.InputEventType = {})),
         (e.AVATAR_OBSERVABLE = 'AVATAR_OBSERVABLE')
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.PhysicsCast = void 0)
       var o,
         r = n(5),
         i = n(1),
         s = n(29)
-      !(function(t) {
+      !(function (t) {
         ;(t.HitFirst = 'rqhf'), (t.HitAll = 'rqha')
       })(o || (o = {}))
-      var a = (function() {
+      var a = (function () {
         function t() {
           this.queries = {}
         }
         return (
           Object.defineProperty(t, 'instance', {
-            get: function() {
+            get: function () {
               return t.ensureInstance(), t._instance
             },
             enumerable: !1,
-            configurable: !0
+            configurable: !0,
           }),
-          (t.ensureInstance = function() {
+          (t.ensureInstance = function () {
             t._instance || (t._instance = new t())
           }),
-          (t.prototype.getRayFromCamera = function(t) {
+          (t.prototype.getRayFromCamera = function (t) {
             var e = s.Camera.instance.rotation,
               n = r.Matrix.Identity()
             e.toRotationMatrix(n)
             var o = r.Vector3.TransformCoordinates(r.Vector3.Forward(), n)
             return { origin: s.Camera.instance.position, direction: o, distance: t }
           }),
-          (t.prototype.getRayFromPositions = function(t, e) {
+          (t.prototype.getRayFromPositions = function (t, e) {
             var n = e.subtract(t),
               o = n.length()
             return { origin: t, direction: n.normalize(), distance: o }
           }),
-          (t.prototype.hitFirst = function(t, e, n) {
+          (t.prototype.hitFirst = function (t, e, n) {
             var r = 'number' == typeof n ? o.HitFirst + n : i.uuid()
             ;(this.queries[r] = e), dcl && dcl.query('raycast', { queryId: r, queryType: 'HitFirst', ray: t })
           }),
-          (t.prototype.hitAll = function(t, e, n) {
+          (t.prototype.hitAll = function (t, e, n) {
             var r = 'number' == typeof n ? o.HitAll + n : i.uuid()
             ;(this.queries[r] = e), dcl && dcl.query('raycast', { queryId: r, queryType: 'HitAll', ray: t })
           }),
-          (t.prototype.hitFirstAvatar = function(t, e) {
+          (t.prototype.hitFirstAvatar = function (t, e) {
             i.log('not implemented yet')
           }),
-          (t.prototype.hitAllAvatars = function(t, e) {
+          (t.prototype.hitAllAvatars = function (t, e) {
             i.log('not implemented yet')
           }),
-          (t.prototype.handleRaycastHitFirstResponse = function(t) {
+          (t.prototype.handleRaycastHitFirstResponse = function (t) {
             this.queries[t.payload.queryId](t.payload.payload), delete this.queries[t.payload.queryId]
           }),
-          (t.prototype.handleRaycastHitAllResponse = function(t) {
+          (t.prototype.handleRaycastHitAllResponse = function (t) {
             this.queries[t.payload.queryId](t.payload.payload), delete this.queries[t.payload.queryId]
           }),
           t
@@ -4984,11 +5031,11 @@
       })()
       e.PhysicsCast = a
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.Camera = void 0)
       var o = n(5),
-        r = (function() {
+        r = (function () {
           function t() {
             var t = this
             ;(this.position = new o.Vector3()),
@@ -5002,7 +5049,7 @@
               'undefined' != typeof dcl &&
                 (dcl.subscribe('positionChanged'),
                 dcl.subscribe('rotationChanged'),
-                dcl.onEvent(function(e) {
+                dcl.onEvent(function (e) {
                   switch (e.type) {
                     case 'positionChanged':
                       t.positionChanged(e.data)
@@ -5012,92 +5059,92 @@
                   }
                 })),
               Object.defineProperty(this.position, 'x', {
-                get: function() {
+                get: function () {
                   return t.lastEventPosition.x
-                }
+                },
               }),
               Object.defineProperty(this.position, 'y', {
-                get: function() {
+                get: function () {
                   return t.lastEventPosition.y
-                }
+                },
               }),
               Object.defineProperty(this.position, 'z', {
-                get: function() {
+                get: function () {
                   return t.lastEventPosition.z
-                }
+                },
               }),
               Object.defineProperty(this.worldPosition, 'x', {
-                get: function() {
+                get: function () {
                   return t.lastEventWorldPosition.x
-                }
+                },
               }),
               Object.defineProperty(this.worldPosition, 'y', {
-                get: function() {
+                get: function () {
                   return t.lastEventWorldPosition.y
-                }
+                },
               }),
               Object.defineProperty(this.worldPosition, 'z', {
-                get: function() {
+                get: function () {
                   return t.lastEventWorldPosition.z
-                }
+                },
               }),
               Object.defineProperty(this.feetPosition, 'x', {
-                get: function() {
+                get: function () {
                   return t.lastEventPosition.x
-                }
+                },
               }),
               Object.defineProperty(this.feetPosition, 'y', {
-                get: function() {
+                get: function () {
                   return t.lastEventPosition.y - t.playerHeight
-                }
+                },
               }),
               Object.defineProperty(this.feetPosition, 'z', {
-                get: function() {
+                get: function () {
                   return t.lastEventPosition.z
-                }
+                },
               }),
               Object.defineProperty(this.rotation, 'x', {
-                get: function() {
+                get: function () {
                   return t.lastEventRotation.x
-                }
+                },
               }),
               Object.defineProperty(this.rotation, 'y', {
-                get: function() {
+                get: function () {
                   return t.lastEventRotation.y
-                }
+                },
               }),
               Object.defineProperty(this.rotation, 'z', {
-                get: function() {
+                get: function () {
                   return t.lastEventRotation.z
-                }
+                },
               }),
               Object.defineProperty(this.rotation, 'w', {
-                get: function() {
+                get: function () {
                   return t.lastEventRotation.w
-                }
+                },
               })
           }
           return (
             Object.defineProperty(t, 'instance', {
-              get: function() {
+              get: function () {
                 return t._instance || (t._instance = new t()), t._instance
               },
               enumerable: !1,
-              configurable: !0
+              configurable: !0,
             }),
             Object.defineProperty(t.prototype, 'playerHeight', {
-              get: function() {
+              get: function () {
                 return this._playerHeight
               },
               enumerable: !1,
-              configurable: !0
+              configurable: !0,
             }),
-            (t.prototype.positionChanged = function(t) {
+            (t.prototype.positionChanged = function (t) {
               ;(this.lastEventPosition = t.position),
                 (this.lastEventWorldPosition = t.cameraPosition),
                 (this._playerHeight = t.playerHeight)
             }),
-            (t.prototype.rotationChanged = function(t) {
+            (t.prototype.rotationChanged = function (t) {
               this.lastEventRotation = t.quaternion
             }),
             t
@@ -5105,26 +5152,26 @@
         })()
       e.Camera = r
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       var o =
           (this && this.__createBinding) ||
           (Object.create
-            ? function(t, e, n, o) {
+            ? function (t, e, n, o) {
                 void 0 === o && (o = n),
                   Object.defineProperty(t, o, {
                     enumerable: !0,
-                    get: function() {
+                    get: function () {
                       return e[n]
-                    }
+                    },
                   })
               }
-            : function(t, e, n, o) {
+            : function (t, e, n, o) {
                 void 0 === o && (o = n), (t[o] = e[n])
               }),
         r =
           (this && this.__exportStar) ||
-          function(t, e) {
+          function (t, e) {
             for (var n in t) 'default' === n || Object.prototype.hasOwnProperty.call(e, n) || o(e, t, n)
           }
       Object.defineProperty(e, '__esModule', { value: !0 }),
@@ -5169,49 +5216,49 @@
         r(n(49), e),
         r(n(28), e)
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.Attachable = void 0)
-      var o = (function() {
+      var o = (function () {
         function t() {}
         return (
           (t.AVATAR = {
-            getEntityRepresentation: function(t) {
+            getEntityRepresentation: function (t) {
               return t.avatarEntity
-            }
+            },
           }),
           (t.FIRST_PERSON_CAMERA = {
-            getEntityRepresentation: function(t) {
+            getEntityRepresentation: function (t) {
               return t.firstPersonCameraEntity
-            }
+            },
           }),
           t
         )
       })()
       e.Attachable = o
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.ComponentGroup = void 0)
       var o = n(0),
-        r = (function() {
+        r = (function () {
           function t() {
             for (var t = [], e = 0; e < arguments.length; e++) t[e] = arguments[e]
             if (((this.entities = []), (this.active = !1), (this._requiresNames = []), !t))
               throw new Error('ComponentGroup: Could not load the requires list')
             if (!(t instanceof Array)) throw new Error('ComponentGroup: requires list is not an Array')
             Object.defineProperty(this, 'requires', {
-              get: function() {
+              get: function () {
                 return t.slice()
-              }
+              },
             }),
               Object.defineProperty(this, 'requiresNames', {
-                get: function() {
+                get: function () {
                   return this._requiresNames.slice()
-                }
+                },
               })
             for (
-              var n = function(e) {
+              var n = function (e) {
                   var n = t[e],
                     i = null
                   if (!n) throw new Error('ComponentGroup: the required component at location ' + e + ' is invalid')
@@ -5225,7 +5272,7 @@
                     )
                   }
                   if (
-                    r._requiresNames.some(function(t) {
+                    r._requiresNames.some(function (t) {
                       return t === i
                     })
                   )
@@ -5240,21 +5287,21 @@
               n(i)
           }
           return (
-            (t.prototype.hasEntity = function(t) {
+            (t.prototype.hasEntity = function (t) {
               return !!t.isAddedToEngine() && -1 !== this.entities.indexOf(t)
             }),
-            (t.prototype.addEntity = function(t) {
+            (t.prototype.addEntity = function (t) {
               if (!t.isAddedToEngine()) throw new TypeError('ComponentGroup: Cannot add a entity that is not added to the engine')
               ;-1 === this.entities.indexOf(t) && this.entities.push(t)
             }),
-            (t.prototype.removeEntity = function(t) {
+            (t.prototype.removeEntity = function (t) {
               var e = this.entities.indexOf(t)
               ;-1 !== e && this.entities.splice(e, 1)
             }),
-            (t.prototype.componentRemoved = function(t, e) {
+            (t.prototype.componentRemoved = function (t, e) {
               ;-1 !== this._requiresNames.indexOf(e) && this.removeEntity(t)
             }),
-            (t.prototype.meetsRequirements = function(t) {
+            (t.prototype.meetsRequirements = function (t) {
               for (var e = 0; e < this._requiresNames.length; e++) {
                 if (!(this._requiresNames[e] in t.components)) return !1
               }
@@ -5265,52 +5312,52 @@
         })()
       e.ComponentGroup = r
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       var o
       Object.defineProperty(e, '__esModule', { value: !0 }),
         (e.teleportTo = void 0),
-        (e.teleportTo = function(t) {
+        (e.teleportTo = function (t) {
           var e, n
           ;(e = 'requestTeleport'),
             (n = [t]),
             void 0 === o && 'undefined' != typeof dcl && (o = dcl.loadModule('@decentraland/UserActionModule')),
             void 0 !== o &&
               'undefined' != typeof dcl &&
-              o.then(function(t) {
+              o.then(function (t) {
                 dcl.callRpc(t.rpcHandle, e, n)
               })
         })
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       var o
       Object.defineProperty(e, '__esModule', { value: !0 }),
         (e.movePlayerTo = void 0),
-        (e.movePlayerTo = function(t, e) {
+        (e.movePlayerTo = function (t, e) {
           var n, r
           ;(n = 'movePlayerTo'),
             (r = [t, e]),
             void 0 === o && 'undefined' != typeof dcl && (o = dcl.loadModule('@decentraland/RestrictedActionModule')),
             void 0 !== o &&
               'undefined' != typeof dcl &&
-              o.then(function(t) {
+              o.then(function (t) {
                 dcl.callRpc(t.rpcHandle, n, r)
               })
         })
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.DecentralandSynchronizationSystem = void 0)
       var o = n(0),
         r = n(7),
         i = n(13),
-        s = (function() {
+        s = (function () {
           function t(t) {
             ;(this.dcl = t), (this.cachedComponents = {})
           }
           return (
-            (t.prototype.activate = function(t) {
+            (t.prototype.activate = function (t) {
               var e = this
               ;(this.engine = t),
                 t.eventManager.addListener(r.ComponentAdded, this, this.componentAdded),
@@ -5321,10 +5368,10 @@
                 t.eventManager.addListener(r.ParentChanged, this, this.parentChanged)
               var n = t.rootEntity.uuid
               this.dcl.addEntity(n),
-                this.dcl.onUpdate(function(n) {
+                this.dcl.onUpdate(function (n) {
                   t.update(n), e.presentEntities()
                 }),
-                this.dcl.onEvent(function(e) {
+                this.dcl.onEvent(function (e) {
                   var n = e.data
                   switch (e.type) {
                     case 'uuidEvent':
@@ -5338,7 +5385,7 @@
                   }
                 })
             }),
-            (t.prototype.onAddEntity = function(t) {
+            (t.prototype.onAddEntity = function (t) {
               if (t && t.isAddedToEngine()) {
                 var e = t.uuid,
                   n = t.getParent()
@@ -5354,13 +5401,13 @@
                 }
               }
             }),
-            (t.prototype.onRemoveEntity = function(t) {
+            (t.prototype.onRemoveEntity = function (t) {
               if (t.isAddedToEngine()) {
                 var e = t.uuid
                 this.dcl.removeEntity(e), delete this.cachedComponents[e]
               }
             }),
-            (t.prototype.presentEntities = function() {
+            (t.prototype.presentEntities = function () {
               for (var t in this.engine.entities) {
                 var e = this.engine.entities[t]
                 for (var n in e.components) {
@@ -5378,7 +5425,7 @@
                   (this.dcl.componentUpdated(a, JSON.stringify(r)), (r.dirty = !1))
               }
             }),
-            (t.prototype.componentAdded = function(t) {
+            (t.prototype.componentAdded = function (t) {
               if (t.entity.isAddedToEngine()) {
                 var e = t.entity.components[t.componentName]
                 if (o.isDisposableComponent(e)) this.dcl.attachEntityComponent(t.entity.uuid, t.componentName, o.getComponentId(e))
@@ -5389,28 +5436,28 @@
                 }
               }
             }),
-            (t.prototype.componentRemoved = function(t) {
+            (t.prototype.componentRemoved = function (t) {
               t.entity.isAddedToEngine() &&
                 (this.dcl.removeEntityComponent(t.entity.uuid, t.componentName),
                 delete this.cachedComponents[t.entity.uuid][t.componentName])
             }),
-            (t.prototype.disposableComponentCreated = function(t) {
+            (t.prototype.disposableComponentCreated = function (t) {
               this.dcl.componentCreated(t.componentId, t.componentName, t.classId)
             }),
-            (t.prototype.disposableComponentRemoved = function(t) {
+            (t.prototype.disposableComponentRemoved = function (t) {
               this.dcl.componentDisposed(t.componentId)
             }),
-            (t.prototype.disposableComponentUpdated = function(t) {
+            (t.prototype.disposableComponentUpdated = function (t) {
               this.dcl.componentUpdated(t.componentId, JSON.stringify(t.component))
             }),
-            (t.prototype.parentChanged = function(t) {
+            (t.prototype.parentChanged = function (t) {
               this.dcl.setParent(t.entity.uuid, t.parent ? t.parent.uuid : '0')
             }),
-            (t.prototype.getJsonIfDirty = function(t, e, n) {
+            (t.prototype.getJsonIfDirty = function (t, e, n) {
               var o = JSON.stringify(n)
               return o !== this.cachedComponents[t][e] && o
             }),
-            (t.prototype.clearDirty = function(t, e, n, o) {
+            (t.prototype.clearDirty = function (t, e, n, o) {
               this.cachedComponents[t][e] = o
             }),
             t
@@ -5418,23 +5465,23 @@
         })()
       e.DecentralandSynchronizationSystem = s
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.Axis = void 0)
       var o = n(3),
-        r = (function() {
+        r = (function () {
           function t() {}
           return (t.X = new o.Vector3(1, 0, 0)), (t.Y = new o.Vector3(0, 1, 0)), (t.Z = new o.Vector3(0, 0, 1)), t
         })()
       e.Axis = r
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.BezierCurve = void 0)
-      var o = (function() {
+      var o = (function () {
         function t() {}
         return (
-          (t.Interpolate = function(t, e, n, o, r) {
+          (t.Interpolate = function (t, e, n, o, r) {
             for (var i = 1 - 3 * o + 3 * e, s = 3 * o - 6 * e, a = 3 * e, p = t, u = 0; u < 5; u++) {
               var l = p * p
               ;(p -= (i * (l * p) + s * l + a * p - t) * (1 / (3 * i * l + 2 * s * p + a))), (p = Math.min(1, Math.max(0, p)))
@@ -5446,115 +5493,115 @@
       })()
       e.BezierCurve = o
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.Color3 = void 0)
       var o = n(2),
         r = n(24),
         i = n(6),
-        s = (function() {
+        s = (function () {
           function t(t, e, n) {
             void 0 === t && (t = 0), void 0 === e && (e = 0), void 0 === n && (n = 0), (this.r = t), (this.g = e), (this.b = n)
           }
           return (
-            (t.FromHexString = function(e) {
+            (t.FromHexString = function (e) {
               if ('#' !== e.substring(0, 1) || 7 !== e.length) return new t(0, 0, 0)
               var n = parseInt(e.substring(1, 3), 16),
                 o = parseInt(e.substring(3, 5), 16),
                 r = parseInt(e.substring(5, 7), 16)
               return t.FromInts(n, o, r)
             }),
-            (t.FromArray = function(e, n) {
+            (t.FromArray = function (e, n) {
               return void 0 === n && (n = 0), new t(e[n], e[n + 1], e[n + 2])
             }),
-            (t.FromInts = function(e, n, o) {
+            (t.FromInts = function (e, n, o) {
               return new t(e / 255, n / 255, o / 255)
             }),
-            (t.Lerp = function(e, n, o) {
+            (t.Lerp = function (e, n, o) {
               var r = new t(0, 0, 0)
               return t.LerpToRef(e, n, o, r), r
             }),
-            (t.LerpToRef = function(t, e, n, o) {
+            (t.LerpToRef = function (t, e, n, o) {
               ;(o.r = t.r + (e.r - t.r) * n), (o.g = t.g + (e.g - t.g) * n), (o.b = t.b + (e.b - t.b) * n)
             }),
-            (t.Red = function() {
+            (t.Red = function () {
               return new t(1, 0, 0)
             }),
-            (t.Green = function() {
+            (t.Green = function () {
               return new t(0, 1, 0)
             }),
-            (t.Blue = function() {
+            (t.Blue = function () {
               return new t(0, 0, 1)
             }),
-            (t.Black = function() {
+            (t.Black = function () {
               return new t(0, 0, 0)
             }),
-            (t.White = function() {
+            (t.White = function () {
               return new t(1, 1, 1)
             }),
-            (t.Purple = function() {
+            (t.Purple = function () {
               return new t(0.5, 0, 0.5)
             }),
-            (t.Magenta = function() {
+            (t.Magenta = function () {
               return new t(1, 0, 1)
             }),
-            (t.Yellow = function() {
+            (t.Yellow = function () {
               return new t(1, 1, 0)
             }),
-            (t.Gray = function() {
+            (t.Gray = function () {
               return new t(0.5, 0.5, 0.5)
             }),
-            (t.Teal = function() {
+            (t.Teal = function () {
               return new t(0, 1, 1)
             }),
-            (t.Random = function() {
+            (t.Random = function () {
               return new t(Math.random(), Math.random(), Math.random())
             }),
-            (t.prototype.toString = function() {
+            (t.prototype.toString = function () {
               return '{R: ' + this.r + ' G:' + this.g + ' B:' + this.b + '}'
             }),
-            (t.prototype.getClassName = function() {
+            (t.prototype.getClassName = function () {
               return 'Color3'
             }),
-            (t.prototype.getHashCode = function() {
+            (t.prototype.getHashCode = function () {
               var t = this.r || 0
               return (t = (397 * (t = (397 * t) ^ (this.g || 0))) ^ (this.b || 0))
             }),
-            (t.prototype.toArray = function(t, e) {
+            (t.prototype.toArray = function (t, e) {
               return void 0 === e && (e = 0), (t[e] = this.r), (t[e + 1] = this.g), (t[e + 2] = this.b), this
             }),
-            (t.prototype.toColor4 = function(t) {
+            (t.prototype.toColor4 = function (t) {
               return void 0 === t && (t = 1), new r.Color4(this.r, this.g, this.b, t)
             }),
-            (t.prototype.asArray = function() {
+            (t.prototype.asArray = function () {
               var t = new Array()
               return this.toArray(t, 0), t
             }),
-            (t.prototype.toLuminance = function() {
+            (t.prototype.toLuminance = function () {
               return 0.3 * this.r + 0.59 * this.g + 0.11 * this.b
             }),
-            (t.prototype.multiply = function(e) {
+            (t.prototype.multiply = function (e) {
               return new t(this.r * e.r, this.g * e.g, this.b * e.b)
             }),
-            (t.prototype.multiplyToRef = function(t, e) {
+            (t.prototype.multiplyToRef = function (t, e) {
               return (e.r = this.r * t.r), (e.g = this.g * t.g), (e.b = this.b * t.b), this
             }),
-            (t.prototype.equals = function(t) {
+            (t.prototype.equals = function (t) {
               return t && this.r === t.r && this.g === t.g && this.b === t.b
             }),
-            (t.prototype.equalsFloats = function(t, e, n) {
+            (t.prototype.equalsFloats = function (t, e, n) {
               return this.r === t && this.g === e && this.b === n
             }),
-            (t.prototype.scale = function(e) {
+            (t.prototype.scale = function (e) {
               return new t(this.r * e, this.g * e, this.b * e)
             }),
-            (t.prototype.scaleToRef = function(t, e) {
+            (t.prototype.scaleToRef = function (t, e) {
               return (e.r = this.r * t), (e.g = this.g * t), (e.b = this.b * t), this
             }),
-            (t.prototype.scaleAndAddToRef = function(t, e) {
+            (t.prototype.scaleAndAddToRef = function (t, e) {
               return (e.r += this.r * t), (e.g += this.g * t), (e.b += this.b * t), this
             }),
-            (t.prototype.clampToRef = function(t, e, n) {
+            (t.prototype.clampToRef = function (t, e, n) {
               return (
                 void 0 === t && (t = 0),
                 void 0 === e && (e = 1),
@@ -5564,41 +5611,41 @@
                 this
               )
             }),
-            (t.prototype.add = function(e) {
+            (t.prototype.add = function (e) {
               return new t(this.r + e.r, this.g + e.g, this.b + e.b)
             }),
-            (t.prototype.addToRef = function(t, e) {
+            (t.prototype.addToRef = function (t, e) {
               return (e.r = this.r + t.r), (e.g = this.g + t.g), (e.b = this.b + t.b), this
             }),
-            (t.prototype.subtract = function(e) {
+            (t.prototype.subtract = function (e) {
               return new t(this.r - e.r, this.g - e.g, this.b - e.b)
             }),
-            (t.prototype.subtractToRef = function(t, e) {
+            (t.prototype.subtractToRef = function (t, e) {
               return (e.r = this.r - t.r), (e.g = this.g - t.g), (e.b = this.b - t.b), this
             }),
-            (t.prototype.clone = function() {
+            (t.prototype.clone = function () {
               return new t(this.r, this.g, this.b)
             }),
-            (t.prototype.copyFrom = function(t) {
+            (t.prototype.copyFrom = function (t) {
               return (this.r = t.r), (this.g = t.g), (this.b = t.b), this
             }),
-            (t.prototype.copyFromFloats = function(t, e, n) {
+            (t.prototype.copyFromFloats = function (t, e, n) {
               return (this.r = t), (this.g = e), (this.b = n), this
             }),
-            (t.prototype.set = function(t, e, n) {
+            (t.prototype.set = function (t, e, n) {
               return this.copyFromFloats(t, e, n)
             }),
-            (t.prototype.toHexString = function() {
+            (t.prototype.toHexString = function () {
               var t = (255 * this.r) | 0,
                 e = (255 * this.g) | 0,
                 n = (255 * this.b) | 0
               return '#' + i.Scalar.ToHex(t) + i.Scalar.ToHex(e) + i.Scalar.ToHex(n)
             }),
-            (t.prototype.toLinearSpace = function() {
+            (t.prototype.toLinearSpace = function () {
               var e = new t()
               return this.toLinearSpaceToRef(e), e
             }),
-            (t.prototype.toLinearSpaceToRef = function(t) {
+            (t.prototype.toLinearSpaceToRef = function (t) {
               return (
                 (t.r = Math.pow(this.r, o.ToLinearSpace)),
                 (t.g = Math.pow(this.g, o.ToLinearSpace)),
@@ -5606,11 +5653,11 @@
                 this
               )
             }),
-            (t.prototype.toGammaSpace = function() {
+            (t.prototype.toGammaSpace = function () {
               var e = new t()
               return this.toGammaSpaceToRef(e), e
             }),
-            (t.prototype.toGammaSpaceToRef = function(t) {
+            (t.prototype.toGammaSpaceToRef = function (t) {
               return (
                 (t.r = Math.pow(this.r, o.ToGammaSpace)),
                 (t.g = Math.pow(this.g, o.ToGammaSpace)),
@@ -5618,7 +5665,7 @@
                 this
               )
             }),
-            (t.prototype.toJSON = function() {
+            (t.prototype.toJSON = function () {
               return { r: this.r, g: this.g, b: this.b }
             }),
             t
@@ -5626,20 +5673,20 @@
         })()
       e.Color3 = s
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.Curve3 = void 0)
       var o = n(3),
-        r = (function() {
+        r = (function () {
           function t(t) {
             ;(this._length = 0), (this._points = t), (this._length = this._computeLength(t))
           }
           return (
-            (t.CreateQuadraticBezier = function(e, n, r, i) {
+            (t.CreateQuadraticBezier = function (e, n, r, i) {
               i = i > 2 ? i : 3
               for (
                 var s = new Array(),
-                  a = function(t, e, n, o) {
+                  a = function (t, e, n, o) {
                     return (1 - t) * (1 - t) * e + 2 * t * (1 - t) * n + t * t * o
                   },
                   p = 0;
@@ -5649,11 +5696,11 @@
                 s.push(new o.Vector3(a(p / i, e.x, n.x, r.x), a(p / i, e.y, n.y, r.y), a(p / i, e.z, n.z, r.z)))
               return new t(s)
             }),
-            (t.CreateCubicBezier = function(e, n, r, i, s) {
+            (t.CreateCubicBezier = function (e, n, r, i, s) {
               s = s > 3 ? s : 4
               for (
                 var a = new Array(),
-                  p = function(t, e, n, o, r) {
+                  p = function (t, e, n, o, r) {
                     return (1 - t) * (1 - t) * (1 - t) * e + 3 * t * (1 - t) * (1 - t) * n + 3 * t * t * (1 - t) * o + t * t * t * r
                   },
                   u = 0;
@@ -5663,11 +5710,11 @@
                 a.push(new o.Vector3(p(u / s, e.x, n.x, r.x, i.x), p(u / s, e.y, n.y, r.y, i.y), p(u / s, e.z, n.z, r.z, i.z)))
               return new t(a)
             }),
-            (t.CreateHermiteSpline = function(e, n, r, i, s) {
+            (t.CreateHermiteSpline = function (e, n, r, i, s) {
               for (var a = new Array(), p = 1 / s, u = 0; u <= s; u++) a.push(o.Vector3.Hermite(e, n, r, i, u * p))
               return new t(a)
             }),
-            (t.CreateCatmullRomSpline = function(e, n, r) {
+            (t.CreateCatmullRomSpline = function (e, n, r) {
               var i = new Array(),
                 s = 1 / n,
                 a = 0
@@ -5690,18 +5737,18 @@
               }
               return new t(i)
             }),
-            (t.prototype.getPoints = function() {
+            (t.prototype.getPoints = function () {
               return this._points
             }),
-            (t.prototype.length = function() {
+            (t.prototype.length = function () {
               return this._length
             }),
-            (t.prototype.continue = function(e) {
+            (t.prototype.continue = function (e) {
               for (var n = this._points[this._points.length - 1], o = this._points.slice(), r = e.getPoints(), i = 1; i < r.length; i++)
                 o.push(r[i].subtract(r[0]).add(n))
               return new t(o)
             }),
-            (t.prototype._computeLength = function(t) {
+            (t.prototype._computeLength = function (t) {
               for (var e = 0, n = 1; n < t.length; n++) e += t[n].subtract(t[n - 1]).length()
               return e
             }),
@@ -5710,42 +5757,42 @@
         })()
       e.Curve3 = r
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.Frustum = void 0)
       var o = n(25),
-        r = (function() {
+        r = (function () {
           function t() {}
           return (
-            (t.GetPlanes = function(e) {
+            (t.GetPlanes = function (e) {
               for (var n = [], r = 0; r < 6; r++) n.push(new o.Plane(0, 0, 0, 0))
               return t.GetPlanesToRef(e, n), n
             }),
-            (t.GetNearPlaneToRef = function(t, e) {
+            (t.GetNearPlaneToRef = function (t, e) {
               var n = t.m
               ;(e.normal.x = n[3] + n[2]), (e.normal.y = n[7] + n[6]), (e.normal.z = n[11] + n[10]), (e.d = n[15] + n[14]), e.normalize()
             }),
-            (t.GetFarPlaneToRef = function(t, e) {
+            (t.GetFarPlaneToRef = function (t, e) {
               var n = t.m
               ;(e.normal.x = n[3] - n[2]), (e.normal.y = n[7] - n[6]), (e.normal.z = n[11] - n[10]), (e.d = n[15] - n[14]), e.normalize()
             }),
-            (t.GetLeftPlaneToRef = function(t, e) {
+            (t.GetLeftPlaneToRef = function (t, e) {
               var n = t.m
               ;(e.normal.x = n[3] + n[0]), (e.normal.y = n[7] + n[4]), (e.normal.z = n[11] + n[8]), (e.d = n[15] + n[12]), e.normalize()
             }),
-            (t.GetRightPlaneToRef = function(t, e) {
+            (t.GetRightPlaneToRef = function (t, e) {
               var n = t.m
               ;(e.normal.x = n[3] - n[0]), (e.normal.y = n[7] - n[4]), (e.normal.z = n[11] - n[8]), (e.d = n[15] - n[12]), e.normalize()
             }),
-            (t.GetTopPlaneToRef = function(t, e) {
+            (t.GetTopPlaneToRef = function (t, e) {
               var n = t.m
               ;(e.normal.x = n[3] - n[1]), (e.normal.y = n[7] - n[5]), (e.normal.z = n[11] - n[9]), (e.d = n[15] - n[13]), e.normalize()
             }),
-            (t.GetBottomPlaneToRef = function(t, e) {
+            (t.GetBottomPlaneToRef = function (t, e) {
               var n = t.m
               ;(e.normal.x = n[3] + n[1]), (e.normal.y = n[7] + n[5]), (e.normal.z = n[11] + n[9]), (e.d = n[15] + n[13]), e.normalize()
             }),
-            (t.GetPlanesToRef = function(e, n) {
+            (t.GetPlanesToRef = function (e, n) {
               t.GetNearPlaneToRef(e, n[0]),
                 t.GetFarPlaneToRef(e, n[1]),
                 t.GetLeftPlaneToRef(e, n[2]),
@@ -5758,27 +5805,27 @@
         })()
       e.Frustum = r
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.Path2 = void 0)
       var o = n(15),
         r = n(23),
         i = n(2),
-        s = (function() {
+        s = (function () {
           function t(t, e) {
             ;(this.closed = !1), (this._points = new Array()), (this._length = 0), this._points.push(new o.Vector2(t, e))
           }
           return (
-            (t.StartingAt = function(e, n) {
+            (t.StartingAt = function (e, n) {
               return new t(e, n)
             }),
-            (t.prototype.addLineTo = function(t, e) {
+            (t.prototype.addLineTo = function (t, e) {
               if (this.closed) return this
               var n = new o.Vector2(t, e),
                 r = this._points[this._points.length - 1]
               return this._points.push(n), (this._length += n.subtract(r).length()), this
             }),
-            (t.prototype.addArcTo = function(t, e, n, s, a) {
+            (t.prototype.addArcTo = function (t, e, n, s, a) {
               if ((void 0 === a && (a = 36), this.closed)) return this
               var p = this._points[this._points.length - 1],
                 u = new o.Vector2(t, e),
@@ -5793,10 +5840,10 @@
               }
               return this
             }),
-            (t.prototype.close = function() {
+            (t.prototype.close = function () {
               return (this.closed = !0), this
             }),
-            (t.prototype.length = function() {
+            (t.prototype.length = function () {
               var t = this._length
               if (!this.closed) {
                 var e = this._points[this._points.length - 1]
@@ -5804,10 +5851,10 @@
               }
               return t
             }),
-            (t.prototype.getPoints = function() {
+            (t.prototype.getPoints = function () {
               return this._points
             }),
-            (t.prototype.getPointAtLengthPosition = function(t) {
+            (t.prototype.getPointAtLengthPosition = function (t) {
               if (t < 0 || t > 1) return o.Vector2.Zero()
               for (var e = t * this.length(), n = 0, r = 0; r < this._points.length; r++) {
                 var i = (r + 1) % this._points.length,
@@ -5828,13 +5875,13 @@
         })()
       e.Path2 = s
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.Path3D = void 0)
       var o = n(3),
         r = n(2),
         i = n(6),
-        s = (function() {
+        s = (function () {
           function t(t, e, n) {
             void 0 === e && (e = null),
               (this.path = t),
@@ -5847,27 +5894,27 @@
             ;(this._raw = n || !1), this._compute(e)
           }
           return (
-            (t.prototype.getCurve = function() {
+            (t.prototype.getCurve = function () {
               return this._curve
             }),
-            (t.prototype.getTangents = function() {
+            (t.prototype.getTangents = function () {
               return this._tangents
             }),
-            (t.prototype.getNormals = function() {
+            (t.prototype.getNormals = function () {
               return this._normals
             }),
-            (t.prototype.getBinormals = function() {
+            (t.prototype.getBinormals = function () {
               return this._binormals
             }),
-            (t.prototype.getDistances = function() {
+            (t.prototype.getDistances = function () {
               return this._distances
             }),
-            (t.prototype.update = function(t, e) {
+            (t.prototype.update = function (t, e) {
               void 0 === e && (e = null)
               for (var n = 0; n < t.length; n++) (this._curve[n].x = t[n].x), (this._curve[n].y = t[n].y), (this._curve[n].z = t[n].z)
               return this._compute(e), this
             }),
-            (t.prototype._compute = function(t) {
+            (t.prototype._compute = function (t) {
               var e = this._curve.length
               ;(this._tangents[0] = this._getFirstNonNullVector(0)),
                 this._raw || this._tangents[0].normalize(),
@@ -5895,17 +5942,17 @@
                   (this._binormals[u] = o.Vector3.Cross(i, this._normals[u])),
                   this._raw || this._binormals[u].normalize()
             }),
-            (t.prototype._getFirstNonNullVector = function(t) {
+            (t.prototype._getFirstNonNullVector = function (t) {
               for (var e = 1, n = this._curve[t + e].subtract(this._curve[t]); 0 === n.length() && t + e + 1 < this._curve.length; )
                 e++, (n = this._curve[t + e].subtract(this._curve[t]))
               return n
             }),
-            (t.prototype._getLastNonNullVector = function(t) {
+            (t.prototype._getLastNonNullVector = function (t) {
               for (var e = 1, n = this._curve[t].subtract(this._curve[t - e]); 0 === n.length() && t > e + 1; )
                 e++, (n = this._curve[t].subtract(this._curve[t - e]))
               return n
             }),
-            (t.prototype._normalVector = function(t, e, n) {
+            (t.prototype._normalVector = function (t, e, n) {
               var s,
                 a = e.length()
               if ((0 === a && (a = 1), null == n)) {
@@ -5926,59 +5973,59 @@
         })()
       e.Path3D = s
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.Size = void 0)
-      var o = (function() {
+      var o = (function () {
         function t(t, e) {
           ;(this.width = t), (this.height = e)
         }
         return (
           Object.defineProperty(t.prototype, 'surface', {
-            get: function() {
+            get: function () {
               return this.width * this.height
             },
             enumerable: !1,
-            configurable: !0
+            configurable: !0,
           }),
-          (t.Zero = function() {
+          (t.Zero = function () {
             return new t(0, 0)
           }),
-          (t.Lerp = function(e, n, o) {
+          (t.Lerp = function (e, n, o) {
             return new t(e.width + (n.width - e.width) * o, e.height + (n.height - e.height) * o)
           }),
-          (t.prototype.toString = function() {
+          (t.prototype.toString = function () {
             return '{W: ' + this.width + ', H: ' + this.height + '}'
           }),
-          (t.prototype.getClassName = function() {
+          (t.prototype.getClassName = function () {
             return 'Size'
           }),
-          (t.prototype.getHashCode = function() {
+          (t.prototype.getHashCode = function () {
             var t = this.width || 0
             return (t = (397 * t) ^ (this.height || 0))
           }),
-          (t.prototype.copyFrom = function(t) {
+          (t.prototype.copyFrom = function (t) {
             ;(this.width = t.width), (this.height = t.height)
           }),
-          (t.prototype.copyFromFloats = function(t, e) {
+          (t.prototype.copyFromFloats = function (t, e) {
             return (this.width = t), (this.height = e), this
           }),
-          (t.prototype.set = function(t, e) {
+          (t.prototype.set = function (t, e) {
             return this.copyFromFloats(t, e)
           }),
-          (t.prototype.multiplyByFloats = function(e, n) {
+          (t.prototype.multiplyByFloats = function (e, n) {
             return new t(this.width * e, this.height * n)
           }),
-          (t.prototype.clone = function() {
+          (t.prototype.clone = function () {
             return new t(this.width, this.height)
           }),
-          (t.prototype.equals = function(t) {
+          (t.prototype.equals = function (t) {
             return !!t && this.width === t.width && this.height === t.height
           }),
-          (t.prototype.add = function(e) {
+          (t.prototype.add = function (e) {
             return new t(this.width + e.width, this.height + e.height)
           }),
-          (t.prototype.subtract = function(e) {
+          (t.prototype.subtract = function (e) {
             return new t(this.width - e.width, this.height - e.height)
           }),
           t
@@ -5986,23 +6033,23 @@
       })()
       e.Size = o
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       var o,
         r =
           (this && this.__extends) ||
-          ((o = function(t, e) {
+          ((o = function (t, e) {
             return (o =
               Object.setPrototypeOf ||
               ({ __proto__: [] } instanceof Array &&
-                function(t, e) {
+                function (t, e) {
                   t.__proto__ = e
                 }) ||
-              function(t, e) {
+              function (t, e) {
                 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n])
               })(t, e)
           }),
-          function(t, e) {
+          function (t, e) {
             function n() {
               this.constructor = t
             }
@@ -6010,7 +6057,7 @@
           }),
         i =
           (this && this.__decorate) ||
-          function(t, e, n, o) {
+          function (t, e, n, o) {
             var r,
               i = arguments.length,
               s = i < 3 ? e : null === o ? (o = Object.getOwnPropertyDescriptor(e, n)) : o
@@ -6021,7 +6068,7 @@
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.AudioStream = e.AudioSource = e.AudioClip = void 0)
       var s = n(0),
         a = n(4),
-        p = (function(t) {
+        p = (function (t) {
           function e(e) {
             var n = t.call(this) || this
             return (n.loop = !1), (n.volume = 1), (n.url = e), n
@@ -6036,7 +6083,7 @@
           )
         })(s.ObservableComponent)
       e.AudioClip = p
-      var u = (function(t) {
+      var u = (function (t) {
         function e(e) {
           var n = t.call(this) || this
           if (((n.audioClip = e), (n.loop = !1), (n.volume = 1), (n.playing = !1), (n.pitch = 1), !(e instanceof p)))
@@ -6045,7 +6092,7 @@
         }
         return (
           r(e, t),
-          (e.prototype.playOnce = function() {
+          (e.prototype.playOnce = function () {
             return (this.playing = !0), (this.dirty = !0), (this.data.nonce = Math.random()), this
           }),
           i([s.ObservableComponent.readonly], e.prototype, 'audioClipId', void 0),
@@ -6057,7 +6104,7 @@
         )
       })(s.ObservableComponent)
       e.AudioSource = u
-      var l = (function(t) {
+      var l = (function (t) {
         function e(e) {
           var n = t.call(this) || this
           return (n.playing = !1), (n.volume = 1), (n.url = e), (n.playing = !0), n
@@ -6072,23 +6119,23 @@
       })(s.ObservableComponent)
       e.AudioStream = l
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       var o,
         r =
           (this && this.__extends) ||
-          ((o = function(t, e) {
+          ((o = function (t, e) {
             return (o =
               Object.setPrototypeOf ||
               ({ __proto__: [] } instanceof Array &&
-                function(t, e) {
+                function (t, e) {
                   t.__proto__ = e
                 }) ||
-              function(t, e) {
+              function (t, e) {
                 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n])
               })(t, e)
           }),
-          function(t, e) {
+          function (t, e) {
             function n() {
               this.constructor = t
             }
@@ -6096,7 +6143,7 @@
           }),
         i =
           (this && this.__decorate) ||
-          function(t, e, n, o) {
+          function (t, e, n, o) {
             var r,
               i = arguments.length,
               s = i < 3 ? e : null === o ? (o = Object.getOwnPropertyDescriptor(e, n)) : o
@@ -6107,10 +6154,10 @@
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.Gizmos = e.OnGizmoEvent = e.Gizmo = void 0)
       var s = n(0),
         a = n(4)
-      !(function(t) {
+      !(function (t) {
         ;(t.MOVE = 'MOVE'), (t.ROTATE = 'ROTATE'), (t.SCALE = 'SCALE'), (t.NONE = 'NONE')
       })(e.Gizmo || (e.Gizmo = {}))
-      var p = (function(t) {
+      var p = (function (t) {
         function e() {
           var e = (null !== t && t.apply(this, arguments)) || this
           return (e.type = 'gizmoEvent'), e
@@ -6122,7 +6169,7 @@
         )
       })(a.OnUUIDEvent)
       e.OnGizmoEvent = p
-      var u = (function(t) {
+      var u = (function (t) {
         function e() {
           var e = (null !== t && t.apply(this, arguments)) || this
           return (e.position = !0), (e.rotation = !0), (e.scale = !0), (e.cycle = !0), (e.localReference = !1), e
@@ -6140,23 +6187,23 @@
       })(s.ObservableComponent)
       e.Gizmos = u
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       var o,
         r =
           (this && this.__extends) ||
-          ((o = function(t, e) {
+          ((o = function (t, e) {
             return (o =
               Object.setPrototypeOf ||
               ({ __proto__: [] } instanceof Array &&
-                function(t, e) {
+                function (t, e) {
                   t.__proto__ = e
                 }) ||
-              function(t, e) {
+              function (t, e) {
                 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n])
               })(t, e)
           }),
-          function(t, e) {
+          function (t, e) {
             function n() {
               this.constructor = t
             }
@@ -6164,7 +6211,7 @@
           }),
         i =
           (this && this.__decorate) ||
-          function(t, e, n, o) {
+          function (t, e, n, o) {
             var r,
               i = arguments.length,
               s = i < 3 ? e : null === o ? (o = Object.getOwnPropertyDescriptor(e, n)) : o
@@ -6173,11 +6220,23 @@
             return i > 3 && s && Object.defineProperty(e, n, s), s
           }
       Object.defineProperty(e, '__esModule', { value: !0 }),
-        (e.UIScrollRect = e.UIImage = e.UIInputText = e.UIText = e.UIButton = e.UIContainerStack = e.UIStackOrientation = e.UIContainerRect = e.UICanvas = e.UIWorldSpace = e.UIFullScreen = e.UIShape = void 0)
+        (e.UIScrollRect =
+          e.UIImage =
+          e.UIInputText =
+          e.UIText =
+          e.UIButton =
+          e.UIContainerStack =
+          e.UIStackOrientation =
+          e.UIContainerRect =
+          e.UICanvas =
+          e.UIWorldSpace =
+          e.UIFullScreen =
+          e.UIShape =
+            void 0)
       var s = n(0),
         a = n(4),
         p = n(5),
-        u = (function(t) {
+        u = (function (t) {
           function e(e) {
             var n = t.call(this) || this
             return (
@@ -6198,18 +6257,18 @@
           return (
             r(e, t),
             Object.defineProperty(e.prototype, 'parent', {
-              get: function() {
+              get: function () {
                 return this._parent
               },
               enumerable: !1,
-              configurable: !0
+              configurable: !0,
             }),
             Object.defineProperty(e.prototype, 'parentComponent', {
-              get: function() {
+              get: function () {
                 return this.data.parentComponent
               },
               enumerable: !1,
-              configurable: !0
+              configurable: !0,
             }),
             i([s.ObservableComponent.field], e.prototype, 'name', void 0),
             i([s.ObservableComponent.field], e.prototype, 'visible', void 0),
@@ -6225,21 +6284,21 @@
           )
         })(s.ObservableComponent)
       e.UIShape = u
-      var l = (function(t) {
+      var l = (function (t) {
         function e() {
           return t.call(this, null) || this
         }
         return r(e, t), (e = i([s.DisposableComponent('engine.shape', a.CLASS_ID.UI_FULLSCREEN_SHAPE)], e))
       })(u)
       e.UIFullScreen = l
-      var c = (function(t) {
+      var c = (function (t) {
         function e() {
           return t.call(this, null) || this
         }
         return r(e, t), (e = i([s.DisposableComponent('engine.shape', a.CLASS_ID.UI_WORLD_SPACE_SHAPE)], e))
       })(u)
       e.UIWorldSpace = c
-      var h = (function(t) {
+      var h = (function (t) {
         function e() {
           return t.call(this, null) || this
         }
@@ -6247,7 +6306,7 @@
       })(u)
       e.UICanvas = h
       var d,
-        f = (function(t) {
+        f = (function (t) {
           function e() {
             var e = (null !== t && t.apply(this, arguments)) || this
             return (e.adaptWidth = !1), (e.adaptHeight = !1), (e.thickness = 0), (e.color = p.Color4.Clear()), (e.alignmentUsesSize = !0), e
@@ -6263,10 +6322,10 @@
           )
         })(u)
       ;(e.UIContainerRect = f),
-        (function(t) {
+        (function (t) {
           ;(t[(t.VERTICAL = 0)] = 'VERTICAL'), (t[(t.HORIZONTAL = 1)] = 'HORIZONTAL')
         })((d = e.UIStackOrientation || (e.UIStackOrientation = {})))
-      var y = (function(t) {
+      var y = (function (t) {
         function e() {
           var e = (null !== t && t.apply(this, arguments)) || this
           return (
@@ -6284,7 +6343,7 @@
         )
       })(u)
       e.UIContainerStack = y
-      var v = (function(t) {
+      var v = (function (t) {
         function e() {
           var e = (null !== t && t.apply(this, arguments)) || this
           return (
@@ -6327,7 +6386,7 @@
         )
       })(u)
       e.UIButton = v
-      var m = (function(t) {
+      var m = (function (t) {
         function e() {
           var e = (null !== t && t.apply(this, arguments)) || this
           return (
@@ -6385,7 +6444,7 @@
         )
       })(u)
       e.UIText = m
-      var b = (function(t) {
+      var b = (function (t) {
         function e() {
           var e = (null !== t && t.apply(this, arguments)) || this
           return (
@@ -6457,7 +6516,7 @@
         )
       })(u)
       e.UIInputText = b
-      var g = (function(t) {
+      var g = (function (t) {
         function e(e, n) {
           var o = t.call(this, e) || this
           return (
@@ -6492,7 +6551,7 @@
         )
       })(u)
       e.UIImage = g
-      var _ = (function(t) {
+      var _ = (function (t) {
         function e() {
           var e = (null !== t && t.apply(this, arguments)) || this
           return (
@@ -6528,23 +6587,23 @@
       })(u)
       e.UIScrollRect = _
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       var o,
         r =
           (this && this.__extends) ||
-          ((o = function(t, e) {
+          ((o = function (t, e) {
             return (o =
               Object.setPrototypeOf ||
               ({ __proto__: [] } instanceof Array &&
-                function(t, e) {
+                function (t, e) {
                   t.__proto__ = e
                 }) ||
-              function(t, e) {
+              function (t, e) {
                 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n])
               })(t, e)
           }),
-          function(t, e) {
+          function (t, e) {
             function n() {
               this.constructor = t
             }
@@ -6552,7 +6611,7 @@
           }),
         i =
           (this && this.__decorate) ||
-          function(t, e, n, o) {
+          function (t, e, n, o) {
             var r,
               i = arguments.length,
               s = i < 3 ? e : null === o ? (o = Object.getOwnPropertyDescriptor(e, n)) : o
@@ -6563,7 +6622,7 @@
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.AvatarShape = void 0)
       var s = n(0),
         a = n(4),
-        p = (function(t) {
+        p = (function (t) {
           function e() {
             var e = (null !== t && t.apply(this, arguments)) || this
             return (e.useDummyModel = !1), (e.talking = !1), e
@@ -6572,7 +6631,7 @@
           return (
             r(e, t),
             (n = e),
-            (e.Dummy = function() {
+            (e.Dummy = function () {
               var t = new n()
               return (t.useDummyModel = !0), t
             }),
@@ -6592,23 +6651,23 @@
         })(s.ObservableComponent)
       e.AvatarShape = p
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       var o,
         r =
           (this && this.__extends) ||
-          ((o = function(t, e) {
+          ((o = function (t, e) {
             return (o =
               Object.setPrototypeOf ||
               ({ __proto__: [] } instanceof Array &&
-                function(t, e) {
+                function (t, e) {
                   t.__proto__ = e
                 }) ||
-              function(t, e) {
+              function (t, e) {
                 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n])
               })(t, e)
           }),
-          function(t, e) {
+          function (t, e) {
             function n() {
               this.constructor = t
             }
@@ -6616,7 +6675,7 @@
           }),
         i =
           (this && this.__decorate) ||
-          function(t, e, n, o) {
+          function (t, e, n, o) {
             var r,
               i = arguments.length,
               s = i < 3 ? e : null === o ? (o = Object.getOwnPropertyDescriptor(e, n)) : o
@@ -6629,7 +6688,7 @@
       var s = n(0),
         a = n(14),
         p = n(4),
-        u = (function(t) {
+        u = (function (t) {
           function e(e) {
             var n = t.call(this, e) || this
             return (n.type = 'onFocus'), (a.uuidEventSystem.handlerMap[n.uuid] = n), n
@@ -6641,7 +6700,7 @@
           )
         })(p.OnUUIDEvent)
       e.OnFocus = u
-      var l = (function(t) {
+      var l = (function (t) {
         function e(e) {
           var n = t.call(this, e) || this
           return (n.type = 'onTextSubmit'), (a.uuidEventSystem.handlerMap[n.uuid] = n), n
@@ -6653,7 +6712,7 @@
         )
       })(p.OnUUIDEvent)
       e.OnTextSubmit = l
-      var c = (function(t) {
+      var c = (function (t) {
         function e(e) {
           var n = t.call(this, e) || this
           return (n.type = 'onBlur'), (a.uuidEventSystem.handlerMap[n.uuid] = n), n
@@ -6665,7 +6724,7 @@
         )
       })(p.OnUUIDEvent)
       e.OnBlur = c
-      var h = (function(t) {
+      var h = (function (t) {
         function e(e) {
           var n = t.call(this, e) || this
           return (n.type = 'onEnter'), (a.uuidEventSystem.handlerMap[n.uuid] = n), n
@@ -6677,7 +6736,7 @@
         )
       })(p.OnUUIDEvent)
       e.OnEnter = h
-      var d = (function(t) {
+      var d = (function (t) {
         function e(e) {
           var n = t.call(this, e) || this
           return (n.type = 'onChange'), (a.uuidEventSystem.handlerMap[n.uuid] = n), n
@@ -6689,7 +6748,7 @@
         )
       })(p.OnUUIDEvent)
       e.OnChanged = d
-      var f = (function(t) {
+      var f = (function (t) {
         function e(e, n) {
           var o = t.call(this, e) || this
           return (
@@ -6710,7 +6769,7 @@
         )
       })(p.OnPointerUUIDEvent)
       e.OnClick = f
-      var y = (function(t) {
+      var y = (function (t) {
         function e(e, n) {
           var o = t.call(this, e) || this
           return (
@@ -6731,7 +6790,7 @@
         )
       })(p.OnPointerUUIDEvent)
       e.OnPointerDown = y
-      var v = (function(t) {
+      var v = (function (t) {
         function e(e, n) {
           var o = t.call(this, e) || this
           return (
@@ -6753,7 +6812,7 @@
       })(p.OnPointerUUIDEvent)
       e.OnPointerUp = v
     },
-    function(t, e, n) {
+    function (t, e, n) {
       'use strict'
       Object.defineProperty(e, '__esModule', { value: !0 }), (e.MessageBus = e.getMessageObserver = void 0)
       var o = n(20),
@@ -6765,31 +6824,31 @@
         return a || (a = new o.Observable()), a
       }
       e.getMessageObserver = p
-      var u = (function() {
+      var u = (function () {
         function t() {
           var t = this
           ;(this.messageQueue = []),
             (this.connected = !1),
             (this.flushing = !1),
-            (function() {
+            (function () {
               if (!s) {
-                ;(s = dcl.loadModule('@decentraland/CommunicationsController')).then(function(t) {
+                ;(s = dcl.loadModule('@decentraland/CommunicationsController')).then(function (t) {
                   i = t
                 })
                 var t = p()
                 dcl.subscribe('comms'),
-                  dcl.onEvent(function(e) {
+                  dcl.onEvent(function (e) {
                     'comms' === e.type && t.notifyObservers(e.data)
                   })
               }
               return s
-            })().then(function(e) {
+            })().then(function (e) {
               ;(t.connected = !0), t.flush()
             })
         }
         return (
-          (t.prototype.on = function(t, e) {
-            return p().add(function(n) {
+          (t.prototype.on = function (t, e) {
+            return p().add(function (n) {
               try {
                 var o = JSON.parse(n.message)
                 o.message === t && e(o.payload, n.sender)
@@ -6798,23 +6857,23 @@
               }
             })
           }),
-          (t.prototype.sendRaw = function(t) {
+          (t.prototype.sendRaw = function (t) {
             this.messageQueue.push(t), this.connected && this.flush()
           }),
-          (t.prototype.emit = function(t, e) {
+          (t.prototype.emit = function (t, e) {
             var n = JSON.stringify({ message: t, payload: e })
             this.sendRaw(n), p().notifyObservers({ message: n, sender: 'self' })
           }),
-          (t.prototype.flush = function() {
+          (t.prototype.flush = function () {
             var t = this
             if (0 !== this.messageQueue.length && this.connected && i && !this.flushing) {
               var e = this.messageQueue.shift()
               ;(this.flushing = !0),
                 dcl.callRpc(i.rpcHandle, 'send', [e]).then(
-                  function(e) {
+                  function (e) {
                     ;(t.flushing = !1), t.flush()
                   },
-                  function(e) {
+                  function (e) {
                     ;(t.flushing = !1), r.error('Error flushing MessageBus', e)
                   }
                 )
@@ -6824,7 +6883,7 @@
         )
       })()
       e.MessageBus = u
-    }
+    },
   ])
 )
 
@@ -7336,9 +7395,9 @@ const nft = new Entity('nft')
 engine.addEntity(nft)
 nft.setParent(_scene)
 const transform46 = new Transform({
-  position: new Vector3(0.3611235022544861, 2.541051149368286, 3.081850051879883),
+  position: new Vector3(0.36112356185913086, 2.541051149368286, 3.081850051879883),
   rotation: new Quaternion(-1.4036670012895682e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071067690849304),
-  scale: new Vector3(3.3827126026153564, 3.156858205795288, 0.9999999403953552)
+  scale: new Vector3(2.4709081649780273, 1.95090651512146, 0.9999999403953552)
 })
 nft.addComponentOrReplace(transform46)
 const nftShape = new NFTShape("ethereum://0x60f80121c31a0d46b5279700f9df786054aa5ee5/385727")
@@ -7352,9 +7411,9 @@ const nft2 = new Entity('nft2')
 engine.addEntity(nft2)
 nft2.setParent(_scene)
 const transform47 = new Transform({
-  position: new Vector3(0.3814784288406372, 2.5475828647613525, 12.957402229309082),
+  position: new Vector3(0.38147830963134766, 2.5475828647613525, 12.957403182983398),
   rotation: new Quaternion(-1.520353836586847e-15, -0.7071068286895752, 8.429368847373553e-8, 0.7071067690849304),
-  scale: new Vector3(3.19222354888916, 3.065547227859497, 0.9999999403953552)
+  scale: new Vector3(2.397366523742676, 1.8810300827026367, 0.9999999403953552)
 })
 nft2.addComponentOrReplace(transform47)
 const nftShape2 = new NFTShape("ethereum://0x60f80121c31a0d46b5279700f9df786054aa5ee5/385559")
@@ -7402,7 +7461,7 @@ script1.spawn(imageFromURL14, {"image":"https://i.imgur.com/QcUwFdz.jpg"}, creat
 script1.spawn(imageFromURL15, {"image":"https://i.imgur.com/sgCcz2y.jpg"}, createChannel(channelId, imageFromURL15, channelBus))
 script1.spawn(imageFromURL16, {"image":"https://i.imgur.com/QcUwFdz.jpg"}, createChannel(channelId, imageFromURL16, channelBus))
 script1.spawn(imageFromURL17, {"image":"https://i.imgur.com/m0PsPsm.jpg"}, createChannel(channelId, imageFromURL17, channelBus))
-script6.spawn(messageBubble, {"text":"SHOP HERE\n         on \n    wall-link!!","fontSize":13}, createChannel(channelId, messageBubble, channelBus))
-script6.spawn(messageBubble2, {"text":" TWEET HERE\n           on \n      wall-link!!","fontSize":12}, createChannel(channelId, messageBubble2, channelBus))
+script6.spawn(messageBubble, {"text":"SHOP HERE\n         on \n    wall-link!!","fontSize":17}, createChannel(channelId, messageBubble, channelBus))
+script6.spawn(messageBubble2, {"text":" TWEET HERE\n           on \n      wall-link!!","fontSize":17}, createChannel(channelId, messageBubble2, channelBus))
 script1.spawn(imageFromURL18, {"image":"https://i.imgur.com/rHol1Kx.jpg"}, createChannel(channelId, imageFromURL18, channelBus))
 script1.spawn(imageFromURL19, {"image":"https://i.imgur.com/ARlTuc4.jpg"}, createChannel(channelId, imageFromURL19, channelBus))

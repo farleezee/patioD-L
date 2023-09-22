@@ -7102,7 +7102,7 @@ const messageBubble2 = new Entity('messageBubble2')
 engine.addEntity(messageBubble2)
 messageBubble2.setParent(_scene)
 const transform19 = new Transform({
-  position: new Vector3(1.1194896697998047, 2.0000007152557373, 14.91415023803711),
+  position: new Vector3(1.2661566734313965, 2.0000007152557373, 14.91415023803711),
   rotation: new Quaternion(3.9819426485030525e-16, 0.471396803855896, -5.6194867426029305e-8, -0.8819212317466736),
   scale: new Vector3(0.6249111294746399, 0.5356435775756836, 0.6249111294746399)
 })
@@ -7673,64 +7673,20 @@ const transform71 = new Transform({
 })
 wallPlainGlass7.addComponentOrReplace(transform71)
 
-const outdoorTable = new Entity('outdoorTable')
-engine.addEntity(outdoorTable)
-outdoorTable.setParent(_scene)
-const transform72 = new Transform({
-  position: new Vector3(1.3511714935302734, 0, 0.8470687866210938),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(0.4999999403953552, 1, 0.2499999850988388)
-})
-outdoorTable.addComponentOrReplace(transform72)
+const outdoorTable3 = new Entity('outdoorTable3')
+engine.addEntity(outdoorTable3)
+outdoorTable3.setParent(_scene)
 const gltfShape7 = new GLTFShape("ea9146e1-5666-40da-80c9-8a3ce23fb979/Table_01/Table_01.glb")
 gltfShape7.withCollisions = true
 gltfShape7.isPointerBlocker = true
 gltfShape7.visible = true
-outdoorTable.addComponentOrReplace(gltfShape7)
-
-const outdoorTable2 = new Entity('outdoorTable2')
-engine.addEntity(outdoorTable2)
-outdoorTable2.setParent(_scene)
-outdoorTable2.addComponentOrReplace(gltfShape7)
-const transform73 = new Transform({
-  position: new Vector3(3.9860737323760986, 0, 0.8470687866210938),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(0.4999999403953552, 1, 0.2499999850988388)
-})
-outdoorTable2.addComponentOrReplace(transform73)
-
-const outdoorTable3 = new Entity('outdoorTable3')
-engine.addEntity(outdoorTable3)
-outdoorTable3.setParent(_scene)
 outdoorTable3.addComponentOrReplace(gltfShape7)
-const transform74 = new Transform({
-  position: new Vector3(6.681774139404297, 0, 0.8470687866210938),
+const transform72 = new Transform({
+  position: new Vector3(8.10548210144043, 0, 15.233450889587402),
   rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(0.4999999403953552, 1, 0.2499999850988388)
+  scale: new Vector3(0.4999999403953552, 0.5, 0.2499999850988388)
 })
-outdoorTable3.addComponentOrReplace(transform74)
-
-const outdoorTable4 = new Entity('outdoorTable4')
-engine.addEntity(outdoorTable4)
-outdoorTable4.setParent(_scene)
-outdoorTable4.addComponentOrReplace(gltfShape7)
-const transform75 = new Transform({
-  position: new Vector3(9.363017082214355, 0, 0.8470687866210938),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(0.4999999403953552, 1, 0.2499999850988388)
-})
-outdoorTable4.addComponentOrReplace(transform75)
-
-const outdoorTable5 = new Entity('outdoorTable5')
-engine.addEntity(outdoorTable5)
-outdoorTable5.setParent(_scene)
-outdoorTable5.addComponentOrReplace(gltfShape7)
-const transform76 = new Transform({
-  position: new Vector3(12.033683776855469, 0, 0.8470687866210938),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(0.4999999403953552, 1, 0.2499999850988388)
-})
-outdoorTable5.addComponentOrReplace(transform76)
+outdoorTable3.addComponentOrReplace(transform72)
 
 const channelId = Math.random().toString(16).slice(2)
 const channelBus = new MessageBus()

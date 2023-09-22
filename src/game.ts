@@ -35,9 +35,9 @@ const grafittiWallJ = new Entity('grafittiWallJ')
 engine.addEntity(grafittiWallJ)
 grafittiWallJ.setParent(_scene)
 const transform3 = new Transform({
-  position: new Vector3(15.819977760314941, 0, 16),
-  rotation: new Quaternion(7.980936705509045e-15, 0, 5.901507242416469e-15, -1),
-  scale: new Vector3(3.8464510440826416, 1, 1.0000042915344238)
+  position: new Vector3(0.09957385063171387, 8.344650268554688e-7, 15.81998062133789),
+  rotation: new Quaternion(3.009794358730701e-15, 0.7071068286895752, -8.429368847373553e-8, -0.7071068286895752),
+  scale: new Vector3(3.8464548587799072, 1, 1.0000052452087402)
 })
 grafittiWallJ.addComponentOrReplace(transform3)
 const gltfShape2 = new GLTFShape("9af74dab-0029-45c8-a431-4c6604ce1099/Grafitti_Wall_J.glb")
@@ -50,8 +50,8 @@ const floorHexagon = new Entity('floorHexagon')
 engine.addEntity(floorHexagon)
 floorHexagon.setParent(_scene)
 const transform4 = new Transform({
-  position: new Vector3(16, 0, 16),
-  rotation: new Quaternion(-7.429307451521747e-16, 0, 1.7763568394002505e-15, 1),
+  position: new Vector3(0, 0, 16),
+  rotation: new Quaternion(-3.3017541219132864e-15, -0.7071068286895752, 8.429368847373553e-8, 0.7071067690849304),
   scale: new Vector3(4, 1, 4)
 })
 floorHexagon.addComponentOrReplace(transform4)
@@ -65,9 +65,9 @@ const externalLink = new Entity('externalLink')
 engine.addEntity(externalLink)
 externalLink.setParent(_scene)
 const transform5 = new Transform({
-  position: new Vector3(14.479756355285645, 1.4391692876815796, 15.6092529296875),
-  rotation: new Quaternion(1.6112725532001107e-15, -1.1920927533992653e-7, 8.30934577871964e-15, 1),
-  scale: new Vector3(0.9714213609695435, 1, 1.0000033378601074)
+  position: new Vector3(0.49032092094421387, 1.4391698837280273, 14.479757308959961),
+  rotation: new Quaternion(3.772921916295885e-15, -0.70710688829422, 8.429370268459024e-8, 0.7071067690849304),
+  scale: new Vector3(0.9714223146438599, 1, 1.0000042915344238)
 })
 externalLink.addComponentOrReplace(transform5)
 
@@ -75,9 +75,9 @@ const twitterButtonLink = new Entity('twitterButtonLink')
 engine.addEntity(twitterButtonLink)
 twitterButtonLink.setParent(_scene)
 const transform6 = new Transform({
-  position: new Vector3(1.9688308238983154, 1.392651915550232, 15.653909683227539),
-  rotation: new Quaternion(1.2602629468908759e-15, 1, -1.1920927533992653e-7, 0),
-  scale: new Vector3(0.9714212417602539, 1, 1.0000032186508179)
+  position: new Vector3(0.4456660747528076, 1.392651081085205, 1.9688301086425781),
+  rotation: new Quaternion(8.911404939166735e-16, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
+  scale: new Vector3(0.9714221954345703, 1, 1.0000041723251343)
 })
 twitterButtonLink.addComponentOrReplace(transform6)
 
@@ -85,9 +85,9 @@ const imageFromURL = new Entity('imageFromURL')
 engine.addEntity(imageFromURL)
 imageFromURL.setParent(_scene)
 const transform7 = new Transform({
-  position: new Vector3(8.049259185791016, 3.8694911003112793, 15.665105819702148),
-  rotation: new Quaternion(1.2602629468908759e-15, 1, -1.1920927533992653e-7, 0),
-  scale: new Vector3(15.770478248596191, 6.104907035827637, 0.3208199739456177)
+  position: new Vector3(0.43446850776672363, 3.8694911003112793, 8.049259185791016),
+  rotation: new Quaternion(8.911404939166735e-16, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
+  scale: new Vector3(15.770493507385254, 6.104907035827637, 0.3208199739456177)
 })
 imageFromURL.addComponentOrReplace(transform7)
 
@@ -155,9 +155,9 @@ const imageFromURL10 = new Entity('imageFromURL10')
 engine.addEntity(imageFromURL10)
 imageFromURL10.setParent(_scene)
 const transform14 = new Transform({
-  position: new Vector3(8, 9.998047828674316, 0.0046787261962890625),
-  rotation: new Quaternion(-0.7071068286895752, -2.9802318834981634e-8, 1.3155380429452634e-7, -0.7071067690849304),
-  scale: new Vector3(15.85307788848877, 15.926098823547363, 0.32495880126953125)
+  position: new Vector3(16, 9.998047828674316, 8.004678726196289),
+  rotation: new Quaternion(0.5000001788139343, -0.49999991059303284, 0.5, 0.5),
+  scale: new Vector3(15.853093147277832, 15.926100730895996, 0.32495877146720886)
 })
 imageFromURL10.addComponentOrReplace(transform14)
 
@@ -165,9 +165,9 @@ const radio = new Entity('radio')
 engine.addEntity(radio)
 radio.setParent(_scene)
 const transform15 = new Transform({
-  position: new Vector3(0.7556191682815552, 1, 4.9923176765441895),
-  rotation: new Quaternion(0.008567742072045803, -0.7053873538970947, -0.01345257367938757, -0.7086426615715027),
-  scale: new Vector3(1.0000007152557373, 0.9999999403953552, 1.0000015497207642)
+  position: new Vector3(10.956101417541504, 1, 0.7782899141311646),
+  rotation: new Quaternion(0.015570775605738163, 0.002301812171936035, -0.0034541571512818336, -0.999870240688324),
+  scale: new Vector3(1.0000014305114746, 0.9999999403953552, 1.0000028610229492)
 })
 radio.addComponentOrReplace(transform15)
 
@@ -175,7 +175,7 @@ const verticalBluePad = new Entity('verticalBluePad')
 engine.addEntity(verticalBluePad)
 verticalBluePad.setParent(_scene)
 const transform16 = new Transform({
-  position: new Vector3(8.000000953674316, 0, 8),
+  position: new Vector3(8.000000953674316, 0, 8.5),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
@@ -185,9 +185,9 @@ const wallHexagonGrid2 = new Entity('wallHexagonGrid2')
 engine.addEntity(wallHexagonGrid2)
 wallHexagonGrid2.setParent(_scene)
 const transform17 = new Transform({
-  position: new Vector3(0, 3.9852542877197266, 15.731605529785156),
-  rotation: new Quaternion(6.189692745072917e-19, 1, -1.1920927533992653e-7, 0),
-  scale: new Vector3(7.967843055725098, 1.5, 0.8076556921005249)
+  position: new Vector3(0.09550081938505173, 3.9852542877197266, 15.755205154418945),
+  rotation: new Quaternion(2.3689055139155743e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
+  scale: new Vector3(7.652790546417236, 1.5, 0.8076586127281189)
 })
 wallHexagonGrid2.addComponentOrReplace(transform17)
 const gltfShape4 = new GLTFShape("59fecc02-0949-4feb-9501-f4279744b57e/HexagonGridWall.glb")
@@ -200,9 +200,9 @@ const messageBubble = new Entity('messageBubble')
 engine.addEntity(messageBubble)
 messageBubble.setParent(_scene)
 const transform18 = new Transform({
-  position: new Vector3(14.890656471252441, 1.9999991655349731, 15.414148330688477),
-  rotation: new Quaternion(2.9148584824859654e-15, 0.3826834559440613, -4.561941935321556e-8, 0.9238795638084412),
-  scale: new Vector3(0.6159782409667969, 0.5356435775756836, 0.6159782409667969)
+  position: new Vector3(0.6854255199432373, 1.9999998807907104, 14.890657424926758),
+  rotation: new Quaternion(6.388820120048445e-16, -0.3826834559440613, 4.561942290592924e-8, 0.9238795638084412),
+  scale: new Vector3(0.6159783601760864, 0.5356435775756836, 0.6159783601760864)
 })
 messageBubble.addComponentOrReplace(transform18)
 
@@ -210,9 +210,9 @@ const messageBubble2 = new Entity('messageBubble2')
 engine.addEntity(messageBubble2)
 messageBubble2.setParent(_scene)
 const transform19 = new Transform({
-  position: new Vector3(1.2661566734313965, 2.0000007152557373, 14.91415023803711),
-  rotation: new Quaternion(3.9819426485030525e-16, 0.471396803855896, -5.6194867426029305e-8, -0.8819212317466736),
-  scale: new Vector3(0.6249111294746399, 0.5356435775756836, 0.6249111294746399)
+  position: new Vector3(1.1854255199432373, 1.9999998807907104, 1.5000004768371582),
+  rotation: new Quaternion(-1.913504814329641e-15, 0.9569404125213623, -1.1407617250824842e-7, -0.2902846336364746),
+  scale: new Vector3(0.6249119639396667, 0.5356435775756836, 0.6249119639396667)
 })
 messageBubble2.addComponentOrReplace(transform19)
 
@@ -220,9 +220,9 @@ const nft = new Entity('nft')
 engine.addEntity(nft)
 nft.setParent(_scene)
 const transform20 = new Transform({
-  position: new Vector3(3.8742151260375977, 2.5410518646240234, 15.674311637878418),
-  rotation: new Quaternion(1.8729645469246292e-15, -5.960464477539063e-8, 1.2039194799098223e-15, 1),
-  scale: new Vector3(3.6004281044006348, 2.9263596534729004, 1)
+  position: new Vector3(0.4252631664276123, 2.5410513877868652, 3.8742146492004395),
+  rotation: new Quaternion(3.957966428018954e-15, -0.70710688829422, 8.429369557916289e-8, 0.7071067690849304),
+  scale: new Vector3(3.6004319190979004, 2.9263596534729004, 1.0000009536743164)
 })
 nft.addComponentOrReplace(transform20)
 const nftShape = new NFTShape("ethereum://0x60f80121c31a0d46b5279700f9df786054aa5ee5/385727")
@@ -236,9 +236,9 @@ const nft2 = new Entity('nft2')
 engine.addEntity(nft2)
 nft2.setParent(_scene)
 const transform21 = new Transform({
-  position: new Vector3(12.429673194885254, 2.5475821495056152, 15.653956413269043),
-  rotation: new Quaternion(-1.7622592465426235e-15, -5.960464477539063e-8, -2.3487941988906786e-15, 1),
-  scale: new Vector3(3.4932684898376465, 2.821545124053955, 1)
+  position: new Vector3(0.4456174373626709, 2.5475826263427734, 12.42967414855957),
+  rotation: new Quaternion(3.899622798612078e-15, -0.70710688829422, 8.429369557916289e-8, 0.7071067690849304),
+  scale: new Vector3(3.493274211883545, 2.821545124053955, 1.0000009536743164)
 })
 nft2.addComponentOrReplace(transform21)
 const nftShape2 = new NFTShape("ethereum://0x60f80121c31a0d46b5279700f9df786054aa5ee5/385559")
@@ -252,9 +252,9 @@ const imageFromURL3 = new Entity('imageFromURL3')
 engine.addEntity(imageFromURL3)
 imageFromURL3.setParent(_scene)
 const transform22 = new Transform({
-  position: new Vector3(8.0829496383667, 8, 0.07960892468690872),
-  rotation: new Quaternion(-1.1422584036133773e-14, -1, 1.1920927533992653e-7, 2.2351741790771484e-8),
-  scale: new Vector3(15.170259475708008, 2.0351979732513428, 0.2375454604625702)
+  position: new Vector3(15.9031982421875, 7.999999523162842, 8.063701629638672),
+  rotation: new Quaternion(-8.076986853595893e-15, -0.7071068286895752, 8.429368847373553e-8, -0.7071068286895752),
+  scale: new Vector3(15.170278549194336, 2.0351979732513428, 0.23754575848579407)
 })
 imageFromURL3.addComponentOrReplace(transform22)
 
@@ -267,9 +267,9 @@ gltfShape5.isPointerBlocker = true
 gltfShape5.visible = true
 wallPlainGlass8.addComponentOrReplace(gltfShape5)
 const transform23 = new Transform({
-  position: new Vector3(13.805848121643066, 0, 0.34576085209846497),
-  rotation: new Quaternion(-2.5354828439160156e-14, 8.940696716308594e-8, 1.542002474059362e-14, -1),
-  scale: new Vector3(6.749911308288574, 2, 1)
+  position: new Vector3(15.637046813964844, 2.384185791015625e-7, 13.786602020263672),
+  rotation: new Quaternion(-3.482920535638999e-14, 0.70710688829422, -8.429370268459024e-8, -0.7071067690849304),
+  scale: new Vector3(6.74992561340332, 2, 1.0000011920928955)
 })
 wallPlainGlass8.addComponentOrReplace(transform23)
 
@@ -282,9 +282,9 @@ gltfShape6.isPointerBlocker = true
 gltfShape6.visible = true
 doorframeNavy2.addComponentOrReplace(gltfShape6)
 const transform24 = new Transform({
-  position: new Vector3(15.952959060668945, 0, 0.3366464376449585),
-  rotation: new Quaternion(-7.563805166238297e-15, -3.725290298461914e-8, -6.669129580316258e-15, 1),
-  scale: new Vector3(1.0740686655044556, 1, 1.0000003576278687)
+  position: new Vector3(15.646161079406738, 4.76837158203125e-7, 15.933712005615234),
+  rotation: new Quaternion(9.681375887671023e-16, -0.7071068286895752, 8.429368847373553e-8, 0.7071068286895752),
+  scale: new Vector3(1.074069857597351, 1, 1.0000015497207642)
 })
 doorframeNavy2.addComponentOrReplace(transform24)
 
@@ -293,9 +293,9 @@ engine.addEntity(wallPlainGlass9)
 wallPlainGlass9.setParent(_scene)
 wallPlainGlass9.addComponentOrReplace(gltfShape5)
 const transform25 = new Transform({
-  position: new Vector3(15.939361572265625, 4, 0.30565643310546875),
-  rotation: new Quaternion(1.9976533448262668e-14, 5.960464477539063e-8, -1.1746675782412213e-14, 1),
-  scale: new Vector3(1.0682162046432495, 1, 1.0000027418136597)
+  position: new Vector3(15.677149772644043, 4.000000476837158, 15.920114517211914),
+  rotation: new Quaternion(1.5867988279144422e-14, -0.7071067690849304, 8.429370268459024e-8, 0.70710688829422),
+  scale: new Vector3(1.068217396736145, 1, 1.0000039339065552)
 })
 wallPlainGlass9.addComponentOrReplace(transform25)
 
@@ -304,9 +304,9 @@ engine.addEntity(wallPlainGlass)
 wallPlainGlass.setParent(_scene)
 wallPlainGlass.addComponentOrReplace(gltfShape5)
 const transform26 = new Transform({
-  position: new Vector3(15.997047424316406, 4.49171781539917, 15.881132125854492),
-  rotation: new Quaternion(-0.5, 0.5, -0.5000000596046448, 0.4999999403953552),
-  scale: new Vector3(0.5100005865097046, 1.0000014305114746, 1)
+  position: new Vector3(0.13416004180908203, 4.4917168617248535, 15.913652420043945),
+  rotation: new Quaternion(-3.2929160213229574e-16, 0, 0.7071067690849304, -0.7071068286895752),
+  scale: new Vector3(0.5100005865097046, 1.0000015497207642, 1.0000001192092896)
 })
 wallPlainGlass.addComponentOrReplace(transform26)
 
@@ -314,9 +314,9 @@ const imageFromURL23 = new Entity('imageFromURL23')
 engine.addEntity(imageFromURL23)
 imageFromURL23.setParent(_scene)
 const transform27 = new Transform({
-  position: new Vector3(15.969127655029297, 0, 13.91065502166748),
-  rotation: new Quaternion(3.4995418208113227e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(3.9828507900238037, 4.472198486328125, 1.0000028610229492)
+  position: new Vector3(2.10463809967041, 0, 15.885733604431152),
+  rotation: new Quaternion(-1.0045665064769074e-14, 0, 3.0870244935207432e-15, -1),
+  scale: new Vector3(3.9828526973724365, 4.472198486328125, 1.0000033378601074)
 })
 imageFromURL23.addComponentOrReplace(transform27)
 
@@ -324,9 +324,9 @@ const imageFromURL24 = new Entity('imageFromURL24')
 engine.addEntity(imageFromURL24)
 imageFromURL24.setParent(_scene)
 const transform28 = new Transform({
-  position: new Vector3(15.81297492980957, 0, 13.908777236938477),
-  rotation: new Quaternion(9.075116290838494e-16, -0.7071067094802856, 8.429368847373553e-8, 0.7071069478988647),
-  scale: new Vector3(3.8791253566741943, 4.4635539054870605, 1.0000019073486328)
+  position: new Vector3(2.106515884399414, 0, 15.729580879211426),
+  rotation: new Quaternion(1.310345654545594e-14, 1, -1.1920927533992653e-7, -2.0861622829215776e-7),
+  scale: new Vector3(3.879127264022827, 4.4635539054870605, 1.000002384185791)
 })
 imageFromURL24.addComponentOrReplace(transform28)
 
@@ -335,9 +335,9 @@ engine.addEntity(wallHexagonGrid)
 wallHexagonGrid.setParent(_scene)
 wallHexagonGrid.addComponentOrReplace(gltfShape4)
 const transform29 = new Transform({
-  position: new Vector3(15.824180603027344, 1.0973030839522835e-7, 15.872520446777344),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(1.9670453071594238, 1.115785837173462, 0.3672069013118744)
+  position: new Vector3(0.14277219772338867, 0, 15.740785598754883),
+  rotation: new Quaternion(7.728269318441928e-15, 1, -1.1920926823449918e-7, 0),
+  scale: new Vector3(1.9670462608337402, 1.115785837173462, 0.36720579862594604)
 })
 wallHexagonGrid.addComponentOrReplace(transform29)
 
@@ -346,9 +346,9 @@ engine.addEntity(wallHexagonGrid9)
 wallHexagonGrid9.setParent(_scene)
 wallHexagonGrid9.addComponentOrReplace(gltfShape4)
 const transform30 = new Transform({
-  position: new Vector3(15.824180603027344, 5.5, 15.872520446777344),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(1.967045783996582, 1.115785837173462, 0.3672069013118744)
+  position: new Vector3(0.14277124404907227, 5.499999046325684, 15.740785598754883),
+  rotation: new Quaternion(7.728269318441928e-15, 1, -1.1920926823449918e-7, 0),
+  scale: new Vector3(1.9670467376708984, 1.115785837173462, 0.3672058582305908)
 })
 wallHexagonGrid9.addComponentOrReplace(transform30)
 
@@ -356,9 +356,9 @@ const imageFromURL2 = new Entity('imageFromURL2')
 engine.addEntity(imageFromURL2)
 imageFromURL2.setParent(_scene)
 const transform31 = new Transform({
-  position: new Vector3(15.81297492980957, 5.5, 13.908777236938477),
-  rotation: new Quaternion(9.075116290838494e-16, -0.7071067094802856, 8.429368847373553e-8, 0.7071069478988647),
-  scale: new Vector3(3.8791263103485107, 4.4635539054870605, 1.000002145767212)
+  position: new Vector3(2.1065149307250977, 5.499999523162842, 15.72957992553711),
+  rotation: new Quaternion(1.310345654545594e-14, 1, -1.1920927533992653e-7, -2.0861622829215776e-7),
+  scale: new Vector3(3.8791282176971436, 4.4635539054870605, 1.0000026226043701)
 })
 imageFromURL2.addComponentOrReplace(transform31)
 
@@ -366,9 +366,9 @@ const imageFromURL25 = new Entity('imageFromURL25')
 engine.addEntity(imageFromURL25)
 imageFromURL25.setParent(_scene)
 const transform32 = new Transform({
-  position: new Vector3(15.969127655029297, 5.5, 13.91065502166748),
-  rotation: new Quaternion(3.4995418208113227e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(3.98285174369812, 4.472198486328125, 1.0000030994415283)
+  position: new Vector3(2.1046371459960938, 5.499999523162842, 15.885732650756836),
+  rotation: new Quaternion(-1.0045665064769074e-14, 0, 3.0870244935207432e-15, -1),
+  scale: new Vector3(3.982853651046753, 4.472198486328125, 1.0000035762786865)
 })
 imageFromURL25.addComponentOrReplace(transform32)
 
@@ -376,9 +376,9 @@ const imageFromURL26 = new Entity('imageFromURL26')
 engine.addEntity(imageFromURL26)
 imageFromURL26.setParent(_scene)
 const transform33 = new Transform({
-  position: new Vector3(15.81297492980957, 5.5, 7.979310989379883),
-  rotation: new Quaternion(9.075116290838494e-16, -0.7071067094802856, 8.429368847373553e-8, 0.7071069478988647),
-  scale: new Vector3(3.8791282176971436, 4.4635539054870605, 1.0000026226043701)
+  position: new Vector3(8.035982131958008, 5.5, 15.729580879211426),
+  rotation: new Quaternion(1.310345654545594e-14, 1, -1.1920927533992653e-7, -2.0861622829215776e-7),
+  scale: new Vector3(3.8791301250457764, 4.4635539054870605, 1.0000030994415283)
 })
 imageFromURL26.addComponentOrReplace(transform33)
 
@@ -387,9 +387,9 @@ engine.addEntity(wallHexagonGrid10)
 wallHexagonGrid10.setParent(_scene)
 wallHexagonGrid10.addComponentOrReplace(gltfShape4)
 const transform34 = new Transform({
-  position: new Vector3(15.824180603027344, 5.5, 9.94305419921875),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(1.9670467376708984, 1.115785837173462, 0.3672068417072296)
+  position: new Vector3(6.072238445281982, 5.5, 15.7407865524292),
+  rotation: new Quaternion(7.728269318441928e-15, 1, -1.1920926823449918e-7, 0),
+  scale: new Vector3(1.9670476913452148, 1.115785837173462, 0.3672056198120117)
 })
 wallHexagonGrid10.addComponentOrReplace(transform34)
 
@@ -397,9 +397,9 @@ const imageFromURL27 = new Entity('imageFromURL27')
 engine.addEntity(imageFromURL27)
 imageFromURL27.setParent(_scene)
 const transform35 = new Transform({
-  position: new Vector3(15.969127655029297, 5.5, 7.981188774108887),
-  rotation: new Quaternion(3.4995418208113227e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(3.982853651046753, 4.472198486328125, 1.0000035762786865)
+  position: new Vector3(8.034104347229004, 5.5, 15.885733604431152),
+  rotation: new Quaternion(-1.0045665064769074e-14, 0, 3.0870244935207432e-15, -1),
+  scale: new Vector3(3.9828555583953857, 4.472198486328125, 1.0000040531158447)
 })
 imageFromURL27.addComponentOrReplace(transform35)
 
@@ -407,9 +407,9 @@ const imageFromURL28 = new Entity('imageFromURL28')
 engine.addEntity(imageFromURL28)
 imageFromURL28.setParent(_scene)
 const transform36 = new Transform({
-  position: new Vector3(15.969127655029297, 0, 7.981188774108887),
-  rotation: new Quaternion(3.4995418208113227e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(3.9828526973724365, 4.472198486328125, 1.0000033378601074)
+  position: new Vector3(8.034104347229004, 2.384185791015625e-7, 15.885734558105469),
+  rotation: new Quaternion(-1.0045665064769074e-14, 0, 3.0870244935207432e-15, -1),
+  scale: new Vector3(3.9828546047210693, 4.472198486328125, 1.0000038146972656)
 })
 imageFromURL28.addComponentOrReplace(transform36)
 
@@ -418,9 +418,9 @@ engine.addEntity(wallHexagonGrid11)
 wallHexagonGrid11.setParent(_scene)
 wallHexagonGrid11.addComponentOrReplace(gltfShape4)
 const transform37 = new Transform({
-  position: new Vector3(15.824180603027344, 0, 9.94305419921875),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(1.9670462608337402, 1.115785837173462, 0.3672068417072296)
+  position: new Vector3(6.072238922119141, 0, 15.7407865524292),
+  rotation: new Quaternion(7.728269318441928e-15, 1, -1.1920926823449918e-7, 0),
+  scale: new Vector3(1.9670472145080566, 1.115785837173462, 0.3672056794166565)
 })
 wallHexagonGrid11.addComponentOrReplace(transform37)
 
@@ -428,9 +428,9 @@ const imageFromURL29 = new Entity('imageFromURL29')
 engine.addEntity(imageFromURL29)
 imageFromURL29.setParent(_scene)
 const transform38 = new Transform({
-  position: new Vector3(15.81297492980957, 0, 7.979310989379883),
-  rotation: new Quaternion(9.075116290838494e-16, -0.7071067094802856, 8.429368847373553e-8, 0.7071069478988647),
-  scale: new Vector3(3.879127264022827, 4.4635539054870605, 1.000002384185791)
+  position: new Vector3(8.035983085632324, 2.384185791015625e-7, 15.729581832885742),
+  rotation: new Quaternion(1.310345654545594e-14, 1, -1.1920927533992653e-7, -2.0861622829215776e-7),
+  scale: new Vector3(3.87912917137146, 4.4635539054870605, 1.0000028610229492)
 })
 imageFromURL29.addComponentOrReplace(transform38)
 
@@ -439,9 +439,9 @@ engine.addEntity(wallPlainGlass10)
 wallPlainGlass10.setParent(_scene)
 wallPlainGlass10.addComponentOrReplace(gltfShape5)
 const transform39 = new Transform({
-  position: new Vector3(15.997047424316406, 4.49171781539917, 9.951665878295898),
-  rotation: new Quaternion(-0.5, 0.5, -0.5000000596046448, 0.4999999403953552),
-  scale: new Vector3(0.5100005865097046, 1.0000014305114746, 1)
+  position: new Vector3(6.063626766204834, 4.49171781539917, 15.913653373718262),
+  rotation: new Quaternion(-3.2929160213229574e-16, 0, 0.7071067690849304, -0.7071068286895752),
+  scale: new Vector3(0.5100005865097046, 1.0000015497207642, 1.0000001192092896)
 })
 wallPlainGlass10.addComponentOrReplace(transform39)
 
@@ -449,9 +449,9 @@ const imageFromURL30 = new Entity('imageFromURL30')
 engine.addEntity(imageFromURL30)
 imageFromURL30.setParent(_scene)
 const transform40 = new Transform({
-  position: new Vector3(15.81297492980957, 5.5, 2.1259841918945312),
-  rotation: new Quaternion(9.075116290838494e-16, -0.7071067094802856, 8.429368847373553e-8, 0.7071069478988647),
-  scale: new Vector3(3.87912917137146, 4.4635539054870605, 1.0000028610229492)
+  position: new Vector3(13.889309883117676, 5.500000953674316, 15.729581832885742),
+  rotation: new Quaternion(1.310345654545594e-14, 1, -1.1920927533992653e-7, -2.0861622829215776e-7),
+  scale: new Vector3(3.8791310787200928, 4.4635539054870605, 1.0000033378601074)
 })
 imageFromURL30.addComponentOrReplace(transform40)
 
@@ -459,9 +459,9 @@ const imageFromURL31 = new Entity('imageFromURL31')
 engine.addEntity(imageFromURL31)
 imageFromURL31.setParent(_scene)
 const transform41 = new Transform({
-  position: new Vector3(15.81297492980957, 0, 2.1259841918945312),
-  rotation: new Quaternion(9.075116290838494e-16, -0.7071067094802856, 8.429368847373553e-8, 0.7071069478988647),
-  scale: new Vector3(3.8791282176971436, 4.4635539054870605, 1.0000026226043701)
+  position: new Vector3(13.889309883117676, 7.152557373046875e-7, 15.729581832885742),
+  rotation: new Quaternion(1.310345654545594e-14, 1, -1.1920927533992653e-7, -2.0861622829215776e-7),
+  scale: new Vector3(3.8791301250457764, 4.4635539054870605, 1.0000030994415283)
 })
 imageFromURL31.addComponentOrReplace(transform41)
 
@@ -470,9 +470,9 @@ engine.addEntity(wallHexagonGrid12)
 wallHexagonGrid12.setParent(_scene)
 wallHexagonGrid12.addComponentOrReplace(gltfShape4)
 const transform42 = new Transform({
-  position: new Vector3(15.824180603027344, 5.5, 4.089727401733398),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(1.9670472145080566, 1.115785837173462, 0.3672068417072296)
+  position: new Vector3(11.925565719604492, 5.500000476837158, 15.7407865524292),
+  rotation: new Quaternion(7.728269318441928e-15, 1, -1.1920926823449918e-7, 0),
+  scale: new Vector3(1.967048168182373, 1.115785837173462, 0.36720550060272217)
 })
 wallHexagonGrid12.addComponentOrReplace(transform42)
 
@@ -481,9 +481,9 @@ engine.addEntity(wallHexagonGrid13)
 wallHexagonGrid13.setParent(_scene)
 wallHexagonGrid13.addComponentOrReplace(gltfShape4)
 const transform43 = new Transform({
-  position: new Vector3(15.824180603027344, 0, 4.089727401733398),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(1.9670467376708984, 1.115785837173462, 0.3672068417072296)
+  position: new Vector3(11.925566673278809, 4.76837158203125e-7, 15.740787506103516),
+  rotation: new Quaternion(7.728269318441928e-15, 1, -1.1920926823449918e-7, 0),
+  scale: new Vector3(1.9670476913452148, 1.115785837173462, 0.36720556020736694)
 })
 wallHexagonGrid13.addComponentOrReplace(transform43)
 
@@ -492,9 +492,9 @@ engine.addEntity(wallPlainGlass11)
 wallPlainGlass11.setParent(_scene)
 wallPlainGlass11.addComponentOrReplace(gltfShape5)
 const transform44 = new Transform({
-  position: new Vector3(15.98587417602539, 4.49171781539917, 4.098339080810547),
-  rotation: new Quaternion(-0.5, 0.5, -0.5000000596046448, 0.4999999403953552),
-  scale: new Vector3(0.5100005865097046, 1.0000014305114746, 1)
+  position: new Vector3(11.91695499420166, 4.491718292236328, 15.902481079101562),
+  rotation: new Quaternion(-3.2929160213229574e-16, 0, 0.7071067690849304, -0.7071068286895752),
+  scale: new Vector3(0.5100005865097046, 1.0000015497207642, 1.0000001192092896)
 })
 wallPlainGlass11.addComponentOrReplace(transform44)
 
@@ -502,9 +502,9 @@ const imageFromURL32 = new Entity('imageFromURL32')
 engine.addEntity(imageFromURL32)
 imageFromURL32.setParent(_scene)
 const transform45 = new Transform({
-  position: new Vector3(15.969127655029297, 5.5, 2.127861976623535),
-  rotation: new Quaternion(3.4995418208113227e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(3.9828546047210693, 4.472198486328125, 1.0000038146972656)
+  position: new Vector3(13.887431144714355, 5.500000953674316, 15.885734558105469),
+  rotation: new Quaternion(-1.0045665064769074e-14, 0, 3.0870244935207432e-15, -1),
+  scale: new Vector3(3.982856512069702, 4.472198486328125, 1.0000042915344238)
 })
 imageFromURL32.addComponentOrReplace(transform45)
 
@@ -512,9 +512,9 @@ const imageFromURL33 = new Entity('imageFromURL33')
 engine.addEntity(imageFromURL33)
 imageFromURL33.setParent(_scene)
 const transform46 = new Transform({
-  position: new Vector3(15.969127655029297, 0, 2.127861976623535),
-  rotation: new Quaternion(3.4995418208113227e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(3.982853651046753, 4.472198486328125, 1.0000035762786865)
+  position: new Vector3(13.887433052062988, 7.152557373046875e-7, 15.885734558105469),
+  rotation: new Quaternion(-1.0045665064769074e-14, 0, 3.0870244935207432e-15, -1),
+  scale: new Vector3(3.9828555583953857, 4.472198486328125, 1.0000040531158447)
 })
 imageFromURL33.addComponentOrReplace(transform46)
 
@@ -523,9 +523,9 @@ engine.addEntity(wallPlainGlass12)
 wallPlainGlass12.setParent(_scene)
 wallPlainGlass12.addComponentOrReplace(gltfShape5)
 const transform47 = new Transform({
-  position: new Vector3(15.611493110656738, 0, 6.0676164627075195),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(1.0112770795822144, 2.5086326599121094, 1.000002145767212)
+  position: new Vector3(9.947676658630371, 2.384185791015625e-7, 15.528099060058594),
+  rotation: new Quaternion(7.728269318441928e-15, 1, -1.1920926823449918e-7, 0),
+  scale: new Vector3(1.0112775564193726, 2.5086326599121094, 1.0000026226043701)
 })
 wallPlainGlass12.addComponentOrReplace(transform47)
 
@@ -533,9 +533,9 @@ const imageFromURL11 = new Entity('imageFromURL11')
 engine.addEntity(imageFromURL11)
 imageFromURL11.setParent(_scene)
 const transform48 = new Transform({
-  position: new Vector3(0.14492416381835938, 0, 13.908777236938477),
-  rotation: new Quaternion(9.075116290838494e-16, -0.7071067094802856, 8.429368847373553e-8, 0.7071069478988647),
-  scale: new Vector3(3.879127264022827, 4.4635539054870605, 1.000002384185791)
+  position: new Vector3(2.1696791648864746, 0, 0.28686389327049255),
+  rotation: new Quaternion(-3.999536687487827e-15, -1, 1.1920928955078125e-7, 2.0861622829215776e-7),
+  scale: new Vector3(3.87912917137146, 4.4635539054870605, 1.0000028610229492)
 })
 imageFromURL11.addComponentOrReplace(transform48)
 
@@ -544,9 +544,9 @@ engine.addEntity(wallPlainGlass2)
 wallPlainGlass2.setParent(_scene)
 wallPlainGlass2.addComponentOrReplace(gltfShape5)
 const transform49 = new Transform({
-  position: new Vector3(0.3289966583251953, 4.49171781539917, 15.881132125854492),
-  rotation: new Quaternion(-0.5, 0.5, -0.5000000596046448, 0.4999999403953552),
-  scale: new Vector3(0.5100005865097046, 1.0000014305114746, 1)
+  position: new Vector3(0.19732332229614258, 4.4917168617248535, 0.47093451023101807),
+  rotation: new Quaternion(-7.697075741972513e-16, 0, -0.7071067690849304, 0.7071068286895752),
+  scale: new Vector3(0.5100005865097046, 1.0000015497207642, 1.0000001192092896)
 })
 wallPlainGlass2.addComponentOrReplace(transform49)
 
@@ -554,9 +554,9 @@ const imageFromURL12 = new Entity('imageFromURL12')
 engine.addEntity(imageFromURL12)
 imageFromURL12.setParent(_scene)
 const transform50 = new Transform({
-  position: new Vector3(0.14492416381835938, 5.5, 13.908777236938477),
-  rotation: new Quaternion(9.075116290838494e-16, -0.7071067094802856, 8.429368847373553e-8, 0.7071069478988647),
-  scale: new Vector3(3.8791282176971436, 4.4635539054870605, 1.0000026226043701)
+  position: new Vector3(2.169678211212158, 5.499999523162842, 0.28686198592185974),
+  rotation: new Quaternion(-3.999536687487827e-15, -1, 1.1920928955078125e-7, 2.0861622829215776e-7),
+  scale: new Vector3(3.8791301250457764, 4.4635539054870605, 1.0000030994415283)
 })
 imageFromURL12.addComponentOrReplace(transform50)
 
@@ -565,9 +565,9 @@ engine.addEntity(wallHexagonGrid3)
 wallHexagonGrid3.setParent(_scene)
 wallHexagonGrid3.addComponentOrReplace(gltfShape4)
 const transform51 = new Transform({
-  position: new Vector3(0.1561298370361328, 5.5, 15.872520446777344),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(1.9670467376708984, 1.115785837173462, 0.3672069013118744)
+  position: new Vector3(0.2059345245361328, 5.499999046325684, 0.2980676591396332),
+  rotation: new Quaternion(-2.177062080483132e-15, -1, 1.1920927533992653e-7, 0),
+  scale: new Vector3(1.9670476913452148, 1.115785837173462, 0.36720407009124756)
 })
 wallHexagonGrid3.addComponentOrReplace(transform51)
 
@@ -576,9 +576,9 @@ engine.addEntity(wallHexagonGrid4)
 wallHexagonGrid4.setParent(_scene)
 wallHexagonGrid4.addComponentOrReplace(gltfShape4)
 const transform52 = new Transform({
-  position: new Vector3(0.1561298370361328, 0, 15.872520446777344),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(1.9670462608337402, 1.115785837173462, 0.3672069013118744)
+  position: new Vector3(0.20593547821044922, 0, 0.298069566488266),
+  rotation: new Quaternion(-2.177062080483132e-15, -1, 1.1920927533992653e-7, 0),
+  scale: new Vector3(1.9670472145080566, 1.115785837173462, 0.36720430850982666)
 })
 wallHexagonGrid4.addComponentOrReplace(transform52)
 
@@ -586,9 +586,9 @@ const imageFromURL13 = new Entity('imageFromURL13')
 engine.addEntity(imageFromURL13)
 imageFromURL13.setParent(_scene)
 const transform53 = new Transform({
-  position: new Vector3(0.30107688903808594, 5.5, 13.91065502166748),
-  rotation: new Quaternion(3.4995418208113227e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(3.982853651046753, 4.472198486328125, 1.0000035762786865)
+  position: new Vector3(2.1678004264831543, 5.499999523162842, 0.4430156946182251),
+  rotation: new Quaternion(1.3860186463170512e-15, 0, 2.4641823209215798e-15, 1),
+  scale: new Vector3(3.9828555583953857, 4.472198486328125, 1.0000040531158447)
 })
 imageFromURL13.addComponentOrReplace(transform53)
 
@@ -596,9 +596,9 @@ const imageFromURL14 = new Entity('imageFromURL14')
 engine.addEntity(imageFromURL14)
 imageFromURL14.setParent(_scene)
 const transform54 = new Transform({
-  position: new Vector3(0.30107688903808594, 0, 13.91065502166748),
-  rotation: new Quaternion(3.4995418208113227e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(3.9828526973724365, 4.472198486328125, 1.0000033378601074)
+  position: new Vector3(2.1678013801574707, 0, 0.4430166482925415),
+  rotation: new Quaternion(1.3860186463170512e-15, 0, 2.4641823209215798e-15, 1),
+  scale: new Vector3(3.9828546047210693, 4.472198486328125, 1.0000038146972656)
 })
 imageFromURL14.addComponentOrReplace(transform54)
 
@@ -607,9 +607,9 @@ engine.addEntity(wallPlainGlass3)
 wallPlainGlass3.setParent(_scene)
 wallPlainGlass3.addComponentOrReplace(gltfShape5)
 const transform55 = new Transform({
-  position: new Vector3(15.611493110656738, 0, 11.954194068908691),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(1.0112773180007935, 2.5086326599121094, 1.000002384185791)
+  position: new Vector3(4.061099052429199, 0, 15.528099060058594),
+  rotation: new Quaternion(7.728269318441928e-15, 1, -1.1920926823449918e-7, 0),
+  scale: new Vector3(1.0112777948379517, 2.5086326599121094, 1.0000028610229492)
 })
 wallPlainGlass3.addComponentOrReplace(transform55)
 
@@ -617,9 +617,9 @@ const imageFromURL15 = new Entity('imageFromURL15')
 engine.addEntity(imageFromURL15)
 imageFromURL15.setParent(_scene)
 const transform56 = new Transform({
-  position: new Vector3(0.30107688903808594, 5.5, 7.906458854675293),
-  rotation: new Quaternion(3.4995418208113227e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(3.9828546047210693, 4.472198486328125, 1.0000038146972656)
+  position: new Vector3(8.1719970703125, 5.5, 0.4430166482925415),
+  rotation: new Quaternion(1.3860186463170512e-15, 0, 2.4641823209215798e-15, 1),
+  scale: new Vector3(3.982856512069702, 4.472198486328125, 1.0000042915344238)
 })
 imageFromURL15.addComponentOrReplace(transform56)
 
@@ -627,9 +627,9 @@ const imageFromURL16 = new Entity('imageFromURL16')
 engine.addEntity(imageFromURL16)
 imageFromURL16.setParent(_scene)
 const transform57 = new Transform({
-  position: new Vector3(0.30107688903808594, 0, 7.906458854675293),
-  rotation: new Quaternion(3.4995418208113227e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(3.982853651046753, 4.472198486328125, 1.0000035762786865)
+  position: new Vector3(8.171998023986816, 2.384185791015625e-7, 0.4430166482925415),
+  rotation: new Quaternion(1.3860186463170512e-15, 0, 2.4641823209215798e-15, 1),
+  scale: new Vector3(3.9828555583953857, 4.472198486328125, 1.0000040531158447)
 })
 imageFromURL16.addComponentOrReplace(transform57)
 
@@ -638,9 +638,9 @@ engine.addEntity(wallPlainGlass5)
 wallPlainGlass5.setParent(_scene)
 wallPlainGlass5.addComponentOrReplace(gltfShape5)
 const transform58 = new Transform({
-  position: new Vector3(0.3289966583251953, 4.49171781539917, 9.876935958862305),
-  rotation: new Quaternion(-0.5, 0.5, -0.5000000596046448, 0.4999999403953552),
-  scale: new Vector3(0.5100005865097046, 1.0000014305114746, 1)
+  position: new Vector3(6.201519966125488, 4.49171781539917, 0.4709354639053345),
+  rotation: new Quaternion(-7.697075741972513e-16, 0, -0.7071067690849304, 0.7071068286895752),
+  scale: new Vector3(0.5100005865097046, 1.0000015497207642, 1.0000001192092896)
 })
 wallPlainGlass5.addComponentOrReplace(transform58)
 
@@ -649,9 +649,9 @@ engine.addEntity(wallPlainGlass6)
 wallPlainGlass6.setParent(_scene)
 wallPlainGlass6.addComponentOrReplace(gltfShape5)
 const transform59 = new Transform({
-  position: new Vector3(0.059474050998687744, 0, 5.910309791564941),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(1.0112782716751099, 2.5086326599121094, 1.0000033378601074)
+  position: new Vector3(10.168147087097168, 4.76837158203125e-7, 0.20141372084617615),
+  rotation: new Quaternion(-2.177062080483132e-15, -1, 1.1920927533992653e-7, 0),
+  scale: new Vector3(1.011278748512268, 2.5086326599121094, 1.0000038146972656)
 })
 wallPlainGlass6.addComponentOrReplace(transform59)
 
@@ -659,9 +659,9 @@ const imageFromURL17 = new Entity('imageFromURL17')
 engine.addEntity(imageFromURL17)
 imageFromURL17.setParent(_scene)
 const transform60 = new Transform({
-  position: new Vector3(0.14492416381835938, 5.5, 7.914831161499023),
-  rotation: new Quaternion(9.075116290838494e-16, -0.7071067094802856, 8.429368847373553e-8, 0.7071069478988647),
-  scale: new Vector3(3.8791301250457764, 4.4635539054870605, 1.0000030994415283)
+  position: new Vector3(8.16362476348877, 5.5, 0.28686293959617615),
+  rotation: new Quaternion(-3.999536687487827e-15, -1, 1.1920928955078125e-7, 2.0861622829215776e-7),
+  scale: new Vector3(3.879132032394409, 4.4635539054870605, 1.0000035762786865)
 })
 imageFromURL17.addComponentOrReplace(transform60)
 
@@ -669,9 +669,9 @@ const imageFromURL18 = new Entity('imageFromURL18')
 engine.addEntity(imageFromURL18)
 imageFromURL18.setParent(_scene)
 const transform61 = new Transform({
-  position: new Vector3(0.14492416381835938, 0, 7.914831161499023),
-  rotation: new Quaternion(9.075116290838494e-16, -0.7071067094802856, 8.429368847373553e-8, 0.7071069478988647),
-  scale: new Vector3(3.87912917137146, 4.4635539054870605, 1.0000028610229492)
+  position: new Vector3(8.163625717163086, 2.384185791015625e-7, 0.28686389327049255),
+  rotation: new Quaternion(-3.999536687487827e-15, -1, 1.1920928955078125e-7, 2.0861622829215776e-7),
+  scale: new Vector3(3.8791310787200928, 4.4635539054870605, 1.0000033378601074)
 })
 imageFromURL18.addComponentOrReplace(transform61)
 
@@ -680,9 +680,9 @@ engine.addEntity(wallHexagonGrid5)
 wallHexagonGrid5.setParent(_scene)
 wallHexagonGrid5.addComponentOrReplace(gltfShape4)
 const transform62 = new Transform({
-  position: new Vector3(0.1561298370361328, 0, 9.87857437133789),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(1.9670472145080566, 1.115785837173462, 0.3672069013118744)
+  position: new Vector3(6.199882507324219, 0, 0.298069566488266),
+  rotation: new Quaternion(-2.177062080483132e-15, -1, 1.1920927533992653e-7, 0),
+  scale: new Vector3(1.967048168182373, 1.115785837173462, 0.3672046661376953)
 })
 wallHexagonGrid5.addComponentOrReplace(transform62)
 
@@ -691,9 +691,9 @@ engine.addEntity(wallHexagonGrid6)
 wallHexagonGrid6.setParent(_scene)
 wallHexagonGrid6.addComponentOrReplace(gltfShape4)
 const transform63 = new Transform({
-  position: new Vector3(0.1561298370361328, 5.5, 9.87857437133789),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(1.9670476913452148, 1.115785837173462, 0.3672069013118744)
+  position: new Vector3(6.199881553649902, 5.5, 0.298069566488266),
+  rotation: new Quaternion(-2.177062080483132e-15, -1, 1.1920927533992653e-7, 0),
+  scale: new Vector3(1.9670486450195312, 1.115785837173462, 0.3672046661376953)
 })
 wallHexagonGrid6.addComponentOrReplace(transform63)
 
@@ -702,9 +702,9 @@ engine.addEntity(wallHexagonGrid7)
 wallHexagonGrid7.setParent(_scene)
 wallHexagonGrid7.addComponentOrReplace(gltfShape4)
 const transform64 = new Transform({
-  position: new Vector3(0.1561298370361328, 5.5, 4.089244842529297),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(1.9670491218566895, 1.115785837173462, 0.3672066330909729)
+  position: new Vector3(11.989211082458496, 5.500000476837158, 0.298069566488266),
+  rotation: new Quaternion(-2.177062080483132e-15, -1, 1.1920927533992653e-7, 0),
+  scale: new Vector3(1.9670500755310059, 1.115785837173462, 0.36720481514930725)
 })
 wallHexagonGrid7.addComponentOrReplace(transform64)
 
@@ -713,9 +713,9 @@ engine.addEntity(wallHexagonGrid8)
 wallHexagonGrid8.setParent(_scene)
 wallHexagonGrid8.addComponentOrReplace(gltfShape4)
 const transform65 = new Transform({
-  position: new Vector3(0.1561298370361328, 0, 4.089244842529297),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(1.9670486450195312, 1.115785837173462, 0.3672066926956177)
+  position: new Vector3(11.989212989807129, 4.76837158203125e-7, 0.2980705201625824),
+  rotation: new Quaternion(-2.177062080483132e-15, -1, 1.1920927533992653e-7, 0),
+  scale: new Vector3(1.9670495986938477, 1.115785837173462, 0.3672049939632416)
 })
 wallHexagonGrid8.addComponentOrReplace(transform65)
 
@@ -723,9 +723,9 @@ const imageFromURL19 = new Entity('imageFromURL19')
 engine.addEntity(imageFromURL19)
 imageFromURL19.setParent(_scene)
 const transform66 = new Transform({
-  position: new Vector3(0.14492416381835938, 0, 2.125501871109009),
-  rotation: new Quaternion(9.075116290838494e-16, -0.7071067094802856, 8.429368847373553e-8, 0.7071069478988647),
-  scale: new Vector3(3.879132032394409, 4.4635539054870605, 1.0000035762786865)
+  position: new Vector3(13.952956199645996, 7.152557373046875e-7, 0.28686484694480896),
+  rotation: new Quaternion(-3.999536687487827e-15, -1, 1.1920928955078125e-7, 2.0861622829215776e-7),
+  scale: new Vector3(3.879133939743042, 4.4635539054870605, 1.0000040531158447)
 })
 imageFromURL19.addComponentOrReplace(transform66)
 
@@ -733,9 +733,9 @@ const imageFromURL20 = new Entity('imageFromURL20')
 engine.addEntity(imageFromURL20)
 imageFromURL20.setParent(_scene)
 const transform67 = new Transform({
-  position: new Vector3(0.14492416381835938, 5.5, 2.125501871109009),
-  rotation: new Quaternion(9.075116290838494e-16, -0.7071067094802856, 8.429368847373553e-8, 0.7071069478988647),
-  scale: new Vector3(3.8791329860687256, 4.4635539054870605, 1.0000038146972656)
+  position: new Vector3(13.95295524597168, 5.500000953674316, 0.28686389327049255),
+  rotation: new Quaternion(-3.999536687487827e-15, -1, 1.1920928955078125e-7, 2.0861622829215776e-7),
+  scale: new Vector3(3.8791348934173584, 4.4635539054870605, 1.0000042915344238)
 })
 imageFromURL20.addComponentOrReplace(transform67)
 
@@ -744,9 +744,9 @@ engine.addEntity(wallPlainGlass4)
 wallPlainGlass4.setParent(_scene)
 wallPlainGlass4.addComponentOrReplace(gltfShape5)
 const transform68 = new Transform({
-  position: new Vector3(0.3289966583251953, 4.49171781539917, 4.136586666107178),
-  rotation: new Quaternion(-0.5, 0.5, -0.5000000596046448, 0.4999999403953552),
-  scale: new Vector3(0.5100005865097046, 1.0000014305114746, 1)
+  position: new Vector3(11.94187068939209, 4.491718292236328, 0.4709364175796509),
+  rotation: new Quaternion(-7.697075741972513e-16, 0, -0.7071067690849304, 0.7071068286895752),
+  scale: new Vector3(0.5100005865097046, 1.0000015497207642, 1.0000001192092896)
 })
 wallPlainGlass4.addComponentOrReplace(transform68)
 
@@ -754,9 +754,9 @@ const imageFromURL21 = new Entity('imageFromURL21')
 engine.addEntity(imageFromURL21)
 imageFromURL21.setParent(_scene)
 const transform69 = new Transform({
-  position: new Vector3(0.30107688903808594, 0, 2.1171295642852783),
-  rotation: new Quaternion(3.4995418208113227e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(3.982856512069702, 4.472198486328125, 1.0000042915344238)
+  position: new Vector3(13.961328506469727, 7.152557373046875e-7, 0.4430185556411743),
+  rotation: new Quaternion(1.3860186463170512e-15, 0, 2.4641823209215798e-15, 1),
+  scale: new Vector3(3.982858419418335, 4.472198486328125, 1.000004768371582)
 })
 imageFromURL21.addComponentOrReplace(transform69)
 
@@ -764,9 +764,9 @@ const imageFromURL22 = new Entity('imageFromURL22')
 engine.addEntity(imageFromURL22)
 imageFromURL22.setParent(_scene)
 const transform70 = new Transform({
-  position: new Vector3(0.30107688903808594, 5.5, 2.1171295642852783),
-  rotation: new Quaternion(3.4995418208113227e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(3.9828574657440186, 4.472198486328125, 1.000004529953003)
+  position: new Vector3(13.96132755279541, 5.500000953674316, 0.4430166482925415),
+  rotation: new Quaternion(1.3860186463170512e-15, 0, 2.4641823209215798e-15, 1),
+  scale: new Vector3(3.9828593730926514, 4.472198486328125, 1.0000050067901611)
 })
 imageFromURL22.addComponentOrReplace(transform70)
 
@@ -775,9 +775,9 @@ engine.addEntity(wallPlainGlass7)
 wallPlainGlass7.setParent(_scene)
 wallPlainGlass7.addComponentOrReplace(gltfShape5)
 const transform71 = new Transform({
-  position: new Vector3(0.059474050998687744, 0, 11.876038551330566),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(1.011278510093689, 2.5086326599121094, 1.0000035762786865)
+  position: new Vector3(4.202417850494385, 0, 0.20141276717185974),
+  rotation: new Quaternion(-2.177062080483132e-15, -1, 1.1920927533992653e-7, 0),
+  scale: new Vector3(1.0112789869308472, 2.5086326599121094, 1.0000040531158447)
 })
 wallPlainGlass7.addComponentOrReplace(transform71)
 
@@ -790,9 +790,9 @@ gltfShape7.isPointerBlocker = true
 gltfShape7.visible = true
 outdoorTable3.addComponentOrReplace(gltfShape7)
 const transform72 = new Transform({
-  position: new Vector3(8.10548210144043, 0, 15.233450889587402),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(0.4999999403953552, 0.5, 0.2499999850988388)
+  position: new Vector3(0.8661239147186279, 0, 8.10548210144043),
+  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
+  scale: new Vector3(0.5000004172325134, 0.5, 0.2500002086162567)
 })
 outdoorTable3.addComponentOrReplace(transform72)
 

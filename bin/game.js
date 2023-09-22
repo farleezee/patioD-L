@@ -7067,7 +7067,7 @@ const verticalBluePad = new Entity('verticalBluePad')
 engine.addEntity(verticalBluePad)
 verticalBluePad.setParent(_scene)
 const transform16 = new Transform({
-  position: new Vector3(8.000000953674316, 0, 8.5),
+  position: new Vector3(8.000000953674316, 0, 8),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
@@ -7092,7 +7092,7 @@ const messageBubble = new Entity('messageBubble')
 engine.addEntity(messageBubble)
 messageBubble.setParent(_scene)
 const transform18 = new Transform({
-  position: new Vector3(0.6854255199432373, 1.9999998807907104, 14.890657424926758),
+  position: new Vector3(0.6854255199432373, 1.9999998807907104, 14.38786506652832),
   rotation: new Quaternion(6.388820120048445e-16, -0.3826834559440613, 4.561942290592924e-8, 0.9238795638084412),
   scale: new Vector3(0.6159783601760864, 0.5356435775756836, 0.6159783601760864)
 })
@@ -7102,9 +7102,9 @@ const messageBubble2 = new Entity('messageBubble2')
 engine.addEntity(messageBubble2)
 messageBubble2.setParent(_scene)
 const transform19 = new Transform({
-  position: new Vector3(1.1854255199432373, 1.9999998807907104, 1.5000004768371582),
+  position: new Vector3(1.1854255199432373, 1.9999998807907104, 1.8617310523986816),
   rotation: new Quaternion(-1.913504814329641e-15, 0.9569404125213623, -1.1407617250824842e-7, -0.2902846336364746),
-  scale: new Vector3(0.6249119639396667, 0.5356435775756836, 0.6249119639396667)
+  scale: new Vector3(0.6249125003814697, 0.5356435775756836, 0.6249125003814697)
 })
 messageBubble2.addComponentOrReplace(transform19)
 
@@ -7682,11 +7682,77 @@ gltfShape7.isPointerBlocker = true
 gltfShape7.visible = true
 outdoorTable3.addComponentOrReplace(gltfShape7)
 const transform72 = new Transform({
-  position: new Vector3(0.8661239147186279, 0, 8.10548210144043),
+  position: new Vector3(0.941591739654541, 0, 0.8915532827377319),
   rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(0.5000004172325134, 0.5, 0.2500002086162567)
+  scale: new Vector3(0.5000010132789612, 0.5, 0.2500005066394806)
 })
 outdoorTable3.addComponentOrReplace(transform72)
+
+const outdoorTable = new Entity('outdoorTable')
+engine.addEntity(outdoorTable)
+outdoorTable.setParent(_scene)
+outdoorTable.addComponentOrReplace(gltfShape7)
+const transform73 = new Transform({
+  position: new Vector3(15.150633811950684, 0, 12.009902954101562),
+  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
+  scale: new Vector3(0.5000013709068298, 0.5, 0.2500006854534149)
+})
+outdoorTable.addComponentOrReplace(transform73)
+
+const outdoorTable2 = new Entity('outdoorTable2')
+engine.addEntity(outdoorTable2)
+outdoorTable2.setParent(_scene)
+outdoorTable2.addComponentOrReplace(gltfShape7)
+const transform74 = new Transform({
+  position: new Vector3(15.150633811950684, 0, 9.303709030151367),
+  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
+  scale: new Vector3(0.5000013709068298, 0.5, 0.2500006854534149)
+})
+outdoorTable2.addComponentOrReplace(transform74)
+
+const outdoorTable4 = new Entity('outdoorTable4')
+engine.addEntity(outdoorTable4)
+outdoorTable4.setParent(_scene)
+outdoorTable4.addComponentOrReplace(gltfShape7)
+const transform75 = new Transform({
+  position: new Vector3(15.150633811950684, 0, 6.698399543762207),
+  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
+  scale: new Vector3(0.5000016093254089, 0.5, 0.25000080466270447)
+})
+outdoorTable4.addComponentOrReplace(transform75)
+
+const outdoorTable5 = new Entity('outdoorTable5')
+engine.addEntity(outdoorTable5)
+outdoorTable5.setParent(_scene)
+outdoorTable5.addComponentOrReplace(gltfShape7)
+const transform76 = new Transform({
+  position: new Vector3(15.150633811950684, 0, 3.9702911376953125),
+  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
+  scale: new Vector3(0.5000017285346985, 0.5, 0.25000086426734924)
+})
+outdoorTable5.addComponentOrReplace(transform76)
+
+const outdoorTable6 = new Entity('outdoorTable6')
+engine.addEntity(outdoorTable6)
+outdoorTable6.setParent(_scene)
+outdoorTable6.addComponentOrReplace(gltfShape7)
+const transform77 = new Transform({
+  position: new Vector3(15.150633811950684, 0, 1.335211157798767),
+  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
+  scale: new Vector3(0.5000019669532776, 0.5, 0.2500009834766388)
+})
+outdoorTable6.addComponentOrReplace(transform77)
+
+const outdoorTable7 = new Entity('outdoorTable7')
+engine.addEntity(outdoorTable7)
+outdoorTable7.setParent(_scene)
+outdoorTable7.addComponentOrReplace(gltfShape7)
+const transform78 = new Transform({
+  position: new Vector3(0.941591739654541, 0, 15.18637466430664),
+  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
+  scale: new Vector3(0.5000012516975403, 0.5, 0.25000062584877014)
+})
+outdoorTable7.addComponentOrReplace(transform78)
 
 const channelId = Math.random().toString(16).slice(2)
 const channelBus = new MessageBus()
@@ -7717,7 +7783,7 @@ script3.spawn(imageFromURL9, {"image":"https://i.imgur.com/PpMxQ6S.jpg"}, create
 script3.spawn(imageFromURL10, {"image":"https://i.imgur.com/1cuKdy2.jpg"}, createChannel(channelId, imageFromURL10, channelBus))
 script4.spawn(radio, {"startOn":true,"volume":1,"onClickText":"DELTA","onClick":[{"entityName":"radio","actionId":"toggle","values":{}}],"station":"https://cdn.instream.audio/:9069/stream?_=171cd6c2b6e"}, createChannel(channelId, radio, channelBus))
 script5.spawn(verticalBluePad, {"distance":7,"speed":5,"autoStart":true,"onReachEnd":[{"entityName":"verticalBluePad","actionId":"goToStart","values":{}}],"onReachStart":[{"entityName":"verticalBluePad","actionId":"goToEnd","values":{}}]}, createChannel(channelId, verticalBluePad, channelBus))
-script6.spawn(messageBubble, {"text":"SHOP HERE\n         on \n    wall-link!!","fontSize":17}, createChannel(channelId, messageBubble, channelBus))
+script6.spawn(messageBubble, {"text":"SHOP HERE\n         on \n    wall-link!!","fontSize":19}, createChannel(channelId, messageBubble, channelBus))
 script6.spawn(messageBubble2, {"text":" TWEET HERE\n           on \n      wall-link!!","fontSize":17}, createChannel(channelId, messageBubble2, channelBus))
 script3.spawn(imageFromURL3, {"image":"https://i.imgur.com/nvPVoZ8.jpg"}, createChannel(channelId, imageFromURL3, channelBus))
 script3.spawn(imageFromURL23, {"image":"https://i.imgur.com/QcUwFdz.jpg"}, createChannel(channelId, imageFromURL23, channelBus))

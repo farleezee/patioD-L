@@ -35,9 +35,9 @@ const grafittiWallJ = new Entity('grafittiWallJ')
 engine.addEntity(grafittiWallJ)
 grafittiWallJ.setParent(_scene)
 const transform3 = new Transform({
-  position: new Vector3(0.09957385063171387, 8.344650268554688e-7, 15.81998062133789),
+  position: new Vector3(0.08721131086349487, 9.5367431640625e-7, 15.81998062133789),
   rotation: new Quaternion(3.009794358730701e-15, 0.7071068286895752, -8.429368847373553e-8, -0.7071068286895752),
-  scale: new Vector3(3.8464548587799072, 1, 1.0000052452087402)
+  scale: new Vector3(3.8464577198028564, 1, 0.5057541728019714)
 })
 grafittiWallJ.addComponentOrReplace(transform3)
 const gltfShape2 = new GLTFShape("9af74dab-0029-45c8-a431-4c6604ce1099/Grafitti_Wall_J.glb")
@@ -65,9 +65,9 @@ const externalLink = new Entity('externalLink')
 engine.addEntity(externalLink)
 externalLink.setParent(_scene)
 const transform5 = new Transform({
-  position: new Vector3(0.49032092094421387, 1.4391698837280273, 14.479757308959961),
+  position: new Vector3(0.2848321199417114, 1.4391698837280273, 14.479757308959961),
   rotation: new Quaternion(3.772921916295885e-15, -0.70710688829422, 8.429370268459024e-8, 0.7071067690849304),
-  scale: new Vector3(0.9714223146438599, 1, 1.0000042915344238)
+  scale: new Vector3(0.9714230298995972, 1, 0.5057536363601685)
 })
 externalLink.addComponentOrReplace(transform5)
 
@@ -75,9 +75,9 @@ const twitterButtonLink = new Entity('twitterButtonLink')
 engine.addEntity(twitterButtonLink)
 twitterButtonLink.setParent(_scene)
 const transform6 = new Transform({
-  position: new Vector3(0.4456660747528076, 1.392651081085205, 1.9688301086425781),
+  position: new Vector3(0.26224786043167114, 1.392651081085205, 1.9688301086425781),
   rotation: new Quaternion(8.911404939166735e-16, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(0.9714221954345703, 1, 1.0000041723251343)
+  scale: new Vector3(0.9714229106903076, 1, 0.5057535767555237)
 })
 twitterButtonLink.addComponentOrReplace(transform6)
 
@@ -85,9 +85,9 @@ const imageFromURL = new Entity('imageFromURL')
 engine.addEntity(imageFromURL)
 imageFromURL.setParent(_scene)
 const transform7 = new Transform({
-  position: new Vector3(0.43446850776672363, 3.8694911003112793, 8.049259185791016),
+  position: new Vector3(0.2565845251083374, 3.8694911003112793, 8.049259185791016),
   rotation: new Quaternion(8.911404939166735e-16, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(15.770493507385254, 6.104907035827637, 0.3208199739456177)
+  scale: new Vector3(15.77050495147705, 6.104907035827637, 0.1622547209262848)
 })
 imageFromURL.addComponentOrReplace(transform7)
 
@@ -165,7 +165,7 @@ const radio = new Entity('radio')
 engine.addEntity(radio)
 radio.setParent(_scene)
 const transform15 = new Transform({
-  position: new Vector3(10.956101417541504, 1, 0.7782899141311646),
+  position: new Vector3(11.093172073364258, 1, 0.7782899141311646),
   rotation: new Quaternion(0.015570775605738163, 0.002301812171936035, -0.0034541571512818336, -0.999870240688324),
   scale: new Vector3(1.0000014305114746, 0.9999999403953552, 1.0000028610229492)
 })
@@ -185,9 +185,9 @@ const wallHexagonGrid2 = new Entity('wallHexagonGrid2')
 engine.addEntity(wallHexagonGrid2)
 wallHexagonGrid2.setParent(_scene)
 const transform17 = new Transform({
-  position: new Vector3(0.09550081938505173, 3.9852542877197266, 15.755205154418945),
+  position: new Vector3(0.08515137434005737, 3.9852542877197266, 15.755205154418945),
   rotation: new Quaternion(2.3689055139155743e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(7.652790546417236, 1.5, 0.8076586127281189)
+  scale: new Vector3(7.652796268463135, 1.5, 0.4084748923778534)
 })
 wallHexagonGrid2.addComponentOrReplace(transform17)
 const gltfShape4 = new GLTFShape("59fecc02-0949-4feb-9501-f4279744b57e/HexagonGridWall.glb")
@@ -200,9 +200,9 @@ const messageBubble = new Entity('messageBubble')
 engine.addEntity(messageBubble)
 messageBubble.setParent(_scene)
 const transform18 = new Transform({
-  position: new Vector3(0.6854255199432373, 1.9999998807907104, 14.38786506652832),
+  position: new Vector3(0.3835064768791199, 1.9999998807907104, 14.38786506652832),
   rotation: new Quaternion(6.388820120048445e-16, -0.3826834559440613, 4.561942290592924e-8, 0.9238795638084412),
-  scale: new Vector3(0.6159783601760864, 0.5356435775756836, 0.6159783601760864)
+  scale: new Vector3(0.4637550413608551, 0.5356435775756836, 0.4637550115585327)
 })
 messageBubble.addComponentOrReplace(transform18)
 
@@ -210,9 +210,9 @@ const messageBubble2 = new Entity('messageBubble2')
 engine.addEntity(messageBubble2)
 messageBubble2.setParent(_scene)
 const transform19 = new Transform({
-  position: new Vector3(1.1854255199432373, 1.9999998807907104, 1.8617310523986816),
+  position: new Vector3(0.6363820433616638, 1.9999998807907104, 1.8617310523986816),
   rotation: new Quaternion(-1.913504814329641e-15, 0.9569404125213623, -1.1407617250824842e-7, -0.2902846336364746),
-  scale: new Vector3(0.6249125003814697, 0.5356435775756836, 0.6249125003814697)
+  scale: new Vector3(0.41138339042663574, 0.5356435775756836, 0.5295802354812622)
 })
 messageBubble2.addComponentOrReplace(transform19)
 
@@ -220,9 +220,9 @@ const nft = new Entity('nft')
 engine.addEntity(nft)
 nft.setParent(_scene)
 const transform20 = new Transform({
-  position: new Vector3(0.4252631664276123, 2.5410513877868652, 3.8742146492004395),
+  position: new Vector3(0.25192904472351074, 2.5410513877868652, 3.8742141723632812),
   rotation: new Quaternion(3.957966428018954e-15, -0.70710688829422, 8.429369557916289e-8, 0.7071067690849304),
-  scale: new Vector3(3.6004319190979004, 2.9263596534729004, 1.0000009536743164)
+  scale: new Vector3(3.6004347801208496, 2.9263596534729004, 0.5057519674301147)
 })
 nft.addComponentOrReplace(transform20)
 const nftShape = new NFTShape("ethereum://0x60f80121c31a0d46b5279700f9df786054aa5ee5/385727")
@@ -236,9 +236,9 @@ const nft2 = new Entity('nft2')
 engine.addEntity(nft2)
 nft2.setParent(_scene)
 const transform21 = new Transform({
-  position: new Vector3(0.4456174373626709, 2.5475826263427734, 12.42967414855957),
+  position: new Vector3(0.2622232437133789, 2.5475826263427734, 12.42967414855957),
   rotation: new Quaternion(3.899622798612078e-15, -0.70710688829422, 8.429369557916289e-8, 0.7071067690849304),
-  scale: new Vector3(3.493274211883545, 2.821545124053955, 1.0000009536743164)
+  scale: new Vector3(3.4932806491851807, 2.821545124053955, 0.5057519674301147)
 })
 nft2.addComponentOrReplace(transform21)
 const nftShape2 = new NFTShape("ethereum://0x60f80121c31a0d46b5279700f9df786054aa5ee5/385559")
@@ -781,87 +781,6 @@ const transform71 = new Transform({
 })
 wallPlainGlass7.addComponentOrReplace(transform71)
 
-const outdoorTable3 = new Entity('outdoorTable3')
-engine.addEntity(outdoorTable3)
-outdoorTable3.setParent(_scene)
-const gltfShape7 = new GLTFShape("ea9146e1-5666-40da-80c9-8a3ce23fb979/Table_01/Table_01.glb")
-gltfShape7.withCollisions = true
-gltfShape7.isPointerBlocker = true
-gltfShape7.visible = true
-outdoorTable3.addComponentOrReplace(gltfShape7)
-const transform72 = new Transform({
-  position: new Vector3(0.941591739654541, 0, 0.8915532827377319),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(0.5000010132789612, 0.5, 0.2500005066394806)
-})
-outdoorTable3.addComponentOrReplace(transform72)
-
-const outdoorTable = new Entity('outdoorTable')
-engine.addEntity(outdoorTable)
-outdoorTable.setParent(_scene)
-outdoorTable.addComponentOrReplace(gltfShape7)
-const transform73 = new Transform({
-  position: new Vector3(15.150633811950684, 0, 12.009902954101562),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(0.5000013709068298, 0.5, 0.2500006854534149)
-})
-outdoorTable.addComponentOrReplace(transform73)
-
-const outdoorTable2 = new Entity('outdoorTable2')
-engine.addEntity(outdoorTable2)
-outdoorTable2.setParent(_scene)
-outdoorTable2.addComponentOrReplace(gltfShape7)
-const transform74 = new Transform({
-  position: new Vector3(15.150633811950684, 0, 9.303709030151367),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(0.5000013709068298, 0.5, 0.2500006854534149)
-})
-outdoorTable2.addComponentOrReplace(transform74)
-
-const outdoorTable4 = new Entity('outdoorTable4')
-engine.addEntity(outdoorTable4)
-outdoorTable4.setParent(_scene)
-outdoorTable4.addComponentOrReplace(gltfShape7)
-const transform75 = new Transform({
-  position: new Vector3(15.150633811950684, 0, 6.698399543762207),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(0.5000016093254089, 0.5, 0.25000080466270447)
-})
-outdoorTable4.addComponentOrReplace(transform75)
-
-const outdoorTable5 = new Entity('outdoorTable5')
-engine.addEntity(outdoorTable5)
-outdoorTable5.setParent(_scene)
-outdoorTable5.addComponentOrReplace(gltfShape7)
-const transform76 = new Transform({
-  position: new Vector3(15.150633811950684, 0, 3.9702911376953125),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(0.5000017285346985, 0.5, 0.25000086426734924)
-})
-outdoorTable5.addComponentOrReplace(transform76)
-
-const outdoorTable6 = new Entity('outdoorTable6')
-engine.addEntity(outdoorTable6)
-outdoorTable6.setParent(_scene)
-outdoorTable6.addComponentOrReplace(gltfShape7)
-const transform77 = new Transform({
-  position: new Vector3(15.150633811950684, 0, 1.335211157798767),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(0.5000019669532776, 0.5, 0.2500009834766388)
-})
-outdoorTable6.addComponentOrReplace(transform77)
-
-const outdoorTable7 = new Entity('outdoorTable7')
-engine.addEntity(outdoorTable7)
-outdoorTable7.setParent(_scene)
-outdoorTable7.addComponentOrReplace(gltfShape7)
-const transform78 = new Transform({
-  position: new Vector3(0.941591739654541, 0, 15.18637466430664),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(0.5000012516975403, 0.5, 0.25000062584877014)
-})
-outdoorTable7.addComponentOrReplace(transform78)
-
 const channelId = Math.random().toString(16).slice(2)
 const channelBus = new MessageBus()
 const inventory = createInventory(UICanvas, UIContainerStack, UIImage)
@@ -895,26 +814,26 @@ script6.spawn(messageBubble, {"text":"SHOP HERE\n         on \n    wall-link!!",
 script6.spawn(messageBubble2, {"text":" TWEET HERE\n           on \n      wall-link!!","fontSize":17}, createChannel(channelId, messageBubble2, channelBus))
 script3.spawn(imageFromURL3, {"image":"https://i.imgur.com/nvPVoZ8.jpg"}, createChannel(channelId, imageFromURL3, channelBus))
 script3.spawn(imageFromURL23, {"image":"https://i.imgur.com/QcUwFdz.jpg"}, createChannel(channelId, imageFromURL23, channelBus))
-script3.spawn(imageFromURL24, {"image":"https://i.imgur.com/UKBrTBD.jpg"}, createChannel(channelId, imageFromURL24, channelBus))
+script3.spawn(imageFromURL24, {"image":"https://i.imgur.com/Sh7lzEn.png"}, createChannel(channelId, imageFromURL24, channelBus))
 script3.spawn(imageFromURL2, {"image":"https://i.imgur.com/m0PsPsm.jpg"}, createChannel(channelId, imageFromURL2, channelBus))
 script3.spawn(imageFromURL25, {"image":"https://i.imgur.com/i57SYZ5.jpg"}, createChannel(channelId, imageFromURL25, channelBus))
-script3.spawn(imageFromURL26, {"image":"https://i.imgur.com/O63IE2H.jpg"}, createChannel(channelId, imageFromURL26, channelBus))
+script3.spawn(imageFromURL26, {"image":"https://i.imgur.com/MO46c01.png"}, createChannel(channelId, imageFromURL26, channelBus))
 script3.spawn(imageFromURL27, {"image":"https://i.imgur.com/QcUwFdz.jpg"}, createChannel(channelId, imageFromURL27, channelBus))
 script3.spawn(imageFromURL28, {"image":"https://i.imgur.com/sgCcz2y.jpg"}, createChannel(channelId, imageFromURL28, channelBus))
 script3.spawn(imageFromURL29, {"image":"https://i.imgur.com/zDfIT0u.jpg"}, createChannel(channelId, imageFromURL29, channelBus))
 script3.spawn(imageFromURL30, {"image":"https://i.imgur.com/i57SYZ5.jpg"}, createChannel(channelId, imageFromURL30, channelBus))
-script3.spawn(imageFromURL31, {"image":"https://i.imgur.com/bVd0SZd.jpg"}, createChannel(channelId, imageFromURL31, channelBus))
+script3.spawn(imageFromURL31, {"image":"https://i.imgur.com/INHudX7.png"}, createChannel(channelId, imageFromURL31, channelBus))
 script3.spawn(imageFromURL32, {"image":"https://i.imgur.com/m0PsPsm.jpg"}, createChannel(channelId, imageFromURL32, channelBus))
 script3.spawn(imageFromURL33, {"image":"https://i.imgur.com/QcUwFdz.jpg"}, createChannel(channelId, imageFromURL33, channelBus))
 script3.spawn(imageFromURL11, {"image":"https://i.imgur.com/QcUwFdz.jpg"}, createChannel(channelId, imageFromURL11, channelBus))
 script3.spawn(imageFromURL12, {"image":"https://i.imgur.com/m0PsPsm.jpg"}, createChannel(channelId, imageFromURL12, channelBus))
 script3.spawn(imageFromURL13, {"image":"https://i.imgur.com/QcUwFdz.jpg"}, createChannel(channelId, imageFromURL13, channelBus))
-script3.spawn(imageFromURL14, {"image":"https://i.imgur.com/bVd0SZd.jpg"}, createChannel(channelId, imageFromURL14, channelBus))
-script3.spawn(imageFromURL15, {"image":"https://i.imgur.com/ZBj6ULs.jpg"}, createChannel(channelId, imageFromURL15, channelBus))
+script3.spawn(imageFromURL14, {"image":"https://i.imgur.com/odRJkMS.png"}, createChannel(channelId, imageFromURL14, channelBus))
+script3.spawn(imageFromURL15, {"image":"https://i.imgur.com/tZybKgk.png"}, createChannel(channelId, imageFromURL15, channelBus))
 script3.spawn(imageFromURL16, {"image":"https://i.imgur.com/sgCcz2y.jpg"}, createChannel(channelId, imageFromURL16, channelBus))
-script3.spawn(imageFromURL17, {"image":"https://i.imgur.com/m0PsPsm.jpg"}, createChannel(channelId, imageFromURL17, channelBus))
-script3.spawn(imageFromURL18, {"image":"https://i.imgur.com/QcUwFdz.jpg"}, createChannel(channelId, imageFromURL18, channelBus))
+script3.spawn(imageFromURL17, {"image":"https://i.imgur.com/QcUwFdz.jpg"}, createChannel(channelId, imageFromURL17, channelBus))
+script3.spawn(imageFromURL18, {"image":"https://i.imgur.com/sgCcz2y.jpg"}, createChannel(channelId, imageFromURL18, channelBus))
 script3.spawn(imageFromURL19, {"image":"https://i.imgur.com/QcUwFdz.jpg"}, createChannel(channelId, imageFromURL19, channelBus))
-script3.spawn(imageFromURL20, {"image":"https://i.imgur.com/m0PsPsm.jpg"}, createChannel(channelId, imageFromURL20, channelBus))
-script3.spawn(imageFromURL21, {"image":"https://i.imgur.com/SNnODUg.jpg"}, createChannel(channelId, imageFromURL21, channelBus))
+script3.spawn(imageFromURL20, {"image":"https://i.imgur.com/i57SYZ5.jpg"}, createChannel(channelId, imageFromURL20, channelBus))
+script3.spawn(imageFromURL21, {"image":"https://i.imgur.com/ctzNDHe.png"}, createChannel(channelId, imageFromURL21, channelBus))
 script3.spawn(imageFromURL22, {"image":"https://i.imgur.com/QcUwFdz.jpg"}, createChannel(channelId, imageFromURL22, channelBus))
